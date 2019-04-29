@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Basic Gatsby structure based on this template https://github.com/gatsbyjs/gatsby-starter-blog
+- Basic Gatsby structure based on [this template](https://github.com/gatsbyjs/gatsby-starter-blog)
 - This Changelog
 
 ### Changed
