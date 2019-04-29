@@ -1,19 +1,39 @@
 // NOTE: This component is not designed per spec, but is being used currently for development purposes only
 import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
 import styled from "@emotion/styled";
 
-// NOTE: Using hardcoded data. This should probably be more flexible before release
-const Navigation = () => (
+/* 
+  NOTE: This component simply takes a brand (goes to the left) and navigational items (goes to the right). 
+  It's intended use is for a primary navigation
+*/
+const Navigation = ({ brand, navigationListItems }) => (
   <NavigationContainer>
-  {/* These will be actual anchor elements in release, I just used buttons while it's still hardcoded (since the anchor wasn't actually going anywhere) */}
-    <button>Brand</button>
+    <Link to={brand.href}>{brand.element}</Link>
     <NavigationList>
-      <NavigationItem>Link 1</NavigationItem>
-      <NavigationItem>Link 2</NavigationItem>
-      <NavigationItem>Link 3</NavigationItem>
+      {navigationListItems.map(item => <Link to={item.href}>{item.title}</Link>)}
     </NavigationList>
   </NavigationContainer>
 );
+
+Navigation.propTypes = {
+  brand: PropTypes.shape({
+    href: PropTypes.string,
+    element: PropTypes.node
+  }).isRequired,
+  navigationListItems: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    href: PropTypes.string.isRequired
+  })).isRequired
+};
+
+Navigation.defaultProps = {
+  brand: {
+    href: "/",
+    element: "Home" // NOTE: Whatever this is gets wrapped in a <Link> element
+  }
+};
 
 // NOTE: These are some styled components that _do not follow any styleguide or design spec_. Again, they are for development purposes only
 // TODO: Make them follow the style guide or design spec
@@ -26,15 +46,9 @@ const NavigationContainer = styled.div`
 `;
 
 const NavigationList = styled.div`
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: end;
-`
-
-const NavigationItem = styled.button`
-  display: inline;
-  margin-left: 16px;
-
 `;
 
 export default Navigation;
