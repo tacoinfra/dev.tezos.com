@@ -3,7 +3,7 @@ module.exports = {
     title: `Development Tutorials`,
     author: `An Author`,
     description: `A archive of various tutorials`,
-    siteUrl: ``,
+    siteUrl: `http://localhost:8000/`,
   },
   plugins: [
     {
