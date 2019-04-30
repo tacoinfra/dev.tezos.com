@@ -61,7 +61,12 @@ class Layout extends React.Component {
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
           />
         </Helmet>
-        <Navigation navigationListItems={[{title: "tutorials", href: "/tutorials"}]} />
+        <Navigation
+          navigationListItems={[
+            { title: "Tutorials", href: "/tutorials" },
+            { title: "Community", href: "/community" },
+          ]}
+        />
 
         <div
           style={{
