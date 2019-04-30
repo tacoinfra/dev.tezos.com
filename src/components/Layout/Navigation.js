@@ -43,12 +43,16 @@ const NavigationContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   min-height: 64px;
+  padding: 8px;
 `;
 
 const NavigationList = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
+  > * {
+    margin-left: 16px;
+  }
 `;
 
 export default Navigation;
