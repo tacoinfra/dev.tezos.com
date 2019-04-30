@@ -65,6 +65,7 @@ class Layout extends React.Component {
           navigationListItems={[
             { title: "Tutorials", href: "/tutorials" },
             { title: "Community", href: "/community" },
+            { title: "Documetation", href: "/docs" }
           ]}
         />
 

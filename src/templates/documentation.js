@@ -5,9 +5,8 @@ import { Layout } from "../components/Layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-class TutorialPostTemplate extends React.Component {
+class DocumentationPostsTemplate extends React.Component {
   render() {
-    console.log(this.props.data);
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
@@ -36,7 +35,7 @@ class TutorialPostTemplate extends React.Component {
           }}
         />
 
-        <ul
+<ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -47,14 +46,14 @@ class TutorialPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={`/tutorial${previous.fields.slug}`} rel="prev">
+              <Link to={`/documentation${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`/tutorial${next.fields.slug}`} rel="next">
+              <Link to={`/documentation${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -65,10 +64,10 @@ class TutorialPostTemplate extends React.Component {
   }
 }
 
-export default TutorialPostTemplate
+export default DocumentationPostsTemplate
 
 export const pageQuery = graphql`
-  query TutorialPostBySlug($slug: String!) {
+  query DocumentationPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title

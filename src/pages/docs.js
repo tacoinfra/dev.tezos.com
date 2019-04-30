@@ -9,7 +9,7 @@ const TutorialIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title="Tutorials">
+    <Layout location={location} title="Documentation">
       <SEO title="All posts" keywords={[`gatsby`, `javascript`, `react`]} />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -20,7 +20,7 @@ const TutorialIndex = ({ data, location }) => {
                 marginBottom: rhythm(1 / 4),
               }}
             >
-              <Link style={{ boxShadow: `none` }} to={`/tutorial${node.fields.slug}`}>
+              <Link style={{ boxShadow: `none` }} to={`/documentation${node.fields.slug}`}>
                 {title}
               </Link>
             </h3>
@@ -48,7 +48,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC },
-      filter: { fileAbsolutePath: {regex : "\/tutorials/"} },
+      filter: { fileAbsolutePath: {regex : "\/documentation/"} },
     ) {
       edges {
         node {
