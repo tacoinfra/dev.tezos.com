@@ -12,7 +12,7 @@ const Navigation = ({ brand, navigationListItems }) => (
   <NavigationContainer>
     <Link to={brand.href}>{brand.element}</Link>
     <NavigationList>
-      {navigationListItems.map(item => <Link to={item.href}>{item.title}</Link>)}
+      {navigationListItems.map(item => <Link key={item.title} to={item.href}>{item.title}</Link>)}
     </NavigationList>
   </NavigationContainer>
 );
