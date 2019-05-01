@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import { Layout } from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
 const TutorialIndex = ({ data, location }) => {
@@ -20,7 +20,10 @@ const TutorialIndex = ({ data, location }) => {
                 marginBottom: rhythm(1 / 4),
               }}
             >
-              <Link style={{ boxShadow: `none` }} to={`/documentation${node.fields.slug}`}>
+              <Link
+                style={{ boxShadow: `none` }}
+                to={`/documentation${node.fields.slug}`}
+              >
                 {title}
               </Link>
             </h3>
@@ -47,14 +50,18 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC },
-      filter: { fileAbsolutePath: {regex : "\/documentation/"} },
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { 
+        fileAbsolutePath: { regex: "/documentation/" },
+        fields: { langKey: { eq: "en" } }
+      }
     ) {
       edges {
         node {
           excerpt
           fields {
             slug
+            langKey
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

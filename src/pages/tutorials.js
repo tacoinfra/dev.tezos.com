@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import { Layout } from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
 const TutorialIndex = ({ data, location }) => {
@@ -48,7 +48,10 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC },
-      filter: { fileAbsolutePath: {regex : "\/tutorials/"} },
+      filter: { 
+        fileAbsolutePath: {regex : "\/tutorials/"},
+        fields: { langKey: { eq: "en" } }
+      },
     ) {
       edges {
         node {

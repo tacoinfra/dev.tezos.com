@@ -1,9 +1,12 @@
+const languages = require("./src/utils/languages.js")
+
 module.exports = {
   siteMetadata: {
     title: `Development Tutorials`,
     author: `An Author`,
     description: `A archive of various tutorials`,
     siteUrl: `http://localhost:8000/`,
+    languages,
   },
   plugins: [
     {
@@ -17,8 +20,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/documentation`,
-        name: `documentation`
-      }
+        name: `documentation`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -76,6 +79,70 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyForNull: languages.defaultLangKey,
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
+        pagesPaths: [`${__dirname}/src/pages`],
+      }
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyForNull: languages.defaultLangKey,
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
+        pagesPaths: [`${__dirname}/content/documentation`],
+        markdownRemark: {
+          postPage: "src/templates/documentation.js",
+          query: `
+          {
+              allMarkdownRemark {
+                  edges {
+                  node {
+                      fields {
+                      slug,
+                      langKey
+                      }
+                  }
+                  }
+              }
+          }
+          `,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyForNull: languages.defaultLangKey,
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
+        pagesPaths: [`${__dirname}/content/tutorials`],
+        markdownRemark: {
+          postPage: "src/templates/tutorial.js",
+          query: `
+          {
+              allMarkdownRemark {
+                  edges {
+                  node {
+                      fields {
+                      slug,
+                      langKey
+                      }
+                  }
+                  }
+              }
+          }
+          `,
+        },
       },
     },
   ],
