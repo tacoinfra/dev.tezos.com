@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import { Layout } from "../components/Layout"
 import SEO from "../components/SEO"
-import { rhythm } from "../utils/typography"
 
 const TutorialIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
@@ -15,11 +14,7 @@ const TutorialIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <div key={node.fields.slug}>
-            <h3
-              style={{
-                marginBottom: rhythm(1 / 4),
-              }}
-            >
+            <h3>
               <Link
                 style={{ boxShadow: `none` }}
                 to={`/documentation${node.fields.slug}`}

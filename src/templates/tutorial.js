@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 
 import { Layout } from "../components/Layout"
 import SEO from "../components/SEO"
-import { rhythm, scale } from "../utils/typography"
 
 const TutorialPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -17,32 +16,13 @@ const TutorialPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <h1>{post.frontmatter.title}</h1>
-      <p
-        style={{
-          ...scale(-1 / 5),
-          display: `block`,
-          marginBottom: rhythm(1),
-          marginTop: rhythm(-1),
-        }}
-      >
+      <p>
         {post.frontmatter.date}
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      <hr
-        style={{
-          marginBottom: rhythm(1),
-        }}
-      />
+      <hr />
 
-      <ul
-        style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
-          listStyle: `none`,
-          padding: 0,
-        }}
-      >
+      <ul>
         <li>
           {previous && (
             <Link to={`/tutorial${previous.fields.slug}`} rel="prev">
