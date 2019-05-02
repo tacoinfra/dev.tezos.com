@@ -3,9 +3,9 @@
  * NOTE: This page uses an input state to search through all of our posts (both docs and tuts) which we get from the gql query
  */
 import React, { useState, useEffect } from "react"
+import { graphql } from "gatsby"
 import SEO from "../components/SEO"
 import { Layout } from "../components/Layout"
-import { graphql } from "gatsby"
 
 const SiteIndex = ({ data, location }) => {
   // NOTE: We grab onto a list of _all_ of our posts
