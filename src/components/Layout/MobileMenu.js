@@ -130,6 +130,7 @@ const NavigationList = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 `
 
 const NavigationItem = styled.li`
