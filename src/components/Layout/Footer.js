@@ -8,7 +8,7 @@ import TwitterIcon from "../../assets/twitter.svg"
 import FacebookIcon from "../../assets/facebook.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
-const Footer = ({ children }) => (
+const Footer = () => (
   <FooterContainer>
     <FooterContent>
       <SocialContent>
