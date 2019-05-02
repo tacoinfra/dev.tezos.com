@@ -33,6 +33,7 @@ const Main = styled.main`
   width: 100%;
   display: flex;
   justify-content: left;
+  flex-direction: column;
 `
 
 export default Layout
