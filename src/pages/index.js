@@ -1,7 +1,3 @@
-/**
- * NOTE: This is the index page (home page)
- * NOTE: This page uses an input state to search through all of our posts (both docs and tuts) which we get from the gql query
- */
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
