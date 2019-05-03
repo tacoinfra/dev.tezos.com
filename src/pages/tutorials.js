@@ -6,7 +6,7 @@ import SEO from "../components/SEO"
 const TutorialIndex = () => (
   <Layout title="Tutorials">
     <SEO title="All posts" />
-    Tutorial Page
+    <h1>Tutorials</h1>
   </Layout>
 )
 
