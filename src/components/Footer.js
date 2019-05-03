@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import palette from "../../utils/palette"
-import RiotIcon from "../../assets/riot.svg"
-import GitlabIcon from "../../assets/gitlab.svg"
-import TwitterIcon from "../../assets/twitter.svg"
-import FacebookIcon from "../../assets/facebook.svg"
+import palette from "../utils/palette"
+import RiotIcon from "../assets/riot.svg"
+import GitlabIcon from "../assets/gitlab.svg"
+import TwitterIcon from "../assets/twitter.svg"
+import FacebookIcon from "../assets/facebook.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -57,11 +57,7 @@ const Footer = () => (
 
 const FooterContainer = styled.footer`
   width: 100%;
-  position: fixed;
   height: 452px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: start;

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
-import { Layout } from "../components/Layout"
+import Layout from "../components/Layout"
 import posts from "./posts.json"
 
 const SiteIndex = ({ location }) => {

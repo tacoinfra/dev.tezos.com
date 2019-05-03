@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../components/Layout"
 import SEO from "../components/SEO";
 
-const CommunityPage = ({ location }) => (
+const ResourcesPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Community" />
-    <h1>Community</h1>
+    <SEO title="Resources" />
+    <h1>Resources</h1>
   </Layout>
 )
 
-export default CommunityPage;
+export default ResourcesPage;
