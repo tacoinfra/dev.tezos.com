@@ -64,11 +64,6 @@ const FooterContainer = styled.footer`
   background-color: ${palette.black};
   color: ${palette.white};
   padding: 64px 0;
-  @media (max-width: 900px) {
-    position: unset;
-    padding: 24px;
-    height: auto;
-  }
 `
 
 const FooterContent = styled.div`
