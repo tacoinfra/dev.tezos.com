@@ -31,7 +31,7 @@ const Footer = () => (
             <RiotIcon />
           </li>
           <li>
-            <StyledGitlabIcon />
+            <GitlabIcon />
           </li>
           <li>
             <TwitterIcon />
@@ -82,11 +82,6 @@ const FooterContent = styled.div`
   @media (max-width: 900px) {
     justify-content: center;
   }
-`
-
-const StyledGitlabIcon = styled(GitlabIcon)`
-  background-color: ${palette.white};
-  border-radius: 50%;
 `
 
 const SocialContent = styled.div`
