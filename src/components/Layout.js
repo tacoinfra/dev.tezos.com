@@ -37,7 +37,7 @@ const Main = styled.main`
   width: 100%;
   max-width: 1200px;
   min-height: calc(100vh - 452px - 90px); /* 100 view height - size of footer (452px) - size of header (90px) */
-  margin-top: 148px;
+  margin: 148px 0;
 `
 
 export default Layout
