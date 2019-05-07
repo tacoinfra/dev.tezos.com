@@ -121,11 +121,28 @@ const CallToAction = styled.a`
 const MobileMenu = () => {
   const [isMenuOpen, setOpenState] = useState(false)
 
+  // NOTE: A func for handling toggle menu. It also locks our body to prevent seeing content while menu is open
+  const handleToggleMenu = () => {
+    if (isMenuOpen) {
+      setOpenState(false);
+      document.body.style.position = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.overflowY = "";
+    } else {
+      setOpenState(true);
+      document.body.style.position = "fixed";
+      document.body.style.left = 0;
+      document.body.style.right = 0;
+      document.body.style.overflowY = "scroll";
+    }
+  }
+
   return (
     <Fragment>
       <HamburgerIcon
         isMenuOpen={isMenuOpen}
-        onClick={() => setOpenState(!isMenuOpen)}
+        onClick={() => handleToggleMenu()}
       />
       <MobileMenuContainer isMenuOpen={isMenuOpen}>
         <MobileMenuNavList>
@@ -194,7 +211,7 @@ const MobileMenuContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 10;
