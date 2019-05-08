@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>riot-icon</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-36.4%" y="-36.4%" width="172.7%" height="172.7%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="riot-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="tiny-riot" filter="url(#filter-1)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M21.6498661,18.660035 C23.1496741,17.3958081 24.10375,15.5035859 24.10375,13.3925 C24.10375,9.59520833 21.0145833,6.50833333 17.2195833,6.50833333 L11.7447917,6.50833333 C11.7333333,6.50833333 11.721875,6.50604167 11.7104167,6.50604167 C10.18875,6.50604167 8.95583333,7.73895833 8.95583333,9.260625 L8.95583333,23.0358333 C8.95583333,24.5575 10.18875,25.7904167 11.7104167,25.7904167 C13.2320833,25.7904167 14.465,24.5575 14.465,23.0358333 L14.465,20.2789583 L16.0581538,20.2789583 L19.0941667,24.6170833 C19.965,25.86375 21.68375,26.16625 22.9304167,25.293125 C24.1770833,24.4222917 24.4795833,22.7035417 23.6064583,21.456875 L21.6498661,18.660035 Z M16.5,33 C7.38730163,33 0,25.6126984 0,16.5 C0,7.38730163 7.38730163,0 16.5,0 C25.6126984,0 33,7.38730163 33,16.5 C33,25.6126984 25.6126984,33 16.5,33 Z" id="Combined-Shape"></path>
-            <g id="Group" transform="translate(8.937500, 6.508333)" opacity="0.5">
-                <circle id="Oval" cx="2.77291667" cy="2.75458333" r="2.75458333"></circle>
-                <path d="M14.6689583,14.9485417 C15.5420833,16.1952083 15.2395833,17.9139583 13.9929167,18.7847917 C12.74625,19.6579167 11.0275,19.3554167 10.1566667,18.10875 L6.03166667,12.2145833 C5.15854167,10.9679167 5.46104167,9.24916667 6.70770833,8.37833333 C7.95208333,7.50291667 9.67083333,7.80541667 10.5439583,9.05208333 L14.6689583,14.9485417 Z" id="Shape"></path>
-            </g>
-        </g>
+<svg width="33" height="33" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter x="-36.4%" y="-36.4%" width="172.7%" height="172.7%" filterUnits="objectBoundingBox" id="a">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#a)" fill="#FFF" fill-rule="nonzero">
+    <path d="M21.65 18.66a6.875 6.875 0 0 0 2.454-5.268 6.892 6.892 0 0 0-6.884-6.884h-5.475l-.035-.002a2.754 2.754 0 0 0-2.754 2.755v13.775a2.754 2.754 0 1 0 5.509 0v-2.757h1.593l3.036 4.338a2.753 2.753 0 0 0 3.836.676 2.753 2.753 0 0 0 .676-3.836L21.65 18.66zM16.5 33C7.387 33 0 25.613 0 16.5S7.387 0 16.5 0 33 7.387 33 16.5 25.613 33 16.5 33z"/>
+    <g transform="translate(8.938 6.508)" opacity=".5">
+      <circle cx="2.773" cy="2.755" r="2.755"/>
+      <path d="M14.669 14.949a2.753 2.753 0 0 1-.676 3.836 2.753 2.753 0 0 1-3.836-.676l-4.125-5.894a2.753 2.753 0 0 1 .676-3.837 2.751 2.751 0 0 1 3.836.674l4.125 5.897z"/>
     </g>
+  </g>
 </svg>

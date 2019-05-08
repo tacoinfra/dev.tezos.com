@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
-    <title>icons/white/facebook</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/white/facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M20.155,10.656 L18.649,10.657 C17.468,10.657 17.239,11.218 17.239,12.041 L17.239,13.857 L20.056,13.857 L19.689,16.702 L17.239,16.702 L17.239,24 L14.302,24 L14.302,16.702 L11.846,16.702 L11.846,13.857 L14.302,13.857 L14.302,11.76 C14.302,9.325 15.789,8 17.96,8 C19,8 19.894,8.077 20.155,8.112 L20.155,10.656 Z M16,0 C7.164,0 0,7.163 0,16 C0,24.836 7.164,32 16,32 C24.837,32 32,24.836 32,16 C32,7.163 24.837,0 16,0 L16,0 Z" id="Fill-183" fill="#FFFFFF"></path>
-    </g>
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.155 10.656l-1.506.001c-1.181 0-1.41.561-1.41 1.384v1.816h2.817l-.367 2.845h-2.45V24h-2.937v-7.298h-2.456v-2.845h2.456V11.76c0-2.435 1.487-3.76 3.658-3.76 1.04 0 1.934.077 2.195.112v2.544zM16 0C7.164 0 0 7.163 0 16c0 8.836 7.164 16 16 16 8.837 0 16-7.164 16-16 0-8.837-7.163-16-16-16z" fill="#FFF" fill-rule="evenodd"/>
 </svg>
