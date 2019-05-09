@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
+import CTA from "../components/CTA"
 import palette from "../utils/palette"
 import TezosLogo from "../assets/tezos_logo.svg"
 
@@ -24,12 +24,7 @@ const Header = () => (
   <HeaderContainer>
     <NavigationMenu>
       <NavigationLink to="/">
-        <TezosLogo
-          css={css`
-            position: relative;
-            z-index: 11;
-          `}
-        />
+        <TezosLogo />
       </NavigationLink>
       <MobileMenu />
       <NavigationList>
@@ -42,7 +37,8 @@ const Header = () => (
             {item.title}
           </NavigationLink>
         ))}
-        <CallToAction href="https://www.tezos.com/">Back to Tezos</CallToAction>
+        <CTA isHeader isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</CTA>
+        <CTA isHeader href="https://www.tezos.com/">Back to Tezos</CTA>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -50,12 +46,13 @@ const Header = () => (
 
 const HeaderContainer = styled.header`
   width: 100%;
-  background-color: ${palette.grey};
   min-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: absolute;
+  z-index: 5;
 `
 
 const NavigationMenu = styled.div`
@@ -84,35 +81,10 @@ const NavigationLink = styled(Link)`
   font-size: 16px;
   font-weight: 300;
   line-height: 16px;
-  color: ${palette.darkBlue};
+  color: ${palette.white};
   text-transform: uppercase;
   margin-right: 31.75px;
   white-space: nowrap;
-  &:hover {
-    opacity: 0.8;
-  }
-`
-
-const CallToAction = styled.a`
-  color: ${palette.white};
-  background: ${palette.blue} none repeat scroll 0% 0%;
-  border: 2px solid ${palette.blue};
-  padding: 14px 40px;
-  display: flex;
-  text-decoration: none;
-  line-height: 1;
-  font-weight: 300;
-  text-align: center;
-  border-radius: 100px;
-  text-transform: uppercase;
-  flex-direction: row;
-  -moz-box-align: center;
-  align-items: center;
-  justify-content: space-around;
-  opacity: 1;
-  white-space: nowrap;
-  position: relative;
-  flex-shrink: 0;
   &:hover {
     opacity: 0.8;
   }
@@ -124,17 +96,17 @@ const MobileMenu = () => {
   // NOTE: A func for handling toggle menu. It also locks our body to prevent seeing content while menu is open
   const handleToggleMenu = () => {
     if (isMenuOpen) {
-      setOpenState(false);
-      document.body.style.position = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      document.body.style.overflowY = "";
+      setOpenState(false)
+      document.body.style.position = ""
+      document.body.style.left = ""
+      document.body.style.right = ""
+      document.body.style.overflowY = ""
     } else {
-      setOpenState(true);
-      document.body.style.position = "fixed";
-      document.body.style.left = 0;
-      document.body.style.right = 0;
-      document.body.style.overflowY = "scroll";
+      setOpenState(true)
+      document.body.style.position = "fixed"
+      document.body.style.left = 0
+      document.body.style.right = 0
+      document.body.style.overflowY = "scroll"
     }
   }
 
@@ -153,7 +125,9 @@ const MobileMenu = () => {
               </MobileMenuLink>
             </li>
           ))}
-          <CallToAction href="https://www.tezos.com/">Back to Tezos</CallToAction>
+          <CTA href="https://www.tezos.com/">
+            Back to Tezos
+          </CTA>
         </MobileMenuNavList>
       </MobileMenuContainer>
     </Fragment>
