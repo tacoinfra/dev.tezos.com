@@ -207,7 +207,7 @@ const CommunityHeaderWrapper = styled.span`
     justify-content: center;
     padding-bottom: 32px;
     margin-bottom: 32px;
-    width: 400px;
+    width: 350px;
     border-bottom: 1px solid ${palette.grey};
   }
 `
