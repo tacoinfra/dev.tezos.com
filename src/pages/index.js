@@ -130,6 +130,10 @@ const PostList = styled.ul`
     display: block;
     padding: 0.45rem;
     border-bottom: 1px solid ${palette.grey};
+    text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
     &::after {
       content: "▲";
       transform: rotate(90deg);
