@@ -156,7 +156,7 @@ const PostColumn = styled.div`
 `
 
 // COMMUNITY Components and Styles
-const CommunitySection = styled.div`
+const CommunitySection = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
