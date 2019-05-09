@@ -120,8 +120,8 @@ const MobileMenu = () => {
       <MobileMenuContainer isMenuOpen={isMenuOpen}>
         <MobileMenuNavList>
           {navigationListItems.map(item => (
-            <li>
-              <MobileMenuLink key={item.title} to={item.href}>
+            <li key={item.title}>
+              <MobileMenuLink to={item.href}>
                 {item.title}
               </MobileMenuLink>
             </li>
