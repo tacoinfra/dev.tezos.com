@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Header from "./Header"
-import CTA from "./CTA"
+import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
 import palette from "../utils/palette"
@@ -13,7 +13,14 @@ const Layout = ({ children, location, title, subtitle }) => {
       color: ${palette.darkBlue};
       font-size: 58px;
       letter-spacing: 2.24px;
-      font-weight: 100;
+      font-weight: 300;
+    }
+    h3 {
+      color: ${palette.darkBlue};
+      font-size: 30px;
+      letter-spacing: 1.25px;
+      line-height: 34px;
+      font-weight: 300;
     }
   `;
 
@@ -31,8 +38,8 @@ const Layout = ({ children, location, title, subtitle }) => {
               margin-left: 40px;
             }
           `}>
-            <CTA href="#">Build a Node</CTA>
-            <CTA href="#">Run a Node</CTA>
+            <ButtonAnchor href="#">Build a Node</ButtonAnchor>
+            <ButtonAnchor href="#">Run a Node</ButtonAnchor>
           </div>
         )}
       </Hero>
