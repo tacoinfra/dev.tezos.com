@@ -64,6 +64,12 @@ const ButtonWrapper = styled.div`
   }
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    a + a {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 `
 
