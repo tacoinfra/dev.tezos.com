@@ -102,7 +102,7 @@ const PostHeaderElement = styled.h2`
   font-size: 25px;
   color: ${palette.darkBlue};
   > * {
-    &:first-child {
+    &:first-of-type {
       margin-right: 24px;
     }
   }
@@ -146,7 +146,7 @@ const PostColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  &:first-child {
+  &:first-of-type {
     margin-right: 50px;
   }
 `
