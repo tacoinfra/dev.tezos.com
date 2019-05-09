@@ -12,6 +12,9 @@ export const palette = {
 
 export const breakpoints = {
   tablet: "1100px",
-  mobile: "0px"
+  mobile: "768px"
 };
 
+export const spacings = {
+  maxWidth: '1440px'
+}

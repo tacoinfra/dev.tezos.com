@@ -5,10 +5,14 @@ import Header from "./Header"
 import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
-import { palette } from "../utils/variables"
+import { palette, breakpoints } from "../utils/variables"
 
 const Layout = ({ children, location, title, subtitle }) => {
   const globalRules = css`
+    body {
+      {/* This fixes a z-index issue in safari */}
+      -webkit-transform:translate3d(0,0,0);
+    }
     h1 {
       color: ${palette.darkBlue};
       font-size: 58px;
@@ -30,17 +34,10 @@ const Layout = ({ children, location, title, subtitle }) => {
       <Header />
       <Hero title={title} subtitle={subtitle}>
         {location.pathname === "/" && (
-          <div css={css`
-            display: flex;
-            justify-content: space-evenly;
-            width: 552px;
-            a + a {
-              margin-left: 40px;
-            }
-          `}>
+          <ButtonWrapper>
             <ButtonAnchor href="#">Build a Node</ButtonAnchor>
             <ButtonAnchor href="#">Run a Node</ButtonAnchor>
-          </div>
+          </ButtonWrapper>
         )}
       </Hero>
       <Main isHome={location.pathname === "/"}>{children}</Main>
@@ -56,6 +53,18 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: ${palette.white};
+`
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  width: 552px;
+  a + a {
+    margin-left: 40px;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+  }
 `
 
 const Main = styled.main`

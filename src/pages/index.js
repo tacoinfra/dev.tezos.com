@@ -10,7 +10,7 @@ import StackExchangeLogo from "../assets/stackexchange_logo.svg"
 import RedditLogo from "../assets/reddit_logo.svg"
 import RiotLogo from "../assets/riot_with_text.svg"
 import MailIcon from "../assets/mail.svg"
-import { palette, breakpoints } from "../utils/variables"
+import { palette, breakpoints, spacings } from "../utils/variables"
 
 const SiteIndex = ({ location }) => {
   const tutorials = posts.filter(post => post.category === "tutorials")
@@ -48,7 +48,7 @@ const SiteIndex = ({ location }) => {
         <CommunitySection>
           <CommunityHeaderWrapper>
             <TetrisBlock />
-            <h3>Dev Support Channels</h3>
+            <h3>Community</h3>
           </CommunityHeaderWrapper>
           <CommunitiesList>
             <li>
@@ -57,7 +57,7 @@ const SiteIndex = ({ location }) => {
               {/* TODO: Actually correct the svg and remove this inline styling */}
               <h3
                 style={{
-                  marginLeft: "4",
+                  marginLeft: "4px",
                 }}
               >
                 StackExchange
@@ -78,19 +78,19 @@ const SiteIndex = ({ location }) => {
             <MailIcon />
             <h3>Developer Mailing List</h3>
           </MailingHeaderWrapper>
-          <form action="" method="POST">
+          <MailingListForm action="" method="POST">
             <StyledInput type="email" placeholder="Email" />
             <ButtonAnchor isSmall isAnchor={false} type="submit">
               Submit
             </ButtonAnchor>
-          </form>
+          </MailingListForm>
         </MailingListSection>
       </Wrapper>
     </Layout>
   )
 }
 
-// NOTE: This wrapper is normally not necessary, but because some elements on this page break the max-width (1440px), we need to handle flexing and what not at this component's level instead of the Layout level
+// NOTE: This wrapper is normally not necessary, but because some elements on this page break the max-width (${spacings.maxWidth}), we need to handle flexing and what not at this component's level instead of the Layout level
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -127,16 +127,21 @@ const PostsSection = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 1440px;
+  max-width: ${spacings.maxWidth};
   margin-top: 100px;
   margin-bottom: 142px;
   width: 100%;
+  @media (max-width: 1100px) {
+    padding: 8px;
+  }
 `
 
 const PostList = styled.ul`
   list-style-type: none;
   margin: 0;
-  min-width: 589px;
+  li:last-of-type {
+    margin-bottom: 64px;
+  }
   li a {
     font-weight: 300;
     letter-spacing: 1.04px;
@@ -166,11 +171,6 @@ const PostColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  @media (max-width: ${breakpoints.tablet}) {
-    &:first-of-type {
-      margin-bottom: 71px;
-    }
-  }
 `
 
 // COMMUNITY Components and Styles
@@ -180,7 +180,7 @@ const CommunitySection = styled.section`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 275px;
+  min-height: 275px;
   background-color: ${palette.lighterGrey};
   width: 100%;
   h3 {
@@ -189,7 +189,10 @@ const CommunitySection = styled.section`
   }
   @media (max-width: ${breakpoints.tablet}) {
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
+    align-items: center;
+    padding: 24px 8px;
   }
 `
 
@@ -199,6 +202,14 @@ const CommunityHeaderWrapper = styled.span`
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 16px;
+    justify-content: center;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    width: 400px;
+    border-bottom: 1px solid ${palette.grey};
+  }
 `
 
 const CommunitiesList = styled.ul`
@@ -207,6 +218,7 @@ const CommunitiesList = styled.ul`
   align-items: center;
   list-style-type: none;
   margin: 0;
+  max-width: 100vw;
   &::before {
     content: "";
     display: block;
@@ -214,21 +226,29 @@ const CommunitiesList = styled.ul`
     background-color: ${palette.grey};
     width: 1px;
     margin: 0 31.5px;
-    @media (max-width: ${breakpoints.tablet}) {
-      display: none;
-    }
   }
   li {
     margin-bottom: 0;
     margin-right: 21px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     svg {
       height: 58px;
       width: 58px;
+    }
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      margin-bottom: 16px;
+    }
+    &::before {
+      display: none;
     }
   }
 `
@@ -244,17 +264,28 @@ const MailingListSection = styled.section`
     flex-direction: column;
     justify-content: space-evenly;
   }
-  > * {
-    margin-bottom: 0;
-    margin-right: 30px;
+`
+
+const MailingListForm = styled.form`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 0;
+  margin-left: 30px;
+  button {
+    margin-left: 41px;
   }
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+    margin-left: 0;
     button {
-      margin-left: 41px;
+      margin-top: 16px;
+      margin-left: 0;
+      width: 100%;
     }
   }
 `
@@ -266,11 +297,19 @@ const MailingHeaderWrapper = styled.span`
   align-items: center;
   flex-wrap: nowrap;
   h3 {
-    margin: 0;
     margin-left: 27px;
+    margin-bottom: 0;
+  }
+  svg {
+    min-width: 49px;
   }
   @media (max-width: ${breakpoints.tablet}) {
     margin-bottom: 65px;
+    width: 100%;
+    padding: 8px;
+    button {
+      flex-grow: 1;
+    }
   }
 `
 
@@ -289,7 +328,7 @@ const StyledInput = styled.input`
   -moz-appearance: none;
   margin-bottom: 0px;
   display: block;
-  width: 310px;
+  min-width: 310px;
 `
 
 export default SiteIndex

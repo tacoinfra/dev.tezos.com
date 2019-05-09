@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import { palette, breakpoints } from "../utils/variables"
+import { palette, breakpoints, spacings } from "../utils/variables"
 import RiotIcon from "../assets/riot.svg"
 import GitlabIcon from "../assets/gitlab.svg"
 import TwitterIcon from "../assets/twitter.svg"
@@ -57,22 +57,22 @@ const Footer = () => (
 
 const FooterContainer = styled.footer`
   width: 100%;
-  height: 452px;
+  height: 230px;
   display: flex;
   justify-content: center;
   align-items: start;
-  background-color: ${palette.black};
+  background-color: ${palette.darkerBlue};
   color: ${palette.white};
-  padding: 64px 0;
+  padding: 64px 8px;
 `
 
 const FooterContent = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: ${spacings.maxWidth};
   flex-wrap: wrap;
   @media (max-width: ${breakpoints.tablet}) {
     justify-content: center;
@@ -81,7 +81,7 @@ const FooterContent = styled.div`
 
 const SocialContent = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
 `

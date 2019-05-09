@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import ButtonAnchor from "./ButtonAnchor"
-import { palette, breakpoints } from "../utils/variables"
+import { palette, breakpoints, spacings } from "../utils/variables"
 import TezosLogo from "../assets/tezos_logo.svg"
 
 const navigationListItems = [
@@ -52,11 +52,14 @@ const HeaderContainer = styled.header`
   align-items: center;
   overflow: hidden;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 8px;
+  }
 `
 
 const NavigationMenu = styled.div`
-  max-width: 1440px;
+  max-width: ${spacings.maxWidth};
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +196,7 @@ const MobileMenuContainer = styled.div`
   justify-content: column;
   align-items: space-between;
   overflow: hidden;
+  -webkit-transform:translate3d(0,0,0);
   transform: ${props =>
     props.isMenuOpen ? "translateX(0)" : "translateX(100%)"};
   transition: transform 150ms ease-in-out, width 250ms ease-in-out;
