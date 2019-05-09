@@ -22,7 +22,9 @@ const SiteIndex = ({ location }) => {
             <PostHeader>Tutorials</PostHeader>
             <PostList>
               {tutorials.map(tutorial => (
-                <li>{tutorial.title}</li>
+                <li key={tutorial.title}>
+                  <a href={tutorial.link}>{tutorial.title}</a>
+                </li>
               ))}
             </PostList>
           </PostColumn>
@@ -30,7 +32,9 @@ const SiteIndex = ({ location }) => {
             <PostHeader>Dev Tools</PostHeader>
             <PostList>
               {tutorials.map(tutorial => (
-                <li>{tutorial.title}</li>
+                <li key={tutorial.title}>
+                  <a href={tutorial.link}>{tutorial.title}</a>
+                </li>
               ))}
             </PostList>
           </PostColumn>
