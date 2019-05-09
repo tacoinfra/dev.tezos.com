@@ -121,7 +121,7 @@ const PostsSection = styled.section`
 const PostList = styled.ul`
   list-style-type: none;
   margin: 0;
-  li {
+  li a {
     font-weight: 300;
     letter-spacing: 1.04px;
     line-height: 34px;
