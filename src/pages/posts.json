@@ -5,5 +5,61 @@
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Setting up a Node",
+    "link": "#",
+    "description": "...",
+    "keywords": ["node"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Smart Contract Programming in Michelson",
+    "link": "#",
+    "description": "...",
+    "keywords": ["michelson", "contract", "programming"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Application Development on Tezos",
+    "link": "#",
+    "description": "#",
+    "keywords": ["application", "programming", "tezos"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Set up your own Secure Baker",
+    "link": "#",
+    "description": "#",
+    "keywords": ["secure", "setup", "gettingstarted", "baker", "baking"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Helpful articles for Bakers",
+    "link": "#",
+    "description": "#",
+    "keywords": ["articles", "baking", "bakers"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Multisig",
+    "link": "#",
+    "description": "#",
+    "keywords": ["multisig"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Escrows",
+    "link": "#",
+    "description": "#",
+    "keywords": ["escrows"]
+  },
+  {
+    "category": "tutorials",
+    "title": "Oracle",
+    "link": "#",
+    "description": "#",
+    "keywords": ["oracle"]
   }
 ]
