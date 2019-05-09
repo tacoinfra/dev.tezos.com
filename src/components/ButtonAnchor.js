@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import { palette } from "../utils/variables"
+import { palette, breakpoints } from "../utils/variables"
 
 const ButtonAnchor = ({
   href,
@@ -60,7 +60,12 @@ const StyledAnchor = styled.a`
   border: 2px solid ${palette.blue};
   height: ${props => (props.isSmall ? "40px" : "50px")};
   & + a {
-    margin-left: 32.25px;
+    margin-left: 32px;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    & + a {
+      margin-left: 16px;
+    }
   }
 `
 
