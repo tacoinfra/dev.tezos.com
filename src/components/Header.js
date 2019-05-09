@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import ButtonAnchor from "./ButtonAnchor"
-import palette from "../utils/palette"
+import { palette, breakpoints } from "../utils/variables"
 import TezosLogo from "../assets/tezos_logo.svg"
 
 const navigationListItems = [
@@ -56,7 +56,7 @@ const HeaderContainer = styled.header`
 `
 
 const NavigationMenu = styled.div`
-  max-width: 1200px;
+  max-width: 1440px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +71,7 @@ const NavigationList = styled.div`
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
-  @media (max-width: 1100px) {
+  @media (max-width: ${breakpoints.tablet}) {
     display: none;
   }
 `
@@ -172,7 +172,7 @@ const HamburgerIcon = styled.span`
     transform: ${props => (props.isMenuOpen ? "rotate(-45deg)" : "rotate(0)")};
     transition: transform 150ms ease-in-out;
   }
-  @media (min-width: 1100px) {
+  @media (min-width: ${breakpoints.tablet}) {
     display: none;
   }
 `

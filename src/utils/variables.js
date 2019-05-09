@@ -1,5 +1,5 @@
 // NOTE: This is a palette variable intended to be use with emotion package
-const palette = {
+export const palette = {
   white: '#FFFFFF',
   lighterGrey: '#F0F3F9',
   lightGrey: '#F6F8FD',
@@ -10,4 +10,8 @@ const palette = {
   blue: '#3380EF'
 }
 
-export default palette;
+export const breakpoints = {
+  tablet: "1100px",
+  mobile: "0px"
+};
+

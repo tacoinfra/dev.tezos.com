@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import palette from "../utils/palette"
+import { palette, breakpoints } from "../utils/variables"
 import RiotIcon from "../assets/riot.svg"
 import GitlabIcon from "../assets/gitlab.svg"
 import TwitterIcon from "../assets/twitter.svg"
@@ -72,9 +72,9 @@ const FooterContent = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   flex-wrap: wrap;
-  @media (max-width: 1100px) {
+  @media (max-width: ${breakpoints.tablet}) {
     justify-content: center;
   }
 `

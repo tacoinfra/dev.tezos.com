@@ -10,7 +10,7 @@ import StackExchangeLogo from "../assets/stackexchange_logo.svg"
 import RedditLogo from "../assets/reddit_logo.svg"
 import RiotLogo from "../assets/riot_with_text.svg"
 import MailIcon from "../assets/mail.svg"
-import palette from "../utils/palette"
+import { palette, breakpoints } from "../utils/variables"
 
 const SiteIndex = ({ location }) => {
   const tutorials = posts.filter(post => post.category === "tutorials")
@@ -46,8 +46,10 @@ const SiteIndex = ({ location }) => {
           </PostColumn>
         </PostsSection>
         <CommunitySection>
-          <TetrisBlock />
-          <h3>Dev Support Channels</h3>
+          <CommunityHeaderWrapper>
+            <TetrisBlock />
+            <h3>Dev Support Channels</h3>
+          </CommunityHeaderWrapper>
           <CommunitiesList>
             <li>
               <StackExchangeLogo />
@@ -72,8 +74,10 @@ const SiteIndex = ({ location }) => {
           </CommunitiesList>
         </CommunitySection>
         <MailingListSection>
-          <MailIcon />
-          <h3>Developer Mailing List</h3>
+          <MailingHeaderWrapper>
+            <MailIcon />
+            <h3>Developer Mailing List</h3>
+          </MailingHeaderWrapper>
           <form action="" method="POST">
             <StyledInput type="email" placeholder="Email" />
             <ButtonAnchor isSmall isAnchor={false} type="submit">
@@ -86,7 +90,7 @@ const SiteIndex = ({ location }) => {
   )
 }
 
-// NOTE: This wrapper is normally not necessary, but because some elements on this page break the max-width (1200px), we need to handle flexing and what not at this component's level instead of the Layout level
+// NOTE: This wrapper is normally not necessary, but because some elements on this page break the max-width (1440px), we need to handle flexing and what not at this component's level instead of the Layout level
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -123,14 +127,16 @@ const PostsSection = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-width: 1200px;
+  max-width: 1440px;
   margin-top: 100px;
   margin-bottom: 142px;
+  width: 100%;
 `
 
 const PostList = styled.ul`
   list-style-type: none;
   margin: 0;
+  min-width: 589px;
   li a {
     font-weight: 300;
     letter-spacing: 1.04px;
@@ -160,8 +166,10 @@ const PostColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  &:first-of-type {
-    margin-right: 50px;
+  @media (max-width: ${breakpoints.tablet}) {
+    &:first-of-type {
+      margin-bottom: 71px;
+    }
   }
 `
 
@@ -179,6 +187,18 @@ const CommunitySection = styled.section`
     margin-bottom: 0;
     margin-left: 18px;
   }
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+`
+
+const CommunityHeaderWrapper = styled.span`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 `
 
 const CommunitiesList = styled.ul`
@@ -194,6 +214,9 @@ const CommunitiesList = styled.ul`
     background-color: ${palette.grey};
     width: 1px;
     margin: 0 31.5px;
+    @media (max-width: ${breakpoints.tablet}) {
+      display: none;
+    }
   }
   li {
     margin-bottom: 0;
@@ -216,6 +239,11 @@ const MailingListSection = styled.section`
   justify-content: center;
   align-items: center;
   margin: 130px 0;
+  flex-wrap: wrap;
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   > * {
     margin-bottom: 0;
     margin-right: 30px;
@@ -228,6 +256,21 @@ const MailingListSection = styled.section`
     button {
       margin-left: 41px;
     }
+  }
+`
+
+const MailingHeaderWrapper = styled.span`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  h3 {
+    margin: 0;
+    margin-left: 27px;
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-bottom: 65px;
   }
 `
 

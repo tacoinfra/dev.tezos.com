@@ -5,7 +5,7 @@ import Header from "./Header"
 import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
-import palette from "../utils/palette"
+import { palette } from "../utils/variables"
 
 const Layout = ({ children, location, title, subtitle }) => {
   const globalRules = css`

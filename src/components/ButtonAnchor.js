@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
-import palette from "../utils/palette"
+import { palette } from "../utils/variables"
 
 const ButtonAnchor = ({
   href,
