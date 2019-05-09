@@ -74,7 +74,7 @@ const FooterContent = styled.div`
   width: 100%;
   max-width: 1200px;
   flex-wrap: wrap;
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     justify-content: center;
   }
 `

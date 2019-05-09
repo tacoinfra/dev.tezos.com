@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import CTA from "../components/CTA"
+import ButtonAnchor from "./ButtonAnchor"
 import palette from "../utils/palette"
 import TezosLogo from "../assets/tezos_logo.svg"
 
@@ -37,8 +37,8 @@ const Header = () => (
             {item.title}
           </NavigationLink>
         ))}
-        <CTA isHeader isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</CTA>
-        <CTA isHeader href="https://www.tezos.com/">Back to Tezos</CTA>
+        <ButtonAnchor isSmall isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
+        <ButtonAnchor isSmall href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -59,6 +59,7 @@ const NavigationMenu = styled.div`
   max-width: 1200px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +71,7 @@ const NavigationList = styled.div`
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     display: none;
   }
 `
@@ -125,9 +126,9 @@ const MobileMenu = () => {
               </MobileMenuLink>
             </li>
           ))}
-          <CTA href="https://www.tezos.com/">
+          <ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
-          </CTA>
+          </ButtonAnchor>
         </MobileMenuNavList>
       </MobileMenuContainer>
     </Fragment>
@@ -171,7 +172,7 @@ const HamburgerIcon = styled.span`
     transform: ${props => (props.isMenuOpen ? "rotate(-45deg)" : "rotate(0)")};
     transition: transform 150ms ease-in-out;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 1100px) {
     display: none;
   }
 `
