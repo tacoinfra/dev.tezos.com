@@ -161,6 +161,7 @@ const CommunitySection = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 275px;
   background-color: ${palette.lighterGrey};
   width: 100%;
