@@ -13,8 +13,8 @@ import MailIcon from "../assets/mail.svg"
 import { palette, breakpoints, spacings } from "../utils/variables"
 
 const SiteIndex = ({ location }) => {
-  const tutorials = posts.filter(post => post.category === "tutorial")
-  const tools = posts.filter(post => post.category === "tool")
+  const tutorials = contentList.filter(post => post.category === "tutorial")
+  const tools = contentList.filter(post => post.category === "tool")
 
   return (
     <Layout
