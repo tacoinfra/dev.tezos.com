@@ -79,7 +79,7 @@ const PageTitle = styled.h1`
   color: ${palette.white};
   font-weight: 300;
   z-index: 2;
-  margin-left: ${props => props.isHome ? "0" : "20%"};
+  margin-left: ${props => props.isHome ? "0" : "25%"};
   @media (max-width: ${breakpoints.tablet}) {
     margin-left: 0;
   }
