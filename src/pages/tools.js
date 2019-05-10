@@ -5,7 +5,7 @@ import SEO from "../components/SEO"
 import { palette, spacings, breakpoints } from "../utils/variables"
 import LibrariesIcon from "../assets/libraries.svg";
 import ToolsIcon from "../assets/tools.svg"
-import posts from "./posts.json"
+import contentList from "./content.json"
 
 const DevToolsPage = ({ location }) => {
   const libraries = posts.filter(post => post.category === "library")
