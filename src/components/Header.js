@@ -11,8 +11,8 @@ const navigationListItems = [
     href: "/tutorials",
   },
   {
-    title: "Resources",
-    href: "/resources",
+    title: "Dev Tools",
+    href: "/tools",
   },
   {
     title: "Community",
