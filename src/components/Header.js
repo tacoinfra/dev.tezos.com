@@ -16,7 +16,7 @@ const navigationListItems = [
   },
   {
     title: "Community",
-    href: "/community",
+    href: "/#community",
   },
 ]
 
