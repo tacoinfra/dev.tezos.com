@@ -5,13 +5,15 @@ import Header from "./Header"
 import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
-import { palette, breakpoints } from "../utils/variables"
+import { palette, breakpoints, spacings } from "../utils/variables"
 
 const Layout = ({ children, location, title, subtitle }) => {
   const globalRules = css`
     body {
-      {/* This fixes a z-index issue in safari */}
-      -webkit-transform:translate3d(0,0,0);
+       {
+        /* This fixes a z-index issue in safari */
+      }
+      -webkit-transform: translate3d(0, 0, 0);
     }
     h1 {
       color: ${palette.darkBlue};
@@ -26,21 +28,26 @@ const Layout = ({ children, location, title, subtitle }) => {
       line-height: 34px;
       font-weight: 300;
     }
-  `;
+  `
 
+  console.log(location.pathname)
   return (
     <Container>
       <Global styles={globalRules} />
       <Header />
-      <Hero title={title} subtitle={subtitle}>
-        {location.pathname === "/" && (
-          <ButtonWrapper>
-            <ButtonAnchor href="#">Build a Node</ButtonAnchor>
-            <ButtonAnchor href="#">Run a Node</ButtonAnchor>
-          </ButtonWrapper>
-        )}
+      <Hero>
+        <HeroContentWrapper isHome={location.pathname === "/"}>
+          <PageTitle isHome={location.pathname === "/"}>{title}</PageTitle>
+          <PageSubtitle>{subtitle}</PageSubtitle>
+          {location.pathname === "/" && (
+            <ButtonWrapper>
+              <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
+              <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
+            </ButtonWrapper>
+          )}
+        </HeroContentWrapper>
       </Hero>
-      <Main isHome={location.pathname === "/"}>{children}</Main>
+      <Main>{children}</Main>
       <Footer />
     </Container>
   )
@@ -55,10 +62,47 @@ const Container = styled.div`
   background-color: ${palette.white};
 `
 
+const HeroContentWrapper = styled.div`
+  max-width: ${spacings.maxWidth};
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: ${props => props.isHome ? "center" : "flex-start"};
+  color: ${palette.white};
+  @media (max-width: ${breakpoints.tablet}) {
+    align-items: center;
+  }
+`
+
+const PageTitle = styled.h1`
+  color: ${palette.white};
+  font-weight: 300;
+  z-index: 2;
+  margin-left: ${props => props.isHome ? "0" : "20%"};
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 0;
+  }
+`
+
+const PageSubtitle = styled.h2`
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 66px;
+  font-weight: 300;
+  z-index: 2;
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-bottom: 26px;
+  }
+`
+
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 552px;
+  > * {
+    width: 256px;
+  }
   a + a {
     margin-left: 40px;
   }
@@ -75,8 +119,9 @@ const ButtonWrapper = styled.div`
 
 const Main = styled.main`
   width: 100%;
-  min-height: calc(100vh - 452px - 90px); /* 100 view height - size of footer (452px) - size of header (90px) */
-  transform: ${props => props.isHome ? "translateY(0)" : "translateY(-80px)"};
+  min-height: calc(
+    100vh - 452px - 90px
+  ); /* 100 view height - size of footer (452px) - size of header (90px) */
   background-color: ${palette.white};
 `
 
