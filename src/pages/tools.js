@@ -8,8 +8,8 @@ import ToolsIcon from "../assets/tools.svg"
 import contentList from "./content.json"
 
 const DevToolsPage = ({ location }) => {
-  const libraries = posts.filter(post => post.category === "library")
-  const tools = posts.filter(post => post.category === "tool")
+  const libraries = contentList.filter(post => post.category === "library")
+  const tools = contentList.filter(post => post.category === "tool")
   return (
     <Layout location={location} title="Dev Tools">
       <SEO title="Resources" />
@@ -98,6 +98,7 @@ const PostsSection = styled.section`
 const PostList = styled.ul`
   list-style-type: none;
   margin: 0;
+  width: 100%;
   li:last-of-type {
     margin-bottom: 64px;
   }
@@ -120,8 +121,10 @@ const PostList = styled.ul`
 const PostColumn = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  max-width: 498px;
+  width: 100%;
 `
 
 
