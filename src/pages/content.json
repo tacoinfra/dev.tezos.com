@@ -2,7 +2,55 @@
   {
     "category": "tool",
     "subcategpry": "",
-    "title": "Tezos.com",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "tool",
+    "subcategpry": "",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "tool",
+    "subcategpry": "",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "library",
+    "subcategpry": "",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "library",
+    "subcategpry": "",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "library",
+    "subcategpry": "",
+    "title": "placeholder",
+    "link": "https://www.tezos.com",
+    "description": "This is a description",
+    "keywords": ["tezos"]
+  },
+  {
+    "category": "library",
+    "subcategpry": "",
+    "title": "placeholder",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
