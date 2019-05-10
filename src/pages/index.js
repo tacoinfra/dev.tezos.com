@@ -13,7 +13,8 @@ import MailIcon from "../assets/mail.svg"
 import { palette, breakpoints, spacings } from "../utils/variables"
 
 const SiteIndex = ({ location }) => {
-  const tutorials = posts.filter(post => post.category === "tutorials")
+  const tutorials = posts.filter(post => post.category === "tutorial")
+  const tools = posts.filter(post => post.category === "tool")
 
   return (
     <Layout
@@ -23,7 +24,7 @@ const SiteIndex = ({ location }) => {
     >
       <SEO title="Home" />
       <Wrapper>
-        <PostsSection>
+        <PostsSection id="posts">
           <PostColumn>
             <PostHeader>Tutorials</PostHeader>
             <PostList>
@@ -37,15 +38,18 @@ const SiteIndex = ({ location }) => {
           <PostColumn>
             <PostHeader>Dev Tools</PostHeader>
             <PostList>
-              {tutorials.map(tutorial => (
-                <li key={tutorial.title}>
-                  <a href={tutorial.link}>{tutorial.title}</a>
+              {tools.map(tool => (
+                <li key={tool.title}>
+                  <a href={tool.link}>{tool.title}</a>
                 </li>
               ))}
             </PostList>
           </PostColumn>
         </PostsSection>
-        <CommunitySection>
+        {/* <TZipsSection id="tzips">
+          TZIPS BABY
+        </TZipsSection> */}
+        <CommunitySection id="community">
           <CommunityHeaderWrapper>
             <TetrisBlock />
             <h3>Community</h3>
@@ -73,7 +77,7 @@ const SiteIndex = ({ location }) => {
             </li>
           </CommunitiesList>
         </CommunitySection>
-        <MailingListSection>
+        <MailingListSection id="mailinglist">
           <MailingHeaderWrapper>
             <MailIcon />
             <h3>Developer Mailing List</h3>
@@ -127,6 +131,7 @@ const PostsSection = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
   max-width: ${spacings.maxWidth};
   margin-top: 100px;
   margin-bottom: 142px;
@@ -136,9 +141,19 @@ const PostsSection = styled.section`
   }
 `
 
+const PostColumn = styled.div`
+  display: flex;
+  max-width: 498px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`
+
 const PostList = styled.ul`
   list-style-type: none;
   margin: 0;
+  width: 100%;
   li:last-of-type {
     margin-bottom: 64px;
   }
@@ -155,22 +170,18 @@ const PostList = styled.ul`
     &:hover {
       opacity: 0.8;
     }
-    &::after {
-      content: "▲";
-      transform: rotate(90deg);
-      display: inline-block;
-      font-size: 10px;
-      margin-left: 12px;
-      line-height: 34px;
-    }
   }
 `
 
-const PostColumn = styled.div`
+// TZIPS Components and Styles
+const TZipsSection = styled.section`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin: 107px 0;
+  border-top: 1px solid ${palette.grey};
+  max-width: ${spacings.maxWidth};
+  width: 85%;
 `
 
 // COMMUNITY Components and Styles
