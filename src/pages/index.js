@@ -62,10 +62,14 @@ const SiteIndex = ({ location }) => {
               </p>
               <ul>
                 <li>
-                  <a href="#">See List of TZIPs</a>
+                  <a href="https://gitlab.com/tzip/tzip/tree/master">
+                    See List of TZIPs
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Participate in the Discussions</a>
+                  <a href="https://gitlab.com/tzip/tzip/issues">
+                    Participate in the Discussions
+                  </a>
                 </li>
               </ul>
             </TZipsBody>
@@ -78,24 +82,29 @@ const SiteIndex = ({ location }) => {
           </CommunityHeaderWrapper>
           <CommunitiesList>
             <li>
-              <StackExchangeLogo />
               {/* NOTE: Icon has a little bit of margin in it, so we correct the header's spacing to accomodate */}
               {/* TODO: Actually correct the svg and remove this inline styling */}
-              <h3
+              <a
                 style={{
                   marginLeft: "4px",
                 }}
+                href="https://tezos.stackexchange.com/"
               >
-                StackExchange
-              </h3>
+                <StackExchangeLogo />
+                <h3>StackExchange</h3>
+              </a>
             </li>
             <li>
-              <RedditLogo />
-              <h3>Reddit</h3>
+              <a href="https://www.reddit.com/r/tezos">
+                <RedditLogo />
+                <h3>Reddit</h3>
+              </a>
             </li>
             <li>
-              <RiotLogo />
-              <h3>Riot</h3>
+              <a href="https://riot.im/app/#/room/#tezos:matrix.org">
+                <RiotLogo />
+                <h3>Riot</h3>
+              </a>
             </li>
           </CommunitiesList>
         </CommunitySection>
@@ -241,7 +250,7 @@ const TZipsBody = styled.div`
     margin-right: 116px;
   }
   ul li::after {
-    content: '▶';
+    content: "▶";
     padding-left: 8px;
     font-size: 0.8em;
     color: ${palette.blue};
@@ -305,11 +314,16 @@ const CommunitiesList = styled.ul`
   li {
     margin-bottom: 0;
     margin-right: 21px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    a {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
     svg {
       height: 58px;
       width: 58px;
