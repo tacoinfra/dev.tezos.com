@@ -1,7 +1,9 @@
 import React from "react"
+import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import CollapsibleItem from "../components/CollapsibleItem"
+import { palette, breakpoints } from "../utils/variables"
 import contentList from "./content.json"
 
 const TutorialIndex = ({ location }) => {
@@ -35,16 +37,39 @@ const TutorialIndex = ({ location }) => {
   return (
     <Layout location={location} title="Tutorials">
       <SEO title="All posts" />
-      <h1>Tutorials</h1>
-      {Object.keys(organizedTutorials).map(category => (
-        <CollapsibleItem
-          key={category}
-          category={category}
-          content={organizedTutorials[category]}
-        />
-      ))}
+      <Wrapper>
+        {Object.keys(organizedTutorials).map(category => (
+          <ItemWrapper key={category}>
+            <CollapsibleItem
+              category={category}
+              content={organizedTutorials[category]}
+            />
+          </ItemWrapper>
+        ))}
+      </Wrapper>
     </Layout>
   )
 }
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-158px);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: ${palette.white};
+  padding: 62px 74px;
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+  }
+`
+
+const ItemWrapper = styled.div`
+  margin-top: 36px;
+  width: 100%;
+`
 
 export default TutorialIndex

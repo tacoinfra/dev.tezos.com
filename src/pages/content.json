@@ -4,6 +4,7 @@
     "slug": "testing",
     "category": "tool",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -13,6 +14,7 @@
     "slug": "testing2",
     "category": "tool",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -22,6 +24,7 @@
     "slug": "testing3",
     "category": "tool",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -31,6 +34,7 @@
     "slug": "testing4",
     "category": "library",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -40,6 +44,7 @@
     "slug": "testing5",
     "category": "library",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -49,6 +54,7 @@
     "slug": "testing6",
     "category": "library",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -58,6 +64,7 @@
     "slug": "testing7",
     "category": "library",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "https://www.tezos.com",
     "description": "This is a description",
     "keywords": ["tezos"]
@@ -67,7 +74,8 @@
     "slug": "testing8",
     "category": "tutorial",
     "subcategory": "Testing",
-    "link": "#",
+    "author": "Author Example",
+    "link": "http://www.example.com/",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu felis bibendum ut tristique et egestas quis. Magna fringilla urna porttitor rhoncus dolor purus non. Sagittis vitae et leo duis ut diam. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Elementum integer enim neque volutpat ac tincidunt vitae semper. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Massa id neque aliquam vestibulum.",
     "keywords": ["node"]
   },
@@ -76,6 +84,7 @@
     "slug": "testing9",
     "category": "tutorial",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "#",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu felis bibendum ut tristique et egestas quis. Magna fringilla urna porttitor rhoncus dolor purus non. Sagittis vitae et leo duis ut diam. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Elementum integer enim neque volutpat ac tincidunt vitae semper. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Massa id neque aliquam vestibulum.",
     "keywords": ["michelson", "contract", "programming"]
@@ -85,6 +94,7 @@
     "slug": "testing10",
     "category": "tutorial",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["application", "programming", "tezos"]
@@ -94,6 +104,7 @@
     "slug": "testing11",
     "category": "tutorial",
     "subcategory": "Testing2",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["secure", "setup", "gettingstarted", "baker", "baking"]
@@ -103,6 +114,7 @@
     "slug": "testing12",
     "category": "tutorial",
     "subcategory": "Testing3",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["articles", "baking", "bakers"]
@@ -112,6 +124,7 @@
     "slug": "testing13",
     "category": "tutorial",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["multisig"]
@@ -121,6 +134,7 @@
     "slug": "testing14",
     "category": "tutorial",
     "subcategory": "Testing",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["escrows"]
@@ -130,6 +144,7 @@
     "slug": "testing15",
     "category": "tutorial",
     "subcategory": "Testing4",
+    "author": "Author Example",
     "link": "#",
     "description": "#",
     "keywords": ["oracle"]
