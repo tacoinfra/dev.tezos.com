@@ -36,10 +36,12 @@ const CollapsibleItem = ({ category, isOpen = false, content }) => {
         <SmoothCollapse expanded={isItemOpened}>
           {content.map(item => (
             <ContentLinkWrapper href={item.link} key={item.title}>
-              <Content>
+              <Content isContentEmpty={item.description.length === 0}>
                 <h3>{item.title}</h3>
                 <span>{item.author}</span>
-                <p>{item.description}</p>
+                {item.description.length > 0 && (
+                  <p>{item.description}</p>
+                )}
               </Content>
             </ContentLinkWrapper>
           ))}
@@ -114,7 +116,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 32px;
+  margin: 32px 0;
   background-color: ${palette.lighterGrey};
   padding: 34px;
   width: 100%;
@@ -130,7 +132,7 @@ const Content = styled.div`
     padding-bottom: 14px;
     margin-bottom: 16px;
     width: 80%;
-    border-bottom: 1px solid ${palette.grey};
+    border-bottom: ${props => props.isContentEmpty ? 'none' : `1px solid ${palette.grey}`};
     font-weight: 300;
     letter-spacing: 0.67px;
     line-height: 34px;
