@@ -22,15 +22,19 @@ const Layout = ({ children, location, title, subtitle }) => {
       font-size: 16px;
       line-height: 29px;
       text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
     }
     h1 {
       color: ${palette.darkBlue};
       font-size: 58px;
       letter-spacing: 2.24px;
       font-weight: 300;
+    }
+    h2 {
+      font-weight: 300;
+      letter-spacing: 1.04;
+      line-height: 42px;
+      font-size: 36px;
+      color: ${palette.darkBlue};
     }
     h3 {
       color: ${palette.darkBlue};

@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import CollapsibleItem from "../components/CollapsibleItem"
-import { palette, breakpoints } from "../utils/variables"
+import { palette, breakpoints, spacings } from "../utils/variables"
 import contentList from "./content.json"
 
 const TutorialIndex = ({ location }) => {
@@ -62,6 +62,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   background-color: ${palette.white};
   padding: 62px 74px;
+  max-width: calc(${spacings.maxWidth} * 0.9);
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
   }
@@ -70,6 +71,15 @@ const Wrapper = styled.div`
 const ItemWrapper = styled.div`
   margin-top: 36px;
   width: 100%;
+  &::after { 
+    margin-top: 38px;
+    display: block;
+    content: ' ';
+    background-color: ${palette.grey};
+    height: 1px;
+    width: calc(100% - 38px);
+    margin-left: 38px;
+  }
 `
 
 export default TutorialIndex

@@ -52,6 +52,8 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   background-color: ${palette.white};
+  max-width: calc(${spacings.maxWidth} * 0.9);
+  padding: 16px;
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;
   }
@@ -69,11 +71,6 @@ const PostHeaderElement = styled.h2`
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  font-weight: 300;
-  letter-spacing: 1.04;
-  line-height: 29px;
-  font-size: 25px;
-  color: ${palette.darkBlue};
   > * {
     &:first-of-type {
       margin-right: 24px;
@@ -85,7 +82,7 @@ const PostsSection = styled.section`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: ${spacings.maxWidth};
   margin-top: 100px;
   margin-bottom: 142px;

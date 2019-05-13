@@ -153,7 +153,7 @@ const PostsSection = styled.section`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   max-width: ${spacings.maxWidth};
   margin-top: 100px;
