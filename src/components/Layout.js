@@ -8,6 +8,7 @@ import Footer from "./Footer"
 import { palette, breakpoints, spacings } from "../utils/variables"
 
 const Layout = ({ children, location, title, subtitle }) => {
+  const isHome = location !== undefined && location.pathname === "/"
   const globalRules = css`
     body {
        {
@@ -35,10 +36,10 @@ const Layout = ({ children, location, title, subtitle }) => {
       <Global styles={globalRules} />
       <Header />
       <Hero>
-        <HeroContentWrapper isHome={location.pathname === "/"}>
-          <PageTitle isHome={location.pathname === "/"}>{title}</PageTitle>
+        <HeroContentWrapper isHome={isHome}>
+          <PageTitle isHome={isHome}>{title}</PageTitle>
           <PageSubtitle>{subtitle}</PageSubtitle>
-          {location.pathname === "/" && (
+          {isHome && (
             <ButtonWrapper>
               <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
               <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
