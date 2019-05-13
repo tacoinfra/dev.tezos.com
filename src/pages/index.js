@@ -10,6 +10,7 @@ import StackExchangeLogo from "../assets/stackexchange_logo.svg"
 import RedditLogo from "../assets/reddit_logo.svg"
 import RiotLogo from "../assets/riot_with_text.svg"
 import MailIcon from "../assets/mail.svg"
+import TZipsIcon from "../assets/tzips.svg"
 import { palette, breakpoints, spacings } from "../utils/variables"
 
 const SiteIndex = ({ location }) => {
@@ -46,9 +47,30 @@ const SiteIndex = ({ location }) => {
             </PostList>
           </PostColumn>
         </PostsSection>
-        {/* <TZipsSection id="tzips">
-          TZIPS BABY
-        </TZipsSection> */}
+        <TZipsSection id="tzips">
+          <TZipsContentWrapper>
+            <TZipsHeader>
+              <TZipsIcon />
+              <h3>TZIPS | Governance</h3>
+            </TZipsHeader>
+            <TZipsBody>
+              <p>
+                TZIPs, short for Tezos Improvement Proposal, are documents that
+                discuss changes or design decisions in the tezos ecosystem.
+                TZIPs are meant to supplement the formal governance process by
+                acting as an initial platform for discussion.
+              </p>
+              <ul>
+                <li>
+                  <a href="#">See List of TZIPs</a>
+                </li>
+                <li>
+                  <a href="#">Participate in the Discussions</a>
+                </li>
+              </ul>
+            </TZipsBody>
+          </TZipsContentWrapper>
+        </TZipsSection>
         <CommunitySection id="community">
           <CommunityHeaderWrapper>
             <TetrisBlock />
@@ -100,6 +122,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 8px;
 `
 
 // POSTS Components and Styles
@@ -116,8 +139,8 @@ const PostHeaderElement = styled.h2`
   flex-wrap: nowrap;
   font-weight: 300;
   letter-spacing: 1.04;
-  line-height: 29px;
-  font-size: 25px;
+  line-height: 42px;
+  font-size: 36px;
   color: ${palette.darkBlue};
   > * {
     &:first-of-type {
@@ -130,7 +153,7 @@ const PostsSection = styled.section`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   max-width: ${spacings.maxWidth};
   margin-top: 100px;
@@ -143,7 +166,7 @@ const PostsSection = styled.section`
 
 const PostColumn = styled.div`
   display: flex;
-  max-width: 498px;
+  max-width: 40%;
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +179,9 @@ const PostList = styled.ul`
   width: 100%;
   li:last-of-type {
     margin-bottom: 64px;
+    a {
+      border-bottom: none;
+    }
   }
   li a {
     font-weight: 300;
@@ -178,10 +204,48 @@ const TZipsSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 107px 0;
-  border-top: 1px solid ${palette.grey};
+  margin: 129px 0;
+  padding-top: 120px;
   max-width: ${spacings.maxWidth};
-  width: 85%;
+  width: 100%;
+  border-top: 1px solid ${palette.grey};
+`
+
+const TZipsContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`
+const TZipsHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 31px;
+  h3 {
+    margin-bottom: 0;
+    margin-left: 24px;
+  }
+`
+
+const TZipsBody = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  p {
+    justify-self: flex-start;
+    max-width: 466px;
+    width: 100%;
+    margin-right: 116px;
+  }
+  ul li::after {
+    content: '▶';
+    padding-left: 8px;
+    font-size: 0.8em;
+    color: ${palette.blue};
+  }
 `
 
 // COMMUNITY Components and Styles

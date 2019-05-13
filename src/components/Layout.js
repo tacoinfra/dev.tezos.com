@@ -16,6 +16,16 @@ const Layout = ({ children, location, title, subtitle }) => {
       }
       -webkit-transform: translate3d(0, 0, 0);
     }
+    a {
+      color: ${palette.blue};
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 29px;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     h1 {
       color: ${palette.darkBlue};
       font-size: 58px;
@@ -24,8 +34,8 @@ const Layout = ({ children, location, title, subtitle }) => {
     }
     h3 {
       color: ${palette.darkBlue};
-      font-size: 30px;
-      letter-spacing: 1.25px;
+      font-size: 36px;
+      letter-spacing: 1.5px;
       line-height: 34px;
       font-weight: 300;
     }
