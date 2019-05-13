@@ -5,7 +5,6 @@ import { palette, breakpoints, spacings } from "../utils/variables"
 import RiotIcon from "../assets/riot.svg"
 import GitlabIcon from "../assets/gitlab.svg"
 import TwitterIcon from "../assets/twitter.svg"
-import FacebookIcon from "../assets/facebook.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -28,16 +27,19 @@ const Footer = () => (
           `}
         >
           <li>
-            <RiotIcon />
+            <a href="https://riot.im/app/#/room/#tezos:matrix.org">
+              <RiotIcon />
+            </a>
           </li>
           <li>
-            <GitlabIcon />
+            <a href="https://gitlab.com/tezos/tezos">
+              <GitlabIcon />
+            </a>
           </li>
           <li>
-            <TwitterIcon />
-          </li>
-          <li>
-            <FacebookIcon />
+            <a href="https://twitter.com/tezos">
+              <TwitterIcon />
+            </a>
           </li>
         </SocialList>
       </SocialContent>
@@ -93,6 +95,10 @@ const SocialList = styled.ul`
   list-style-type: none;
   li {
     margin: 0 18px 0 0;
+    transition: transform 0.25s ease-in-out;
+    &:hover {
+      transform: translateY(-4px);
+    }
   }
 `
 
