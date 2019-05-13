@@ -30,7 +30,6 @@ const Layout = ({ children, location, title, subtitle }) => {
     }
   `
 
-  console.log(location.pathname)
   return (
     <Container>
       <Global styles={globalRules} />
