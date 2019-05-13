@@ -28,7 +28,9 @@ const CollapsibleItem = ({ category, isOpen = false, content }) => {
 
   return (
     <Wrapper>
-      <StyledBullet onClick={() => setIsItemOpen(!isItemOpened)} />
+      <StyledBullet onClick={() => setIsItemOpen(!isItemOpened)}>
+        <Bullet />
+      </StyledBullet>
       <PrimaryContentWrapper>
         <Title onClick={() => setIsItemOpen(!isItemOpened)}>{category}</Title>
         <SmoothCollapse expanded={isItemOpened}>
@@ -46,7 +48,9 @@ const CollapsibleItem = ({ category, isOpen = false, content }) => {
       <StyledCaret
         isItemOpen={isItemOpened}
         onClick={() => setIsItemOpen(!isItemOpened)}
-      />
+      >
+        <Caret />
+      </StyledCaret>
     </Wrapper>
   )
 }
@@ -60,7 +64,12 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
-const StyledBullet = styled(Bullet)`
+const StyledBullet = styled.div`
+  width: 80px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     cursor: pointer;
   }
@@ -73,6 +82,7 @@ const PrimaryContentWrapper = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 90%;
+  margin-left: 39px;
   > * {
     width: 100%;
   }
@@ -86,6 +96,7 @@ const Title = styled.h2`
   font-weight: 300;
   font-size: 36px;
   letter-spacing: 1.5;
+  margin-bottom: 0;
   &:hover {
     cursor: pointer;
   }
@@ -134,8 +145,15 @@ const Content = styled.div`
   }
 `
 
-const StyledCaret = styled(Caret)`
-  transform: ${props => (props.isItemOpen ? "rotate(180deg)" : "rotate(0)")};
+const StyledCaret = styled.div`
+  width: 80px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    transform: ${props => (props.isItemOpen ? "rotate(180deg)" : "rotate(0)")};
+  }
   &:hover {
     cursor: pointer;
   }
