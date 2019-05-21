@@ -5,43 +5,26 @@ import Bullet from "../assets/bullet.svg"
 import Caret from "../assets/caret.svg"
 import { palette } from "../utils/variables"
 
-// provides a toggleable state that will update
-// when the window location hash changes
+// provides a togglable state
 const useHashChangeToggle = ({ isOpen, id }) => {
   const [isItemOpened, setIsItemOpen] = useState(isOpen)
-
   const hashId = `#${id.toLowerCase()}`
-  const matchesHashId = () => window.location.hash.toLowerCase() === hashId
-
-  // update the state if the hash changes
-  const handleHashChange = () => {
-    setIsItemOpen(matchesHashId())
-  }
 
   // update hash if we are opening the toggle, remove if not
   const handleToggle = () => {
     const newHash = !isItemOpened ? hashId : '#'
-    if (window.history.pushState) {
-      window.history.pushState(null, null, newHash)
-    } else {
-      window.location.hash = newHash
-    }
+    window.history.replaceState(null, null, newHash)
 
     // update state
     setIsItemOpen(!isItemOpened)
   }
 
   // init item as open if the hash matches on first render
-  useEffect(handleHashChange, [])
-
-  // listen for hash change and update state if needed
   useEffect(() => {
-    window.addEventListener('hashchange', handleHashChange)
-
-    return () => {
-      window.removeEventListener('hashchange', handleHashChange)
+    if (window.location.hash.toLowerCase() === hashId) {
+      setIsItemOpen(true)
     }
-  })
+  }, [])
 
   return [
     isItemOpened,
