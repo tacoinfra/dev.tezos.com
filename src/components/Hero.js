@@ -8,7 +8,9 @@ import ShellWrapper from './ShellWrapper';
 
 const Hero = ({ compact, children = null }) => (
   <HeroContainer compact={compact}>
-    <BackgroundImage compact={compact} />
+    <BackgroundImage compact={compact}>
+      <HeroBackground />
+    </BackgroundImage>
     <HeroContentWrapper>{children}</HeroContentWrapper>
   </HeroContainer>
 )
@@ -46,23 +48,25 @@ const HeroContentWrapper = styled(ShellWrapper)`
   }
 `
 
-const BackgroundImage = styled(HeroBackground)`
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  max-width: ${spacings.maxWidth};
-  margin-left: calc(${spacings.maxWidth} / -2 - 30px); /* pull left, plus "padding" */
-  height: 100%;
-  z-index: 1;
-  -webkit-transform: translate3d(0,0,-1);
+const BackgroundImage = styled.div`
+  svg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: ${spacings.maxWidth};
+    margin-left: calc(${spacings.maxWidth} / -2 - 30px); /* pull left, plus "padding" */
+    height: 100%;
+    z-index: 1;
+    -webkit-transform: translate3d(0,0,-1);
 
-  > g {
-    transform: ${({ compact }) => (
-      compact
-      ? "translate3d(0, -60px, 0)"
-      : "translate3d(0, 0px, 0)"
-    )};
+    > g {
+      transform: ${({ compact }) => (
+        compact
+        ? "translate3d(0, -60px, 0)"
+        : "translate3d(0, 0px, 0)"
+      )};
+    }
   }
 `
 
