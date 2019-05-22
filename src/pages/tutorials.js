@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import CollapsibleItem from "../components/CollapsibleItem"
+import Layout from "../components/Layout"
 import { palette, breakpoints, spacings } from "../utils/variables"
 import contentList from "./content.json"
+import ShellWrapper from '../components/ShellWrapper'
 
 // First we organize all content with category of tutorial
 const tutorials = contentList.filter(
@@ -40,48 +40,51 @@ const TutorialIndex = ({ location }) => {
   return (
     <Layout location={location} title="Tutorials" compact>
       <SEO title="All posts" />
+
       <Wrapper>
-        {Object.keys(organizedTutorials).map(category => (
-          <ItemWrapper key={category}>
-            <CollapsibleItem
-              category={category}
-              content={organizedTutorials[category]}
-            />
-          </ItemWrapper>
-        ))}
+        <Sidebar>
+          <SidebarList>
+            {Object.keys(organizedTutorials).map(category => (
+              <li key={category}>
+                <a href={`#${category.toLowerCase()}`}>{category}</a>
+              </li>
+            ))}
+          </SidebarList>
+        </Sidebar>
+
+        <Main>
+          {Object.keys(organizedTutorials).map(category => (
+            <TutorialGroup key={category}>
+              <TutorialHeading>{category}</TutorialHeading>
+              {
+                organizedTutorials[category].map(item => (
+                  <TutorialItem
+                    key={item.slug}
+                    href={item.link}
+                  >
+                    <h3>{item.title}</h3>
+                    <p>{item.author}</p>
+                    {item.description.length > 0 && (
+                      <p>{item.description}</p>
+                    )}
+                  </TutorialItem>
+                ))
+              }
+            </TutorialGroup>
+          ))}
+        </Main>
       </Wrapper>
     </Layout>
   )
 }
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: ${palette.white};
-  padding: 62px 74px;
-  max-width: calc(${spacings.maxWidth} * 0.9);
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
-  }
-`
+const Wrapper = styled(ShellWrapper)``
+const Sidebar = styled.ul``
+const SidebarList = styled.div``
+const Main = styled.div``
+const TutorialGroup = styled.div``
+const TutorialHeading = styled.h2``
+const TutorialItem = styled.a``
 
-const ItemWrapper = styled.div`
-  margin-top: 36px;
-  width: 100%;
-  &::after {
-    margin-top: 38px;
-    display: block;
-    content: ' ';
-    background-color: ${palette.grey};
-    height: 1px;
-    width: calc(100% - 38px);
-    margin-left: 38px;
-  }
-`
 
 export default TutorialIndex
