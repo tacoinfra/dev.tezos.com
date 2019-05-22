@@ -53,9 +53,8 @@ const HeaderContainer = styled.header`
   overflow: hidden;
   position: absolute;
   z-index: 10;
-  @media (max-width: ${breakpoints.tablet}) {
-    padding: 8px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 `
 
 const NavigationMenu = styled.div`
