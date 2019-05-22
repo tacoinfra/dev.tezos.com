@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "@emotion/styled";
 import { breakpoints, spacings } from "../utils/variables";
 
