@@ -11,7 +11,7 @@ const DevToolsPage = ({ location }) => {
   const libraries = contentList.filter(post => post.category === "library")
   const tools = contentList.filter(post => post.category === "tool")
   return (
-    <Layout location={location} title="Dev Tools">
+    <Layout location={location} title="Dev Tools" compact>
       <SEO title="Resources" />
       <Wrapper>
         <PostsSection id="posts">
@@ -47,7 +47,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-158px);
   width: 90%;
   margin-left: auto;
   margin-right: auto;

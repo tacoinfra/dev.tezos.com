@@ -35,7 +35,7 @@ const TutorialIndex = ({ location }) => {
     {}
   )
   return (
-    <Layout location={location} title="Tutorials">
+    <Layout location={location} title="Tutorials" compact>
       <SEO title="All posts" />
       <Wrapper>
         {Object.keys(organizedTutorials).map(category => (
@@ -56,7 +56,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-158px);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -71,7 +70,7 @@ const Wrapper = styled.div`
 const ItemWrapper = styled.div`
   margin-top: 36px;
   width: 100%;
-  &::after { 
+  &::after {
     margin-top: 38px;
     display: block;
     content: ' ';

@@ -22,6 +22,7 @@ const SiteIndex = ({ location }) => {
       location={location}
       title="Tezos Developer Portal"
       subtitle="Technical Resources for Software and Blockchain Developers"
+      isHome
     >
       <SEO title="Home" />
       <Wrapper>

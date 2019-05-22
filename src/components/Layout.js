@@ -5,15 +5,19 @@ import Header from "./Header"
 import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
-import { palette, breakpoints, spacings } from "../utils/variables"
+import { palette, breakpoints } from "../utils/variables"
 
-const Layout = ({ children, location, title, subtitle }) => {
-  const isHome = location !== undefined && location.pathname === "/"
+const Layout = ({
+  children,
+  location,
+  title,
+  subtitle,
+  compact = false,
+  isHome = false,
+}) => {
   const globalRules = css`
     body {
-       {
-        /* This fixes a z-index issue in safari */
-      }
+      /* This fixes a z-index issue in safari */
       -webkit-transform: translate3d(0, 0, 0);
     }
     a {
@@ -49,17 +53,15 @@ const Layout = ({ children, location, title, subtitle }) => {
     <Container>
       <Global styles={globalRules} />
       <Header />
-      <Hero>
-        <HeroContentWrapper isHome={isHome}>
-          <PageTitle isHome={isHome}>{title}</PageTitle>
-          <PageSubtitle>{subtitle}</PageSubtitle>
-          {isHome && (
-            <ButtonWrapper>
-              <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
-              <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
-            </ButtonWrapper>
-          )}
-        </HeroContentWrapper>
+      <Hero compact={compact}>
+        <PageTitle>{title}</PageTitle>
+        {subtitle && <PageSubtitle>{subtitle}</PageSubtitle>}
+        {isHome && (
+          <ButtonWrapper>
+            <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
+            <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
+          </ButtonWrapper>
+        )}
       </Hero>
       <Main>{children}</Main>
       <Footer />
@@ -76,24 +78,10 @@ const Container = styled.div`
   background-color: ${palette.white};
 `
 
-const HeroContentWrapper = styled.div`
-  max-width: ${spacings.maxWidth};
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: ${props => props.isHome ? "center" : "flex-start"};
-  color: ${palette.white};
-  @media (max-width: ${breakpoints.tablet}) {
-    align-items: center;
-  }
-`
-
 const PageTitle = styled.h1`
   color: ${palette.white};
   font-weight: 300;
   z-index: 2;
-  margin-left: ${props => props.isHome ? "0" : "25%"};
   @media (max-width: ${breakpoints.tablet}) {
     margin-left: 0;
   }
@@ -105,6 +93,7 @@ const PageSubtitle = styled.h2`
   margin-bottom: 66px;
   font-weight: 300;
   z-index: 2;
+  color: ${palette.white};
   @media (max-width: ${breakpoints.mobile}) {
     margin-bottom: 26px;
   }
@@ -132,11 +121,9 @@ const ButtonWrapper = styled.div`
 `
 
 const Main = styled.main`
-  width: 100%;
-  min-height: calc(
-    100vh - 452px - 90px
-  ); /* 100 view height - size of footer (452px) - size of header (90px) */
   background-color: ${palette.white};
+  flex-grow: 1;
+  width: 100%;
 `
 
 export default Layout
