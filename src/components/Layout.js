@@ -63,12 +63,13 @@ const Layout = ({
 }
 
 const Container = styled.div`
-  width: 100%;
+  align-items: center;
+  background-color: ${palette.white};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  background-color: ${palette.white};
+  min-height: 100vh;
+  width: 100%;
 `
 
 const PageTitle = styled.h1`
