@@ -145,6 +145,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 552px;
+  margin-top: 66px;
   > * {
     width: 256px;
   }
@@ -155,6 +156,7 @@ const ButtonWrapper = styled.div`
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    margin-top: 26px;
     a + a {
       margin-left: 0;
       margin-top: 20px;

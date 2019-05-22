@@ -75,21 +75,14 @@ const PageTitle = styled.h1`
   color: ${palette.white};
   font-weight: 300;
   z-index: 2;
-  @media (max-width: ${breakpoints.tablet}) {
-    margin-left: 0;
-  }
 `
 
 const PageSubtitle = styled.h2`
   font-size: 24px;
   line-height: 38px;
-  margin-bottom: 66px;
   font-weight: 300;
   z-index: 2;
   color: ${palette.white};
-  @media (max-width: ${breakpoints.mobile}) {
-    margin-bottom: 26px;
-  }
 `
 
 const Main = styled.main`
