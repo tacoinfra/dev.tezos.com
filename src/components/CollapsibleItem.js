@@ -5,6 +5,33 @@ import Bullet from "../assets/bullet.svg"
 import Caret from "../assets/caret.svg"
 import { palette } from "../utils/variables"
 
+// provides a togglable state
+const useHashChangeToggle = ({ isOpen, id }) => {
+  const [isItemOpened, setIsItemOpen] = useState(isOpen)
+  const hashId = `#${id.toLowerCase()}`
+
+  // update hash if we are opening the toggle, remove if not
+  const handleToggle = () => {
+    const newHash = !isItemOpened ? hashId : '#'
+    window.history.replaceState(null, null, newHash)
+
+    // update state
+    setIsItemOpen(!isItemOpened)
+  }
+
+  // init item as open if the hash matches on first render
+  useEffect(() => {
+    if (window.location.hash.toLowerCase() === hashId) {
+      setIsItemOpen(true)
+    }
+  }, [])
+
+  return [
+    isItemOpened,
+    handleToggle
+  ]
+}
+
 /**
  *
  * @param {category} String The text shown on the element at all times
@@ -18,21 +45,15 @@ import { palette } from "../utils/variables"
  *
  */
 const CollapsibleItem = ({ category, isOpen = false, content }) => {
-  const [isItemOpened, setIsItemOpen] = useState(isOpen)
-
-  useEffect(() => {
-    if (window.location.hash.toLowerCase() === `#${category.toLowerCase()}`) {
-      setIsItemOpen(true)
-    }
-  }, [])
+  const [isItemOpened, handleToggle] = useHashChangeToggle({ isOpen, id: category })
 
   return (
     <Wrapper>
-      <StyledBullet onClick={() => setIsItemOpen(!isItemOpened)}>
+      <StyledBullet onClick={handleToggle}>
         <Bullet />
       </StyledBullet>
       <PrimaryContentWrapper>
-        <Title onClick={() => setIsItemOpen(!isItemOpened)}>{category}</Title>
+        <Title onClick={handleToggle}>{category}</Title>
         <SmoothCollapse expanded={isItemOpened}>
           {content.map(item => (
             <ContentLinkWrapper href={item.link} key={item.title}>
@@ -49,7 +70,7 @@ const CollapsibleItem = ({ category, isOpen = false, content }) => {
       </PrimaryContentWrapper>
       <StyledCaret
         isItemOpen={isItemOpened}
-        onClick={() => setIsItemOpen(!isItemOpened)}
+        onClick={handleToggle}
       >
         <Caret />
       </StyledCaret>
