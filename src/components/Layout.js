@@ -2,18 +2,16 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Header from "./Header"
-import ButtonAnchor from "./ButtonAnchor"
 import Hero from "../components/Hero"
 import Footer from "./Footer"
 import { palette, breakpoints } from "../utils/variables"
 
 const Layout = ({
   children,
-  location,
   title,
   subtitle,
-  compact = false,
-  isHome = false,
+  heroContent,
+  compact = false
 }) => {
   const globalRules = css`
     body {
@@ -56,12 +54,7 @@ const Layout = ({
       <Hero compact={compact}>
         <PageTitle>{title}</PageTitle>
         {subtitle && <PageSubtitle>{subtitle}</PageSubtitle>}
-        {isHome && (
-          <ButtonWrapper>
-            <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
-            <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
-          </ButtonWrapper>
-        )}
+        {heroContent}
       </Hero>
       <Main>{children}</Main>
       <Footer />
@@ -96,27 +89,6 @@ const PageSubtitle = styled.h2`
   color: ${palette.white};
   @media (max-width: ${breakpoints.mobile}) {
     margin-bottom: 26px;
-  }
-`
-
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 552px;
-  > * {
-    width: 256px;
-  }
-  a + a {
-    margin-left: 40px;
-  }
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    a + a {
-      margin-left: 0;
-      margin-top: 20px;
-    }
   }
 `
 

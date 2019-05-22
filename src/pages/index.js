@@ -22,7 +22,12 @@ const SiteIndex = ({ location }) => {
       location={location}
       title="Tezos Developer Portal"
       subtitle="Technical Resources for Software and Blockchain Developers"
-      isHome
+      heroContent={
+        <ButtonWrapper>
+          <ButtonAnchor href="#">Build & Run A Node</ButtonAnchor>
+          <ButtonAnchor href="#">Use Testnet Faucet</ButtonAnchor>
+        </ButtonWrapper>
+      }
     >
       <SEO title="Home" />
       <Wrapper>
@@ -133,6 +138,28 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 8px;
+`
+
+/* Hero content */
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  width: 552px;
+  > * {
+    width: 256px;
+  }
+  a + a {
+    margin-left: 40px;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    a + a {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
 `
 
 // POSTS Components and Styles
