@@ -55,7 +55,7 @@ const globalRules = css`
   }
   h3 {
     font-size: 25px;
-    line-height: 25px;
+    line-height: 30px;
     font-weight: 400;
   }
 `
