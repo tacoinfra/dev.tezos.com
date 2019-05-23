@@ -44,7 +44,7 @@ const SiteIndex = ({ location }) => {
                 <li><a href="#/">How to get Tezos</a></li>
                 <li><a href="#/">How to get Tezos</a></li>
                 <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#">How to get Tezos</a></li>
+                <li><a href="#/">How to get Tezos</a></li>
               </ul>
             </PostList>
 
@@ -109,52 +109,53 @@ const SiteIndex = ({ location }) => {
 
           <PostListGroup columns={3}>
             <PostList title={<h3>Languages</h3>} link="/tools">
-              <p>Learn how to install the Tezos binaries, Master the command-line interface, and start exploring the blockchain.</p>
-
-              <h4>Tutorial</h4>
-
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#">How to get Tezos</a></li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
               </ul>
             </PostList>
 
             <PostList title={<h3>Libraries</h3>} link="/tools">
-              <p>Learn about Michelson, the smart-contract language of Tezos. Choose one of the high-level languages to program in, or program in Michelson directly.</p>
-
-              <h4>Tutorial</h4>
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-              </ul>
-
-              <h4>Dev Tools</h4>
-              <ul>
-                <li><a href="#/">Morley / Lorenz</a></li>
-                <li><a href="#/">Ligo</a></li>
-                <li><a href="#/">Michelson Emacs Mode</a></li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
               </ul>
             </PostList>
 
             <PostList title={<h3>Tools</h3>} link="/tools">
-              <p>Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.</p>
-
-              <h4>Tutorial</h4>
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-              </ul>
-
-              <h4>Dev Tools</h4>
-              <ul>
-                <li><a href="#/">Morley / Lorenz</a></li>
-                <li><a href="#/">Ligo</a></li>
-                <li><a href="#/">Michelson Emacs Mode</a></li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
+                <li>
+                  <p><a href="#/">How to get Tezos</a></p>
+                  <p>Minim non dolor ipsum aute proident.</p>
+                </li>
               </ul>
             </PostList>
           </PostListGroup>
@@ -163,72 +164,45 @@ const SiteIndex = ({ location }) => {
         <Section>
           <SectionHeading centered>Additional Tutorials</SectionHeading>
 
-          <PostListGroup columns={3}>
+          <PostListGroup columns={4}>
             <PostList title={<h3>Baking</h3>} link="/tutorials">
-              <p>Learn how to install the Tezos binaries, Master the command-line interface, and start exploring the blockchain.</p>
-
-              <h4>Tutorial</h4>
-
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#">How to get Tezos</a></li>
+                <li><a href="#/">Enim ea veniam laborum magna quis veniam occaecat sunt aliquip.</a></li>
+                <li><a href="#/">Magna veniam consequat dolore ad officia.</a></li>
+                <li><a href="#/">Nulla mollit eiusmod eu aliquip aliquip ex anim.</a></li>
+                <li><a href="#/">Fugiat ad id nostrud amet anim anim.</a></li>
+                <li><a href="#/">Nostrud pariatur sunt amet qui cupidatat.</a></li>
+                <li><a href="#/">Ea cupidatat minim quis ad esse.</a></li>
               </ul>
             </PostList>
 
             <PostList title={<h3>Ledger</h3>} link="/tutorials">
-              <p>Learn about Michelson, the smart-contract language of Tezos. Choose one of the high-level languages to program in, or program in Michelson directly.</p>
-
-              <h4>Tutorial</h4>
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-              </ul>
-
-              <h4>Dev Tools</h4>
-              <ul>
-                <li><a href="#/">Morley / Lorenz</a></li>
-                <li><a href="#/">Ligo</a></li>
-                <li><a href="#/">Michelson Emacs Mode</a></li>
+                <li><a href="#/">Est ullamco excepteur magna ad voluptate.</a></li>
+                <li><a href="#/">Non id est veniam dolor excepteur excepteur.</a></li>
+                <li><a href="#/">Esse ex dolore occaecat tempor dolo.</a></li>
+                <li><a href="#/">Culpa enim minim in incididunt ad sit.</a></li>
+                <li><a href="#/">Anim enim quis esse qui ut deserunt.</a></li>
               </ul>
             </PostList>
 
             <PostList title={<h3>Hardware Wallets</h3>} link="/tutorials">
-              <p>Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.</p>
-
-              <h4>Tutorial</h4>
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-              </ul>
-
-              <h4>Dev Tools</h4>
-              <ul>
-                <li><a href="#/">Morley / Lorenz</a></li>
-                <li><a href="#/">Ligo</a></li>
-                <li><a href="#/">Michelson Emacs Mode</a></li>
+                <li><a href="#/">Minim consequat nisi adipisicing consequat officia deserunt anim.</a></li>
+                <li><a href="#/">Pariatur consequat commodo aute laborum fugiat fugiat ad magna duis eu ullamco pariatur et aute.</a></li>
+                <li><a href="#/">Ipsum est proident officia id dolore aute est occaecat veniam ad consequat consectetur.</a></li>
+                <li><a href="#/">Eu ex irure eiusmod qui.</a></li>
+                <li><a href="#/">Tempor excepteur eu eu mollit nostrud est ex aliqua dolore.</a></li>
               </ul>
             </PostList>
 
             <PostList title={<h3>DApp</h3>} link="/tutorials">
-              <p>Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.</p>
-
-              <h4>Tutorial</h4>
               <ul>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-                <li><a href="#/">How to get Tezos</a></li>
-              </ul>
-
-              <h4>Dev Tools</h4>
-              <ul>
-                <li><a href="#/">Morley / Lorenz</a></li>
-                <li><a href="#/">Ligo</a></li>
-                <li><a href="#/">Michelson Emacs Mode</a></li>
+                <li><a href="#/">Dolor magna laborum pariatur irure incididunt ex.</a></li>
+                <li><a href="#/">Anim labore adipisicing eu deserunt.</a></li>
+                <li><a href="#/">Ex mollit irure eiusmod eiusmod.</a></li>
+                <li><a href="#/">Excepteur ea sunt eiusmod proident Lorem Lorem aute qui pariatur tempor excepteur.</a></li>
+                <li><a href="#/">Ut et adipisicing est id elit.</a></li>
               </ul>
             </PostList>
           </PostListGroup>
