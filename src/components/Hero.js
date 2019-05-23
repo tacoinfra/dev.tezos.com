@@ -6,12 +6,21 @@ import { palette, breakpoints, spacings } from "../utils/variables";
 import HeroBackground from "../assets/hero_background.svg";
 import ShellWrapper from './ShellWrapper';
 
-const Hero = ({ compact, children = null }) => (
+const Hero = ({
+  title,
+  subtitle,
+  compact,
+  children
+}) => (
   <HeroContainer compact={compact}>
     <BackgroundImage compact={compact}>
       <HeroBackground />
     </BackgroundImage>
-    <HeroContentWrapper>{children}</HeroContentWrapper>
+    <HeroContentWrapper>
+      <PageTitle>{title}</PageTitle>
+      {subtitle && <PageSubtitle>{subtitle}</PageSubtitle>}
+      {children}
+    </HeroContentWrapper>
   </HeroContainer>
 )
 
@@ -36,16 +45,6 @@ const HeroContainer = styled.div`
     background-color: #1A4D98; /* one off color from svg bg */
     z-index: 0;
   }
-`;
-
-const HeroContentWrapper = styled(ShellWrapper)`
-  color: ${palette.white};
-  position: relative;
-  z-index: 2;
-
-  @media (min-width: ${breakpoints.tablet}) {
-    padding-left: 360px;
-  }
 `
 
 const BackgroundImage = styled.div`
@@ -68,6 +67,30 @@ const BackgroundImage = styled.div`
       )};
     }
   }
+`
+
+const HeroContentWrapper = styled(ShellWrapper)`
+  color: ${palette.white};
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding-left: 360px;
+  }
+`
+
+const PageTitle = styled.h1`
+  color: ${palette.white};
+  font-size: 58px;
+  font-weight: 300;
+  letter-spacing: 2.24px;
+`
+
+const PageSubtitle = styled.h2`
+  color: ${palette.white};
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 38px;
 `
 
 export default Hero;
