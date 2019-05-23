@@ -2,21 +2,26 @@ import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
 
 const StyledInput = styled.input`
-  padding: 0px 0px 9px;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
-  border-color: ${palette.gray};
-  border-style: none none solid;
-  border-width: medium medium 1px;
-  border-image: none 100% / 1 / 0 stretch;
-  border-radius: 0px;
-  color: rgb(0, 0, 0);
+  padding: 8px 0;
+  background: transparent;
+  border: 0 solid rgba(255, 255, 255, 0.5);
+  border-bottom-width: 1px;
+  color: ${palette.white};
   font-size: 16px;
+  font-weight: 300;
   line-height: 24px;
   width: 100%;
   appearance: none;
   margin-bottom: 0px;
-  display: block;
-  min-width: 310px;
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 1);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
 `
 
 export default StyledInput

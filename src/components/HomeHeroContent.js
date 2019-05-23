@@ -28,9 +28,49 @@ const HomeHeroContent = () => (
   </Container>
 )
 
-const Container = styled.div``
-const SocialLinks = styled.ul``
+const Container = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
 
-const MailSignup = styled.form``
+  @media (min-width: ${breakpoints.tablet}) {
+    flex-flow: row nowrap;
+  }
+`
+
+const SocialLinks = styled.ul`
+  display: flex;
+  list-style: none;
+  margin: 0;
+`
+
+const MailSignup = styled.form`
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+
+  label {
+    display: flex;
+    align-items: center;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  input {
+    margin: 2px 20px 0;
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 40px;
+    margin-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+`
 
 export default HomeHeroContent

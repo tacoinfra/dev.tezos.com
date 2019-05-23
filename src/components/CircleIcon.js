@@ -20,16 +20,18 @@ const Circle = styled.div`
   svg,
   span {
     position: absolute;
-    top: 50%;
+    top: 10px;
     left: 0;
     right: 0;
-    margin-top: -0.5em;
     text-align: center;
+    color: ${palette.white};
   }
 
   svg {
     height: 90%;
-    margin-top: 5%;
+    left: 5%;
+    margin-top: 0;
+    top: 5%;
     width: 90%;
   }
 `
