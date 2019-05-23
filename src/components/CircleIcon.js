@@ -2,15 +2,11 @@ import React from "react"
 import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
 
-const CircleIcon = ({ children }) => (
-  <Circle>{children}</Circle>
-)
-
-const Circle = styled.div`
+const CircleIcon = styled.div`
   background-color: ${palette.blue};
   border-radius: 100px;
   display: inline-block;
-  flex-grow: 44px;
+  flex: 0 0 44px;
   height: 44px;
   margin-right: 12px;
   position: relative;
