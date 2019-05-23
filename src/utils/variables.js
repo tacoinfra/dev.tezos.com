@@ -1,6 +1,7 @@
 // NOTE: This is a palette variable intended to be use with emotion package
 export const palette = {
   white: '#FFFFFF',
+  lightestGrey: '#FAFAFA',
   lighterGrey: '#F0F3F9',
   lightGrey: '#F6F8FD',
   grey: '#DCE3F0',
