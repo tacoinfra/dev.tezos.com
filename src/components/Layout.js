@@ -58,6 +58,11 @@ const globalRules = css`
     line-height: 30px;
     font-weight: 400;
   }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 `
 
 const Container = styled.div`
