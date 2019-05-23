@@ -5,11 +5,11 @@ const ShellWrapper = styled.div`
   max-width: ${spacings.maxWidth};
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 40px 20px 20px;
   width: 100%;
 
   @media (min-width: ${breakpoints.mobile}) {
-    padding: 40px;
+    padding: 68px 40px 40px;
   }
 `
 

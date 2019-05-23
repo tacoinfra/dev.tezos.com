@@ -128,7 +128,6 @@ const Sidebar = styled(ShellWrapper)`
     position: sticky;
     top: -28px;
     margin-bottom: 0;
-    padding-top: 68px;
     width: 350px;
   }
 `
@@ -158,10 +157,6 @@ const SidebarList = styled.ul`
 
 const Main = styled(ShellWrapper)`
   background-color: ${palette.white};
-
-  @media (min-width: ${breakpoints.mobile}) {
-    padding-top: 68px;
-  }
 `
 
 const TutorialGroup = styled.div`
