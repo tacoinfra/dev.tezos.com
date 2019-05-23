@@ -121,12 +121,14 @@ const FlexWrapper = styled.div`
 
 const Sidebar = styled(ShellWrapper)`
   background-color: ${palette.lightGrey};
+  margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 
   @media (min-width: ${breakpoints.mobile}) {
     position: sticky;
     top: 0;
+    margin-bottom: 0;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 350px;
