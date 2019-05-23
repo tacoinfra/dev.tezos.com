@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
-import slugify from 'slugify'
-import Scrollspy from 'react-scrollspy'
+import slugify from "slugify"
+import Scrollspy from "react-scrollspy"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import { palette, breakpoints, spacings } from "../utils/variables"
 import contentList from "./content.json"
-import ShellWrapper from '../components/ShellWrapper'
-import SectionHeading from '../components/SectionHeading'
+import ShellWrapper from "../components/ShellWrapper"
+import SectionHeading from "../components/SectionHeading"
 
 // First we organize all content with category of tutorial
 const tutorials = contentList.filter(
