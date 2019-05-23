@@ -325,12 +325,20 @@ const Wrapper = styled(ShellWrapper)`
 
 /* Callout section */
 const CalloutGroup = styled.section`
-  padding: 64px 40px 40px;
+  padding: 40px 20px 20px;
   background-color: ${palette.lightGrey};
 
   & > h2 {
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: ${breakpoints.mobile}) {
+    padding: 64px 40px 40px;
+
+    & > h2 {
+      margin-bottom: 64px;
+    }
   }
 `
 
