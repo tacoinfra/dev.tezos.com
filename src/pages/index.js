@@ -3,11 +3,11 @@ import styled from "@emotion/styled"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import ShellWrapper from "../components/ShellWrapper"
-import ButtonAnchor from "../components/ButtonAnchor"
 import NumberTitle from "../components/NumberTitle"
 import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
 import SectionHeading from "../components/SectionHeading"
+import HomeHeroContent from "../components/HomeHeroContent"
 import contentList from "./content.json"
 import { palette, breakpoints, spacings } from "../utils/variables"
 
@@ -20,12 +20,7 @@ const SiteIndex = ({ location }) => {
       location={location}
       title="Tezos Developer Portal"
       subtitle="Technical Resources for Software and Blockchain Developers"
-      heroContent={
-        <ButtonWrapper>
-          <ButtonAnchor href="#/">Build & Run A Node</ButtonAnchor>
-          <ButtonAnchor href="#/">Use Testnet Faucet</ButtonAnchor>
-        </ButtonWrapper>
-      }
+      heroContent={<HomeHeroContent />}
     >
       <SEO title="Home" />
 
@@ -237,52 +232,6 @@ const SiteIndex = ({ location }) => {
   )
 }
 
-
-/* Hero content */
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 552px;
-  margin-top: 66px;
-
-  > * {
-    width: 256px;
-  }
-
-  a + a {
-    margin-left: 40px;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 26px;
-
-    a + a {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  }
-`
-
-const StyledInput = styled.input`
-  padding: 0px 0px 9px;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
-  border-color: ${palette.gray};
-  border-style: none none solid;
-  border-width: medium medium 1px;
-  border-image: none 100% / 1 / 0 stretch;
-  border-radius: 0px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  appearance: none;
-  margin-bottom: 0px;
-  display: block;
-  min-width: 310px;
-`
 
 /* Content components */
 const Wrapper = styled(ShellWrapper)`
