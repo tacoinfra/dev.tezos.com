@@ -127,9 +127,9 @@ const Sidebar = styled(ShellWrapper)`
 
   @media (min-width: ${breakpoints.mobile}) {
     position: sticky;
-    top: 0;
+    top: -28px;
     margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 68px;
     padding-bottom: 40px;
     width: 350px;
   }
@@ -164,7 +164,7 @@ const Main = styled(ShellWrapper)`
   padding-bottom: 20px;
 
   @media (min-width: ${breakpoints.mobile}) {
-    padding-top: 40px;
+    padding-top: 68px;
     padding-bottom: 40px;
   }
 `
