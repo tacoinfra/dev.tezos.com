@@ -117,11 +117,10 @@ const Sidebar = styled(ShellWrapper)`
   background-color: ${palette.lightGrey};
   padding-top: 20px;
   padding-bottom: 20px;
-  position: sticky;
-  top: 0;
 
-  /* flex-grow: 1; */
   @media (min-width: ${breakpoints.mobile}) {
+    position: sticky;
+    top: 0;
     padding-top: 40px;
     padding-bottom: 40px;
     width: 350px;
@@ -131,6 +130,20 @@ const Sidebar = styled(ShellWrapper)`
 const SidebarList = styled.ul`
   list-style: none;
   margin: 0;
+
+  li {
+    margin-bottom: 0;
+
+    & + li {
+      margin-top: 20px;
+    }
+  }
+
+  a {
+    color: ${palette.darkBlue};
+    font-size: 20px;
+    font-weight: 400;
+  }
 `
 
 const Main = styled(ShellWrapper)`
@@ -159,7 +172,7 @@ const TutorialItem = styled.a`
   background-color: ${palette.lightestGrey};
   color: ${palette.darkBlue};
   display: block;
-  padding: 34px 49px;
+  padding: 34px;
   margin-top: 20px;
 
   h3 {
@@ -168,6 +181,10 @@ const TutorialItem = styled.a`
 
   &:hover {
     h3 { text-decoration: underline; }
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding: 34px 49px;
   }
 `
 
