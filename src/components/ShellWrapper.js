@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { breakpoints, spacings } from "../utils/variables";
 
-export default styled.div`
+const ShellWrapper = styled.div`
   max-width: ${spacings.maxWidth};
   margin-left: auto;
   margin-right: auto;
@@ -14,3 +14,5 @@ export default styled.div`
     padding-right: 40px;
   }
 `
+
+export default ShellWrapper

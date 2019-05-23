@@ -7,6 +7,7 @@ import Layout from "../components/Layout"
 import { palette, breakpoints, spacings } from "../utils/variables"
 import contentList from "./content.json"
 import ShellWrapper from '../components/ShellWrapper'
+import SectionHeading from '../components/SectionHeading'
 
 // First we organize all content with category of tutorial
 const tutorials = contentList.filter(
@@ -63,7 +64,7 @@ const TutorialIndex = ({ location }) => {
           <Main>
             {Object.keys(organizedTutorials).map(category => (
               <TutorialGroup id={slugify(category.toLowerCase())} key={category}>
-                <TutorialHeading>{category}</TutorialHeading>
+                <SectionHeading>{category}</SectionHeading>
                 {
                   organizedTutorials[category].map(item => (
                     <TutorialItem
@@ -173,11 +174,6 @@ const TutorialGroup = styled.div`
   & + & {
     margin-top: 60px;
   }
-`
-
-const TutorialHeading = styled.h2`
-  border-bottom: 1px solid ${palette.grey};
-  padding-bottom: 30px;
 `
 
 const TutorialItem = styled.a`
