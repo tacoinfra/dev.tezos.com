@@ -123,15 +123,12 @@ const FlexWrapper = styled.div`
 const Sidebar = styled(ShellWrapper)`
   background-color: ${palette.lightGrey};
   margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   @media (min-width: ${breakpoints.mobile}) {
     position: sticky;
     top: -28px;
     margin-bottom: 0;
     padding-top: 68px;
-    padding-bottom: 40px;
     width: 350px;
   }
 `
@@ -161,12 +158,9 @@ const SidebarList = styled.ul`
 
 const Main = styled(ShellWrapper)`
   background-color: ${palette.white};
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   @media (min-width: ${breakpoints.mobile}) {
     padding-top: 68px;
-    padding-bottom: 40px;
   }
 `
 

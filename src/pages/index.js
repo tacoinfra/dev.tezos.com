@@ -312,17 +312,11 @@ const StyledInput = styled.input`
 
 /* Content components */
 const Wrapper = styled(ShellWrapper)`
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   & > * + * {
     margin-top: 60px;
   }
 
   @media (min-width: ${breakpoints.mobile}) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
     & > * + * {
       margin-top: 80px;
     }
