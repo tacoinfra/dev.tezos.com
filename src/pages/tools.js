@@ -1,10 +1,9 @@
 import React from "react"
-import styled from "@emotion/styled"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import { palette, spacings, breakpoints } from "../utils/variables"
-import LibrariesIcon from "../assets/libraries.svg";
-import ToolsIcon from "../assets/tools.svg"
+import ShellWrapper from "../components/ShellWrapper"
+import PostList from "../components/PostList"
+import PostListGroup from "../components/PostListGroup"
 import contentList from "./content.json"
 
 const DevToolsPage = ({ location }) => {
@@ -13,115 +12,80 @@ const DevToolsPage = ({ location }) => {
   return (
     <Layout location={location} title="Dev Tools" compact>
       <SEO title="Resources" />
-      <Wrapper>
-        <PostsSection id="posts">
-          <PostColumn>
-            <PostHeader icon={<LibrariesIcon />}>Libraries</PostHeader>
-            <PostList>
-              {libraries.map(library => (
-                <li key={library.title}>
-                  <a href={library.link}>{library.title}</a>
-                </li>
-              ))}
-            </PostList>
-          </PostColumn>
-          <PostColumn>
-            <PostHeader icon={<ToolsIcon />}>Tools</PostHeader>
-            <PostList>
-              {tools.map(tool => (
-                <li key={tool.title}>
-                  <a href={tool.link}>{tool.title}</a>
-                </li>
-              ))}
-            </PostList>
-          </PostColumn>
-        </PostsSection>
-      </Wrapper>
+      <ShellWrapper>
+        <PostListGroup columns={3}>
+          <PostList title={<h3>Languages</h3>}>
+            <ul>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+            </ul>
+          </PostList>
+
+          <PostList title={<h3>Libraries</h3>}>
+            <ul>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+            </ul>
+          </PostList>
+
+          <PostList title={<h3>Tools</h3>}>
+            <ul>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+              <li>
+                <p><a href="#/">How to get Tezos</a></p>
+                <p>Minim non dolor ipsum aute proident.</p>
+              </li>
+            </ul>
+          </PostList>
+        </PostListGroup>
+      </ShellWrapper>
     </Layout>
   )
 }
 
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: ${palette.white};
-  max-width: calc(${spacings.maxWidth} * 0.9);
-  padding: 16px;
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 100%;
-  }
-`
-
-// POSTS Components and Styles
-const PostHeader = ({ icon, children }) => (
-  <PostHeaderElement>
-    {icon}
-    {children}
-  </PostHeaderElement>
-)
-
-const PostHeaderElement = styled.h2`
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  > * {
-    &:first-of-type {
-      margin-right: 24px;
-    }
-  }
-`
-
-const PostsSection = styled.section`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: ${spacings.maxWidth};
-  margin-top: 100px;
-  margin-bottom: 142px;
-  width: 100%;
-  @media (max-width: 1100px) {
-    padding: 8px;
-  }
-`
-
-const PostList = styled.ul`
-  list-style-type: none;
-  margin: 0;
-  width: 100%;
-  li:last-of-type {
-    margin-bottom: 64px;
-  }
-  li a {
-    font-weight: 300;
-    letter-spacing: 1.04px;
-    line-height: 34px;
-    font-size: 24px;
-    color: ${palette.blue};
-    display: block;
-    padding: 0.45rem;
-    border-bottom: 1px solid ${palette.grey};
-    text-decoration: none;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-`
-
-const PostColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 498px;
-  width: 100%;
-`
 
 
 export default DevToolsPage
