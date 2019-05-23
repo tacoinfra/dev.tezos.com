@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import slugify from 'slugify'
+import Scrollspy from 'react-scrollspy'
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import { palette, breakpoints, spacings } from "../utils/variables"
@@ -37,6 +38,11 @@ const organizedTutorials = subcategories.reduce(
   {}
 )
 
+// gather category slus for scrollspu
+const categorySlugs =
+  Object.keys(organizedTutorials)
+    .map(category => slugify(category.toLowerCase()))
+
 const TutorialIndex = ({ location }) => {
   return (
     <Layout location={location} title="Tutorials" compact>
@@ -45,13 +51,13 @@ const TutorialIndex = ({ location }) => {
       <Wrapper>
         <FlexWrapper>
           <Sidebar>
-            <SidebarList>
+            <Scrollspy items={categorySlugs} currentClassName={'is-current'} componentTag={SidebarList}>
               {Object.keys(organizedTutorials).map(category => (
                 <li key={category}>
                   <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
                 </li>
               ))}
-            </SidebarList>
+            </Scrollspy>
           </Sidebar>
 
           <Main>
@@ -136,6 +142,10 @@ const SidebarList = styled.ul`
 
     & + li {
       margin-top: 20px;
+    }
+
+    &.is-current a {
+      color: ${palette.blue};
     }
   }
 
