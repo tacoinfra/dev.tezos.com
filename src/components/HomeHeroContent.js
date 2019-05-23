@@ -17,12 +17,12 @@ const HomeHeroContent = () => (
       <li><CircleIcon href="#"><StackExtangeLogo /></CircleIcon></li>
     </SocialLinks>
 
-    <MailSignup>
+    <MailSignup action="#">
       <label htmlFor="email">
         <CircleIcon><EmailSvg /></CircleIcon>
         <span>Developer Mailing List</span>
       </label>
-      <TextInput id="email" name="email" placeholder="Email"></TextInput>
+      <TextInput id="email" name="email" type="email" placeholder="Email"></TextInput>
       <ButtonAnchor type="submit" isSmall isSecondary>Submit</ButtonAnchor>
     </MailSignup>
   </Container>
