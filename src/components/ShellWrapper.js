@@ -3,7 +3,8 @@ import { breakpoints, spacings } from "../utils/variables";
 
 export default styled.div`
   max-width: ${spacings.maxWidth};
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
