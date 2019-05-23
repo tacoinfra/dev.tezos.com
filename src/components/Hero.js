@@ -73,9 +73,11 @@ const HeroContentWrapper = styled(ShellWrapper)`
   color: ${palette.white};
   position: relative;
   z-index: 2;
+  padding-top: 0;
+  padding-bottom: 0;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding-left: 360px;
+    padding: 0 0 0 360px;
   }
 `
 
