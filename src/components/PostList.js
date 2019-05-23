@@ -13,7 +13,7 @@ const PostList = ({
       <HeaderTitle>{title}</HeaderTitle>
       { link && (
         <HeaderLink>
-          <a href={link}>View all <ArrowSvg /></a>
+          <a href={link}><span>View all</span> <ArrowSvg /></a>
         </HeaderLink>
       ) }
     </Header>
@@ -23,14 +23,69 @@ const PostList = ({
   </Container>
 )
 
-const Container = styled.div``
+const Container = styled.div`
+`
 
 const Header = styled.header`
+  display: flex;
   border-bottom: 3px solid ${palette.blue};
+  padding-bottom: 20px;
+  width: 100%;
 `
-const HeaderTitle = styled.div``
-const HeaderLink = styled.div``
+const HeaderTitle = styled.div`
+  flex-grow: 1;
 
-const Content = styled.div``
+  h3 {
+    margin-bottom: 0;
+  }
+`
+
+const HeaderLink = styled.div`
+  span {
+    margin-right: 5px;
+  }
+
+  svg {
+    position: relative;
+    top: 2px;
+  }
+
+  a:hover {
+    span {
+      text-decoration: underline;
+    }
+  }
+`
+
+const Content = styled.div`
+  margin-top: 20px;
+
+  & > * + * {
+    margin-top: 10px;
+  }
+
+  h4 {
+    margin-top: 25px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  li {
+    padding-bottom: 15px;
+    border-bottom: 1px solid ${palette.grey};
+
+    p {
+      margin: 0;
+    }
+  }
+`
 
 export default PostList
