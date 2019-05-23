@@ -14,10 +14,6 @@ const navigationListItems = [
     title: "Dev Tools",
     href: "/tools",
   },
-  {
-    title: "Community",
-    href: "/#community",
-  },
 ]
 
 const Header = () => (
