@@ -30,7 +30,7 @@ const SiteIndex = ({ location }) => {
 
           <PostListGroup columns={4}>
             <PostList title={<NumberTitle number={1}>Starting up a node on Tezos</NumberTitle>}>
-              <p>Learn how to install the Tezos binaries, Master the command-line interface, and start exploring the blockchain.</p>
+              <p><small>Learn how to install the Tezos binaries, Master the command-line interface, and start exploring the blockchain.</small></p>
 
               <h4>Tutorial</h4>
 
@@ -44,7 +44,7 @@ const SiteIndex = ({ location }) => {
             </PostList>
 
             <PostList title={<NumberTitle number={2}>Learning a smart-contract language</NumberTitle>}>
-              <p>Learn about Michelson, the smart-contract language of Tezos. Choose one of the high-level languages to program in, or program in Michelson directly.</p>
+              <p><small>Learn about Michelson, the smart-contract language of Tezos. Choose one of the high-level languages to program in, or program in Michelson directly.</small></p>
 
               <h4>Tutorial</h4>
               <ul>
@@ -62,7 +62,7 @@ const SiteIndex = ({ location }) => {
             </PostList>
 
             <PostList title={<NumberTitle number={3}>Deploying transactions to the testnet and mainnet</NumberTitle>}>
-              <p>Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.</p>
+              <p><small>Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.</small></p>
 
               <h4>Tutorial</h4>
               <ul>
@@ -80,7 +80,7 @@ const SiteIndex = ({ location }) => {
             </PostList>
 
             <PostList title={<NumberTitle number={4}>Interacting with your contract through your node</NumberTitle>}>
-              <p>Retrieve information about your contracts. Learn to query your node for information. Build applications, websites, and more!</p>
+              <p><small>Retrieve information about your contracts. Learn to query your node for information. Build applications, websites, and more!</small></p>
 
               <h4>Tutorial</h4>
               <ul>
@@ -107,15 +107,15 @@ const SiteIndex = ({ location }) => {
               <ul>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
               </ul>
             </PostList>
@@ -124,15 +124,15 @@ const SiteIndex = ({ location }) => {
               <ul>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
               </ul>
             </PostList>
@@ -141,15 +141,15 @@ const SiteIndex = ({ location }) => {
               <ul>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
                 <li>
                   <p><a href="#/">How to get Tezos</a></p>
-                  <p>Minim non dolor ipsum aute proident.</p>
+                  <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
               </ul>
             </PostList>

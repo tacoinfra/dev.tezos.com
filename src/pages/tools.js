@@ -18,15 +18,15 @@ const DevToolsPage = ({ location }) => {
             <ul>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
             </ul>
           </PostList>
@@ -35,27 +35,27 @@ const DevToolsPage = ({ location }) => {
             <ul>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
             </ul>
           </PostList>
@@ -64,19 +64,19 @@ const DevToolsPage = ({ location }) => {
             <ul>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
               <li>
                 <p><a href="#/">How to get Tezos</a></p>
-                <p>Minim non dolor ipsum aute proident.</p>
+                <p><small>Minim non dolor ipsum aute proident.</small></p>
               </li>
             </ul>
           </PostList>
