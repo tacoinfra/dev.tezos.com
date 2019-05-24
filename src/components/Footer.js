@@ -2,9 +2,9 @@ import React from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { palette, breakpoints, spacings } from "../utils/variables"
-import RiotIcon from "../assets/riot.svg"
-import GitlabIcon from "../assets/gitlab.svg"
-import TwitterIcon from "../assets/twitter.svg"
+import RiotIcon from "../assets/social-riot.svg"
+import GitlabIcon from "../assets/social-gitlab.svg"
+import TwitterIcon from "../assets/social-twitter.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
