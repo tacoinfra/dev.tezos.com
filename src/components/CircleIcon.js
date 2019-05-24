@@ -6,28 +6,30 @@ const CircleIcon = styled.div`
   background-color: ${palette.blue};
   border-radius: 100px;
   display: inline-block;
-  flex: 0 0 44px;
-  height: 44px;
+  flex: 0 0 40px;
+  height: 40px;
   position: relative;
   vertical-align: middle;
-  width: 44px;
+  width: 40px;
 
   svg,
+  img,
   span {
     position: absolute;
-    top: 10px;
+    top: 7px;
     left: 0;
     right: 0;
     text-align: center;
     color: ${palette.white};
   }
 
+  img,
   svg {
-    height: 90%;
-    left: 5%;
+    height: 100%;
+    left: 0;
     margin-top: 0;
-    top: 5%;
-    width: 90%;
+    top: 0;
+    width: 100%;
   }
 `
 
