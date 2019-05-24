@@ -8,13 +8,14 @@ import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
 import SectionHeading from "../components/SectionHeading"
 import HomeHeroContent from "../components/HomeHeroContent"
+import { palette, breakpoints } from "../utils/variables"
 import contentList from "./content.json"
-import { palette, breakpoints, spacings } from "../utils/variables"
+import { getTutorials, getTools } from "../lib/contentHelpers"
+
+const tutorials = getTutorials(contentList)
+const tools = getTools(contentList)
 
 const SiteIndex = ({ location }) => {
-  const tutorials = contentList.filter(post => post.category === "tutorial")
-  const tools = contentList.filter(post => post.category === "tool")
-
   return (
     <Layout
       location={location}
@@ -202,32 +203,7 @@ const SiteIndex = ({ location }) => {
             </PostList>
           </PostListGroup>
         </Section>
-
       </Wrapper>
-
-
-      {/* <PostsSection id="posts">
-        <PostColumn>
-          <PostHeader>Tutorials</PostHeader>
-          <PostList>
-            {tutorials.map(tutorial => (
-              <li key={tutorial.title}>
-                <a href={tutorial.link}>{tutorial.title}</a>
-              </li>
-            ))}
-          </PostList>
-        </PostColumn>
-        <PostColumn>
-          <PostHeader>Dev Tools</PostHeader>
-          <PostList>
-            {tools.map(tool => (
-              <li key={tool.title}>
-                <a href={tool.link}>{tool.title}</a>
-              </li>
-            ))}
-          </PostList>
-        </PostColumn>
-      </PostsSection> */}
     </Layout>
   )
 }

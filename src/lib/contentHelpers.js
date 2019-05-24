@@ -8,11 +8,13 @@ export const getTools = contentList => (
   contentList.filter(post => post.category === "tool")
 )
 
+export const getTutorials = contentList => (
+  contentList.filter(post => post.category === "tutorial")
+)
+
 export const getOrganizedTutorials = contentList => {
   // First we organize all content with category of tutorial
-  const tutorials = contentList.filter(
-    content => content.category === "tutorial"
-  )
+  const tutorials = getTutorials(contentList)
 
   // Second we grab an array of all the different subcategories
   const subcategories = tutorials
