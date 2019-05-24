@@ -29,21 +29,14 @@ const HeroContainer = styled.div`
   background-color: ${palette.darkBlue};
   display: flex;
   min-height: ${props => props.compact ? '300px' : '580px'};
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 50px;
   position: relative;
   width: 100%;
   z-index: 0;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 50%;
-    bottom: 0;
-    background-color: #1A4D98; /* one off color from svg bg */
-    z-index: 0;
+  @media (min-width: ${breakpoints.tablet}) {
+    padding-top: 100px;
   }
 `
 
@@ -75,8 +68,14 @@ const HeroContentWrapper = styled(ShellWrapper)`
   z-index: 2;
   padding-top: 0;
   padding-bottom: 0;
+  text-align: center;
 
-  @media (min-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.mobile}) {
+    padding: 0 0 0 15vw;
+    text-align: left;
+  }
+
+  @media (min-width: ${breakpoints.full}) {
     padding: 0 0 0 360px;
   }
 `
