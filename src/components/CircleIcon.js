@@ -12,13 +12,14 @@ const CircleIcon = styled.div`
   vertical-align: middle;
   width: 40px;
 
-  svg,
-  img,
-  span {
-    position: absolute;
-    top: 7px;
+  & > * {
     left: 0;
-    right: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  span {
+    top: 7px;
     text-align: center;
     color: ${palette.white};
   }
@@ -26,10 +27,7 @@ const CircleIcon = styled.div`
   img,
   svg {
     height: 100%;
-    left: 0;
-    margin-top: 0;
     top: 0;
-    width: 100%;
   }
 `
 
