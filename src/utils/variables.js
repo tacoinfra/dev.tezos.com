@@ -12,6 +12,7 @@ export const palette = {
 }
 
 export const breakpoints = {
+  full: '1440px',
   tablet: "1140px",
   mobile: "768px"
 };
