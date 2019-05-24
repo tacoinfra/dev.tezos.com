@@ -39,6 +39,11 @@ const globalRules = css`
     font-size: 16px;
     line-height: 29px;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
   h1, h2, h3 {
     color: ${palette.darkBlue};
@@ -62,6 +67,10 @@ const globalRules = css`
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
+  }
+  small {
+    font-size: 14px;
+    line-height: 26px;
   }
 `
 

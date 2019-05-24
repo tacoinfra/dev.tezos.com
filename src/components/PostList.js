@@ -50,9 +50,14 @@ const HeaderLink = styled.div`
     top: 2px;
   }
 
-  a:hover {
-    span {
-      text-decoration: underline;
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      span {
+        text-decoration: underline;
+      }
     }
   }
 `
@@ -66,11 +71,6 @@ const Content = styled.div`
 
   h4 {
     margin-top: 25px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 24px;
   }
 
   ul {
