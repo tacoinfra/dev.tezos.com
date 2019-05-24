@@ -33,8 +33,8 @@ const Header = () => (
             {item.title}
           </NavigationLink>
         ))}
-        <ButtonAnchor isSmall isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
-        <ButtonAnchor isSmall href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
+        <ButtonAnchor isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
+        <ButtonAnchor href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -69,6 +69,11 @@ const NavigationList = styled.div`
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
+
+  & > * + * {
+    margin-left: 32px;
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     display: none;
   }
@@ -82,7 +87,6 @@ const NavigationLink = styled(Link)`
   line-height: 16px;
   color: ${palette.white};
   text-transform: uppercase;
-  margin-right: 31.75px;
   white-space: nowrap;
   &:hover {
     opacity: 0.8;
