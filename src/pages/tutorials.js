@@ -4,9 +4,9 @@ import slugify from "slugify"
 import Scrollspy from "react-scrollspy"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
-import { palette, breakpoints, spacings } from "../utils/variables"
-import ShellWrapper from "../components/ShellWrapper"
+import SplitWrapper from "../components/SplitWrapper"
 import SectionHeading from "../components/SectionHeading"
+import { palette, breakpoints } from "../utils/variables"
 import contentList from "./content.json"
 import { getOrganizedTutorials, getCategorySlugs } from "../lib/contentHelpers"
 
@@ -18,88 +18,42 @@ const TutorialIndex = ({ location }) => {
     <Layout location={location} title="Tutorials" compact>
       <SEO title="All posts" />
 
-      <Wrapper>
-        <FlexWrapper>
-          <Sidebar>
-            <Scrollspy items={categorySlugs} currentClassName={'is-current'} componentTag={SidebarList}>
-              {Object.keys(organizedTutorials).map(category => (
-                <li key={category}>
-                  <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
-                </li>
-              ))}
-            </Scrollspy>
-          </Sidebar>
-
-          <Main>
+      <SplitWrapper>
+        <SplitWrapper.Sidebar>
+          <Scrollspy items={categorySlugs} currentClassName={'is-current'} componentTag={SidebarList}>
             {Object.keys(organizedTutorials).map(category => (
-              <TutorialGroup id={slugify(category.toLowerCase())} key={category}>
-                <SectionHeading>{category}</SectionHeading>
-                {
-                  organizedTutorials[category].map(item => (
-                    <TutorialItem
-                      key={item.slug}
-                      href={item.link}
-                    >
-                      <h3>{item.title}</h3>
-                      <TutorialAuthor>{item.author}</TutorialAuthor>
-                      {item.description.length > 0 && (
-                        <TutorialDescription>{item.description}</TutorialDescription>
-                      )}
-                    </TutorialItem>
-                  ))
-                }
-              </TutorialGroup>
+              <li key={category}>
+                <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
+              </li>
             ))}
-          </Main>
-        </FlexWrapper>
-      </Wrapper>
+          </Scrollspy>
+        </SplitWrapper.Sidebar>
+
+        <SplitWrapper.Main>
+          {Object.keys(organizedTutorials).map(category => (
+            <TutorialGroup id={slugify(category.toLowerCase())} key={category}>
+              <SectionHeading>{category}</SectionHeading>
+              {
+                organizedTutorials[category].map(item => (
+                  <TutorialItem
+                    key={item.slug}
+                    href={item.link}
+                  >
+                    <h3>{item.title}</h3>
+                    <TutorialAuthor>{item.author}</TutorialAuthor>
+                    {item.description.length > 0 && (
+                      <TutorialDescription>{item.description}</TutorialDescription>
+                    )}
+                  </TutorialItem>
+                ))
+              }
+            </TutorialGroup>
+          ))}
+        </SplitWrapper.Main>
+      </SplitWrapper>
     </Layout>
   )
 }
-
-const Wrapper = styled.div`
-  position: relative;
-
-  @media (min-width: ${breakpoints.mobile}) {
-    &::before {
-      content: '';
-      position: absolute;
-      background-color: ${palette.lightGrey};
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 50%;
-      z-index: 0;
-    }
-  }
-`
-
-const FlexWrapper = styled.div`
-  align-items: flex-start;
-  display: flex;
-  flex-flow: column nowrap;
-  margin: auto;
-  max-width: ${spacings.maxWidth};
-  position: relative;
-  width: 100%;
-  z-index: 1;
-
-  @media (min-width: ${breakpoints.mobile}) {
-    flex-flow: row nowrap;
-  }
-`
-
-const Sidebar = styled(ShellWrapper)`
-  background-color: ${palette.lightGrey};
-  margin-bottom: 20px;
-
-  @media (min-width: ${breakpoints.mobile}) {
-    position: sticky;
-    top: -28px;
-    margin-bottom: 0;
-    width: 350px;
-  }
-`
 
 const SidebarList = styled.ul`
   list-style: none;
@@ -122,10 +76,6 @@ const SidebarList = styled.ul`
     font-size: 20px;
     font-weight: 400;
   }
-`
-
-const Main = styled(ShellWrapper)`
-  background-color: ${palette.white};
 `
 
 const TutorialGroup = styled.div`
