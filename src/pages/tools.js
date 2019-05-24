@@ -5,10 +5,12 @@ import ShellWrapper from "../components/ShellWrapper"
 import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
 import contentList from "./content.json"
+import { getLibraries, getTools } from "../lib/contentHelpers"
+
+const libraries = getLibraries(contentList)
+const tools = getTools(contentList)
 
 const DevToolsPage = ({ location }) => {
-  const libraries = contentList.filter(post => post.category === "library")
-  const tools = contentList.filter(post => post.category === "tool")
   return (
     <Layout location={location} title="Dev Tools" compact>
       <SEO title="Resources" />
