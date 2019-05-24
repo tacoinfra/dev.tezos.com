@@ -71,7 +71,7 @@ const HeroContentWrapper = styled(ShellWrapper)`
   text-align: center;
 
   @media (min-width: ${breakpoints.mobile}) {
-    padding: 0 0 0 15vw;
+    padding: 0 10vw 0 15vw;
     text-align: left;
   }
 

@@ -62,8 +62,8 @@ const SocialLinks = styled.ul`
 const Rule = styled.hr`
   background-color: rgba(255, 255, 255, 0.2);
   height: 1px;
-  margin: 40px auto 30px;
-  width: 100px;
+  margin: 40px auto;
+  width: 100%;
 
   @media (min-width: ${breakpoints.mobile}) {
     margin-left: 0;
@@ -96,22 +96,21 @@ const MailSignup = styled.form`
     max-width: 400px;
   }
 
-  @media (min-width: ${breakpoints.tablet}) {
-    border-top: none;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: 40px;
-    padding-left: 40px;
-  }
-
   @media (min-width: ${breakpoints.mobile}) {
     align-items: center;
     flex-flow: row nowrap;
-    padding-right: 40px;
     max-width: 100%;
 
     input {
       margin: 2px 20px 0;
     }
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 40px;
+    padding-left: 40px;
   }
 `
 
