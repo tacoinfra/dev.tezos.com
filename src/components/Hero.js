@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { palette, breakpoints, spacings } from "../utils/variables";
 // NOTE: For some reason, Gatsby doesn't like SVG's as background images in styled components, so I had to code this kind of oddly
 // NOTE: I opted to use an SVG because of the Quality and Performance benefits. If it becomes a hassle, I've included a JPG and PNG in assets you can switch it for
-import HeroBackground from "../assets/hero_background.svg";
+import HeroBackground from "../assets/hero-background.svg";
 import ShellWrapper from './ShellWrapper';
 
 const Hero = ({

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import ButtonAnchor from "./ButtonAnchor"
 import { palette, breakpoints, spacings } from "../utils/variables"
-import TezosLogo from "../assets/tezos_logo.svg"
+import TezosLogo from "../assets/tezos-logo.svg"
 
 const navigationListItems = [
   {
