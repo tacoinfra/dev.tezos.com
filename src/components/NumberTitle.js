@@ -20,6 +20,7 @@ const Container = styled.div`
 const Heading = styled.h3`
   font-size: 20px;
   flex-grow: 1;
+  margin-left: 12px;
 `
 
 export default NumberTitle

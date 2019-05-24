@@ -8,7 +8,6 @@ const CircleIcon = styled.div`
   display: inline-block;
   flex: 0 0 44px;
   height: 44px;
-  margin-right: 12px;
   position: relative;
   vertical-align: middle;
   width: 44px;
