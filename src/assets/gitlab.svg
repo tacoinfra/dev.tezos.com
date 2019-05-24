@@ -1,4 +1,4 @@
-<svg style="background-color:#fff;border-radius:50%" height="33" width="33" id="logo_art" data-name="logo art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559">
+<svg style="background-color:#fff;border-radius:50%" height="33" width="33" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586 559">
   <defs>
     <style>
       .cls-1{fill:#fc6d26}.cls-2{fill:#e24329}.cls-3{fill:#fca326}
@@ -7,28 +7,14 @@
       <feColorMatrix values="0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 1 0"/>
     </filter>
   </defs>
-  <g id="g44" filter="url(#linear)">
-    <path id="path46" class="cls-1" d="M461.17 301.83l-18.91-58.12-37.42-115.28a6.47 6.47 0 0 0-12.27 0l-37.42 115.21H230.82L193.4 128.43a6.46 6.46 0 0 0-12.26 0l-37.36 115.21-18.91 58.19a12.88 12.88 0 0 0 4.66 14.39L293 435l163.44-118.78a12.9 12.9 0 0 0 4.73-14.39"/>
-  </g>
-  <g id="g48" filter="url(#linear)">
-    <path id="path50" class="cls-2" d="M293 434.91l62.16-191.28H230.87L293 434.91z"/>
-  </g>
-  <g id="g56" filter="url(#linear)">
-    <path id="path58" class="cls-1" d="M293 434.91l-62.18-191.28h-87L293 434.91z"/>
-  </g>
-  <g id="g64" filter="url(#linear)">
-    <path id="path66" class="cls-3" d="M143.75 243.69l-18.91 58.12a12.88 12.88 0 0 0 4.66 14.39L293 435 143.75 243.69z"/>
-  </g>
-  <g id="g72" filter="url(#linear)">
-    <path id="path74" class="cls-2" d="M143.78 243.69h87.11l-37.49-115.2a6.47 6.47 0 0 0-12.27 0l-37.35 115.2z"/>
-  </g>
-  <g id="g76" filter="url(#linear)">
-    <path id="path78" class="cls-1" d="M293 434.91l62.16-191.28h87.14L293 434.91z"/>
-  </g>
-  <g id="g80" filter="url(#linear)">
-    <path id="path82" class="cls-3" d="M442.24 243.69l18.91 58.12a12.85 12.85 0 0 1-4.66 14.39L293 434.91l149.2-191.22z"/>
-  </g>
-  <g id="g84" filter="url(#linear)">
-    <path id="path86" class="cls-2" d="M442.28 243.69h-87.1l37.42-115.2a6.46 6.46 0 0 1 12.26 0l37.42 115.2z"/>
+  <g filter="url(#linear)">
+    <path class="cls-1" d="M461.17 301.83l-18.91-58.12-37.42-115.28a6.47 6.47 0 0 0-12.27 0l-37.42 115.21H230.82L193.4 128.43a6.46 6.46 0 0 0-12.26 0l-37.36 115.21-18.91 58.19a12.88 12.88 0 0 0 4.66 14.39L293 435l163.44-118.78a12.9 12.9 0 0 0 4.73-14.39"/>
+    <path class="cls-2" d="M293 434.91l62.16-191.28H230.87L293 434.91z"/>
+    <path class="cls-1" d="M293 434.91l-62.18-191.28h-87L293 434.91z"/>
+    <path class="cls-3" d="M143.75 243.69l-18.91 58.12a12.88 12.88 0 0 0 4.66 14.39L293 435 143.75 243.69z"/>
+    <path class="cls-2" d="M143.78 243.69h87.11l-37.49-115.2a6.47 6.47 0 0 0-12.27 0l-37.35 115.2z"/>
+    <path class="cls-1" d="M293 434.91l62.16-191.28h87.14L293 434.91z"/>
+    <path class="cls-3" d="M442.24 243.69l18.91 58.12a12.85 12.85 0 0 1-4.66 14.39L293 434.91l149.2-191.22z"/>
+    <path class="cls-2" d="M442.28 243.69h-87.1l37.42-115.2a6.46 6.46 0 0 1 12.26 0l37.42 115.2z"/>
   </g>
 </svg>
