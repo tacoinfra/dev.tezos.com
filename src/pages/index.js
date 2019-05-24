@@ -101,6 +101,53 @@ const SiteIndex = ({ location }) => {
         </CalloutGroup>
 
         <Section>
+          <SectionHeading centered>Additional Tutorials</SectionHeading>
+
+          <PostListGroup columns={4}>
+            <PostList title={<h3>Baking</h3>} link="/tutorials">
+              <ul>
+                <li><a href="#/">Enim ea veniam laborum magna quis veniam occaecat sunt aliquip.</a></li>
+                <li><a href="#/">Magna veniam consequat dolore ad officia.</a></li>
+                <li><a href="#/">Nulla mollit eiusmod eu aliquip aliquip ex anim.</a></li>
+                <li><a href="#/">Fugiat ad id nostrud amet anim anim.</a></li>
+                <li><a href="#/">Nostrud pariatur sunt amet qui cupidatat.</a></li>
+                <li><a href="#/">Ea cupidatat minim quis ad esse.</a></li>
+              </ul>
+            </PostList>
+
+            <PostList title={<h3>Ledger</h3>} link="/tutorials">
+              <ul>
+                <li><a href="#/">Est ullamco excepteur magna ad voluptate.</a></li>
+                <li><a href="#/">Non id est veniam dolor excepteur excepteur.</a></li>
+                <li><a href="#/">Esse ex dolore occaecat tempor dolo.</a></li>
+                <li><a href="#/">Culpa enim minim in incididunt ad sit.</a></li>
+                <li><a href="#/">Anim enim quis esse qui ut deserunt.</a></li>
+              </ul>
+            </PostList>
+
+            <PostList title={<h3>Hardware Wallets</h3>} link="/tutorials">
+              <ul>
+                <li><a href="#/">Minim consequat nisi adipisicing consequat officia deserunt anim.</a></li>
+                <li><a href="#/">Pariatur consequat commodo aute laborum fugiat fugiat ad magna duis eu ullamco pariatur et aute.</a></li>
+                <li><a href="#/">Ipsum est proident officia id dolore aute est occaecat veniam ad consequat consectetur.</a></li>
+                <li><a href="#/">Eu ex irure eiusmod qui.</a></li>
+                <li><a href="#/">Tempor excepteur eu eu mollit nostrud est ex aliqua dolore.</a></li>
+              </ul>
+            </PostList>
+
+            <PostList title={<h3>DApp</h3>} link="/tutorials">
+              <ul>
+                <li><a href="#/">Dolor magna laborum pariatur irure incididunt ex.</a></li>
+                <li><a href="#/">Anim labore adipisicing eu deserunt.</a></li>
+                <li><a href="#/">Ex mollit irure eiusmod eiusmod.</a></li>
+                <li><a href="#/">Excepteur ea sunt eiusmod proident Lorem Lorem aute qui pariatur tempor excepteur.</a></li>
+                <li><a href="#/">Ut et adipisicing est id elit.</a></li>
+              </ul>
+            </PostList>
+          </PostListGroup>
+        </Section>
+
+        <Section>
           <SectionHeading centered>Dev Tools</SectionHeading>
 
           <PostListGroup columns={3}>
@@ -152,53 +199,6 @@ const SiteIndex = ({ location }) => {
                   <p><a href="#/">How to get Tezos</a></p>
                   <p><small>Minim non dolor ipsum aute proident.</small></p>
                 </li>
-              </ul>
-            </PostList>
-          </PostListGroup>
-        </Section>
-
-        <Section>
-          <SectionHeading centered>Additional Tutorials</SectionHeading>
-
-          <PostListGroup columns={4}>
-            <PostList title={<h3>Baking</h3>} link="/tutorials">
-              <ul>
-                <li><a href="#/">Enim ea veniam laborum magna quis veniam occaecat sunt aliquip.</a></li>
-                <li><a href="#/">Magna veniam consequat dolore ad officia.</a></li>
-                <li><a href="#/">Nulla mollit eiusmod eu aliquip aliquip ex anim.</a></li>
-                <li><a href="#/">Fugiat ad id nostrud amet anim anim.</a></li>
-                <li><a href="#/">Nostrud pariatur sunt amet qui cupidatat.</a></li>
-                <li><a href="#/">Ea cupidatat minim quis ad esse.</a></li>
-              </ul>
-            </PostList>
-
-            <PostList title={<h3>Ledger</h3>} link="/tutorials">
-              <ul>
-                <li><a href="#/">Est ullamco excepteur magna ad voluptate.</a></li>
-                <li><a href="#/">Non id est veniam dolor excepteur excepteur.</a></li>
-                <li><a href="#/">Esse ex dolore occaecat tempor dolo.</a></li>
-                <li><a href="#/">Culpa enim minim in incididunt ad sit.</a></li>
-                <li><a href="#/">Anim enim quis esse qui ut deserunt.</a></li>
-              </ul>
-            </PostList>
-
-            <PostList title={<h3>Hardware Wallets</h3>} link="/tutorials">
-              <ul>
-                <li><a href="#/">Minim consequat nisi adipisicing consequat officia deserunt anim.</a></li>
-                <li><a href="#/">Pariatur consequat commodo aute laborum fugiat fugiat ad magna duis eu ullamco pariatur et aute.</a></li>
-                <li><a href="#/">Ipsum est proident officia id dolore aute est occaecat veniam ad consequat consectetur.</a></li>
-                <li><a href="#/">Eu ex irure eiusmod qui.</a></li>
-                <li><a href="#/">Tempor excepteur eu eu mollit nostrud est ex aliqua dolore.</a></li>
-              </ul>
-            </PostList>
-
-            <PostList title={<h3>DApp</h3>} link="/tutorials">
-              <ul>
-                <li><a href="#/">Dolor magna laborum pariatur irure incididunt ex.</a></li>
-                <li><a href="#/">Anim labore adipisicing eu deserunt.</a></li>
-                <li><a href="#/">Ex mollit irure eiusmod eiusmod.</a></li>
-                <li><a href="#/">Excepteur ea sunt eiusmod proident Lorem Lorem aute qui pariatur tempor excepteur.</a></li>
-                <li><a href="#/">Ut et adipisicing est id elit.</a></li>
               </ul>
             </PostList>
           </PostListGroup>
