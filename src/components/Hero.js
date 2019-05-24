@@ -35,7 +35,7 @@ const HeroContainer = styled.div`
   width: 100%;
   z-index: 0;
 
-  @media (min-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.mobile}) {
     padding-top: 100px;
   }
 `

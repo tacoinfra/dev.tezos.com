@@ -5,19 +5,45 @@ import TextInput from "./TextInput"
 import CircleIcon from "./CircleIcon"
 import { breakpoints } from "../utils/variables"
 
+// images
+import redditIcon from "../assets/icon-reddit.png"
+import redditIcon2x from "../assets/icon-reddit@2x.png"
+import riotIcon from "../assets/icon-riot.png"
+import riotIcon2x from "../assets/icon-riot@2x.png"
+import stackexchangeIcon from "../assets/icon-stackexchange.png"
+import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
+import mailIcon from "../assets/icon-mail.png"
+import mailIcon2x from "../assets/icon-mail@2x.png"
+
+const srcSet = (src, src2x) => `${src}, 2x ${src2x}`
+
 const HomeHeroContent = () => (
   <Container>
     <SocialLinks>
-      <li><CircleIcon href="#"><img src="../assets/reddit_logo.svg" srcSet="" /></CircleIcon></li>
-      <li><CircleIcon href="#"><img src="../assets/riot.svg" srcSet="" /></CircleIcon></li>
-      <li><CircleIcon href="#"><img src="../assets/stackexchange_logo.svg" srcSet="" /></CircleIcon></li>
+      <li>
+        <CircleIcon href="#">
+          <img src={redditIcon2x} srcSet={srcSet(redditIcon, redditIcon2x)} />
+        </CircleIcon>
+      </li>
+      <li>
+        <CircleIcon href="#">
+          <img src={riotIcon2x} srcSet={srcSet(riotIcon, riotIcon2x)} />
+        </CircleIcon>
+      </li>
+      <li>
+        <CircleIcon href="#">
+          <img src={stackexchangeIcon2x} srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)} />
+        </CircleIcon>
+      </li>
     </SocialLinks>
 
     <Rule />
 
     <MailSignup action="#">
       <label htmlFor="email">
-        <CircleIcon><img src="../assets/mail.svg" srcSet="" /></CircleIcon>
+        <CircleIcon>
+          <img src={mailIcon2x} srcSet={srcSet(mailIcon, mailIcon2x)} />
+        </CircleIcon>
         <span>Developer Mailing List</span>
       </label>
       <TextInput id="email" name="email" type="email" placeholder="Email"></TextInput>
