@@ -22,17 +22,29 @@ const HomeHeroContent = () => (
     <SocialLinks>
       <li>
         <CircleIcon href="#">
-          <img src={redditIcon2x} srcSet={srcSet(redditIcon, redditIcon2x)} />
+          <img
+            src={redditIcon2x}
+            srcSet={srcSet(redditIcon, redditIcon2x)}
+            alt="Reddit"
+          />
         </CircleIcon>
       </li>
       <li>
         <CircleIcon href="#">
-          <img src={riotIcon2x} srcSet={srcSet(riotIcon, riotIcon2x)} />
+          <img
+            src={riotIcon2x}
+            srcSet={srcSet(riotIcon, riotIcon2x)}
+            alt="Riot"
+          />
         </CircleIcon>
       </li>
       <li>
         <CircleIcon href="#">
-          <img src={stackexchangeIcon2x} srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)} />
+          <img
+            src={stackexchangeIcon2x}
+            srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)}
+            alt="Stack Exchange"
+          />
         </CircleIcon>
       </li>
     </SocialLinks>
@@ -42,7 +54,11 @@ const HomeHeroContent = () => (
     <MailSignup action="#">
       <label htmlFor="email">
         <CircleIcon>
-          <img src={mailIcon2x} srcSet={srcSet(mailIcon, mailIcon2x)} />
+          <img
+            src={mailIcon2x}
+            srcSet={srcSet(mailIcon, mailIcon2x)}
+            alt="Email"
+          />
         </CircleIcon>
         <span>Developer Mailing List</span>
       </label>
