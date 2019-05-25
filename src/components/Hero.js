@@ -34,6 +34,7 @@ const HeroContainer = styled.div`
   position: relative;
   width: 100%;
   z-index: 0;
+  overflow: hidden;
 
   @media (min-width: ${breakpoints.mobile}) {
     padding-top: 100px;
@@ -45,19 +46,16 @@ const BackgroundImage = styled.div`
     position: absolute;
     top: 0;
     left: 50%;
-    width: 100%;
-    max-width: ${spacings.maxWidth};
-    margin-left: calc(${spacings.maxWidth} / -2 - 30px); /* pull left, plus "padding" */
-    height: 100%;
+    margin-left: calc(${spacings.maxWidth} * -1 - 600px);
     z-index: 1;
     -webkit-transform: translate3d(0,0,-1);
 
-    > g {
-      transform: ${({ compact }) => (
-        compact
-        ? "translate3d(0, -60px, 0)"
-        : "translate3d(0, 0px, 0)"
-      )};
+    @media (min-width: ${breakpoints.mobile}) {
+      margin-left: calc(${spacings.maxWidth} * -1 - 620px - 8vw);
+    }
+
+    @media (min-width: ${breakpoints.full}) {
+      margin-left: calc(${spacings.maxWidth} * -1 - 620px);
     }
   }
 `
@@ -71,6 +69,11 @@ const HeroContentWrapper = styled(ShellWrapper)`
   text-align: center;
 
   @media (min-width: ${breakpoints.mobile}) {
+    padding: 0 10vw 0 10vw;
+    text-align: left;
+  }
+
+  @media (min-width: 1280px) {
     padding: 0 10vw 0 15vw;
     text-align: left;
   }
