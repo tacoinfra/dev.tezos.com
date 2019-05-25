@@ -20,12 +20,18 @@ const TutorialIndex = ({ location }) => {
 
       <SplitWrapper>
         <SplitWrapper.Sidebar>
-          <Scrollspy items={categorySlugs} currentClassName={'is-current'} componentTag={SidebarList}>
-            {Object.keys(organizedTutorials).map(category => (
-              <li key={category}>
-                <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
-              </li>
-            ))}
+          <Scrollspy
+            items={categorySlugs}
+            currentClassName={'is-current'}
+            componentTag={'div'}
+          >
+            <SidebarList>
+              {Object.keys(organizedTutorials).map(category => (
+                <li key={category}>
+                  <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
+                </li>
+              ))}
+            </SidebarList>
           </Scrollspy>
         </SplitWrapper.Sidebar>
 
