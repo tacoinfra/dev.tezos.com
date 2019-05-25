@@ -54,7 +54,7 @@ const SiteIndex = ({ location }) => {
                 <li><a href="#/">How to get Tezos</a></li>
               </ul>
 
-              <h4>Dev Tools</h4>
+              <h4>Resources</h4>
               <ul>
                 <li><a href="#/">Morley / Lorenz</a></li>
                 <li><a href="#/">Ligo</a></li>
@@ -72,7 +72,7 @@ const SiteIndex = ({ location }) => {
                 <li><a href="#/">How to get Tezos</a></li>
               </ul>
 
-              <h4>Dev Tools</h4>
+              <h4>Resources</h4>
               <ul>
                 <li><a href="#/">Morley / Lorenz</a></li>
                 <li><a href="#/">Ligo</a></li>
@@ -90,7 +90,7 @@ const SiteIndex = ({ location }) => {
                 <li><a href="#/">How to get Tezos</a></li>
               </ul>
 
-              <h4>Dev Tools</h4>
+              <h4>Resources</h4>
               <ul>
                 <li><a href="#/">Morley / Lorenz</a></li>
                 <li><a href="#/">Ligo</a></li>
@@ -148,7 +148,7 @@ const SiteIndex = ({ location }) => {
         </Section>
 
         <Section>
-          <SectionHeading centered>Dev Tools</SectionHeading>
+          <SectionHeading centered>Resources</SectionHeading>
 
           <PostListGroup columns={3}>
             <PostList title={<h3>Languages</h3>} link="/tools">

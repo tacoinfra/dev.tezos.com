@@ -12,7 +12,7 @@ const tools = getTools(contentList)
 
 const DevToolsPage = ({ location }) => {
   return (
-    <Layout location={location} title="Dev Tools" compact>
+    <Layout location={location} title="Resources" compact>
       <SEO title="Resources" />
       <ShellWrapper>
         <PostListGroup columns={3}>
