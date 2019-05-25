@@ -15,7 +15,7 @@ import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
 import mailIcon from "../assets/icon-mail.png"
 import mailIcon2x from "../assets/icon-mail@2x.png"
 
-const srcSet = (src, src2x) => `${src}, 2x ${src2x}`
+const srcSet = (src, src2x) => `${src} 1x, ${src2x} 2x`
 
 const HomeHeroContent = () => (
   <Container>
