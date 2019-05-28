@@ -91,7 +91,6 @@ const gettingStarted = [
       }
     ]
   },
-
   {
     title: "Interacting with your contract through your code",
     description: "Retrieve information about your contracts. Learn to query your node for information. Build applications, websites, and more!",
@@ -180,7 +179,7 @@ const additionalTutorials = [
     ]
   },
   {
-    title: "Other Hardware Wallet",
+    title: "Hardware Wallets",
     link: "/tutorials",
     posts: [
       {
