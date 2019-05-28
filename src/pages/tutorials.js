@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "@emotion/styled"
 import Scrollspy from "react-scrollspy"
 import SEO from "../components/SEO"
@@ -11,6 +11,12 @@ import tutorialsContent from "../content/tutorials"
 const slugList = tutorialsContent.map(category => category.slug)
 
 const TutorialIndex = ({ location }) => {
+  const [activeScrollSpy, setActiveScrollSpy] = useState(null)
+
+  const handleScrollSpyUpdate = (el) => {
+    setActiveScrollSpy(el.getAttribute("id"))
+  }
+
   return (
     <Layout location={location} title="Tutorials" compact>
       <SEO title="Tutorials" />
@@ -19,13 +25,16 @@ const TutorialIndex = ({ location }) => {
         <SplitWrapper.Sidebar>
           <Scrollspy
             items={slugList}
-            currentClassName={'is-current'}
             componentTag={'div'}
+            onUpdate={handleScrollSpyUpdate}
           >
             <SidebarList>
               {
                 tutorialsContent.map(({ slug, title }) => (
-                  <li key={slug}>
+                  <li
+                    key={slug}
+                    className={activeScrollSpy === slug ? "is-current" : ""}
+                  >
                     <a href={`#${slug}`}>{title}</a>
                   </li>
                 ))
@@ -36,9 +45,15 @@ const TutorialIndex = ({ location }) => {
 
         <SplitWrapper.Main>
           {
-            tutorialsContent.map(({ slug, title, tutorials }) => (
+            tutorialsContent.map(({ slug, title, body, tutorials }) => (
               <TutorialGroup id={slug} key={slug}>
                 <SectionHeading>{title}</SectionHeading>
+                {
+                  body &&
+                  <TutorialBody
+                    dangerouslySetInnerHTML={{ __html: body }}
+                  />
+                }
                 {
                   tutorials.map(({ title, author, link, body }) => (
                     <TutorialItem
@@ -89,6 +104,12 @@ const SidebarList = styled.ul`
 const TutorialGroup = styled.div`
   & + & {
     margin-top: 60px;
+  }
+`
+
+const TutorialBody = styled.div`
+  a {
+    font-weight: 400;
   }
 `
 
