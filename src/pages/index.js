@@ -9,11 +9,7 @@ import PostListGroup from "../components/PostListGroup"
 import SectionHeading from "../components/SectionHeading"
 import HomeHeroContent from "../components/HomeHeroContent"
 import { palette, breakpoints } from "../utils/variables"
-import contentList from "./content.json"
-import { getTutorials, getTools } from "../lib/contentHelpers"
-
-const tutorials = getTutorials(contentList)
-const tools = getTools(contentList)
+import homepageContent from "../content/homepage"
 
 const SiteIndex = ({ location }) => {
   return (

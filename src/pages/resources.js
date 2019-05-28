@@ -4,11 +4,7 @@ import SEO from "../components/SEO"
 import ShellWrapper from "../components/ShellWrapper"
 import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
-import contentList from "./content.json"
-import { getLibraries, getTools } from "../lib/contentHelpers"
-
-const libraries = getLibraries(contentList)
-const tools = getTools(contentList)
+import resourcesContent from "../content/resources"
 
 const DevToolsPage = ({ location }) => {
   return (
