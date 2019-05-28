@@ -18,7 +18,7 @@ const Container = styled.div`
 `
 
 const Heading = styled.h3`
-  font-size: 20px;
+  font-size: 19px;
   flex-grow: 1;
   margin-left: 12px;
 `

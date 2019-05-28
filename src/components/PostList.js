@@ -63,7 +63,7 @@ const HeaderLink = styled.div`
 `
 
 const Content = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
 
   & > * + * {
     margin-top: 10px;
@@ -84,6 +84,10 @@ const Content = styled.div`
 
     p {
       margin: 0;
+
+      & + p {
+        margin-top: -4px;
+      }
     }
   }
 `

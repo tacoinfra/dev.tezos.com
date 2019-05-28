@@ -36,7 +36,6 @@ const globalRules = css`
   a {
     color: ${palette.blue};
     font-weight: 300;
-    font-size: 16px;
     line-height: 29px;
     text-decoration: none;
 
@@ -64,8 +63,8 @@ const globalRules = css`
     font-weight: 400;
   }
   h4 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
   }
   small {
