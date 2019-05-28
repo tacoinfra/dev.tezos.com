@@ -2,7 +2,7 @@ const languages = require("./src/utils/languages.js")
 
 module.exports = {
   siteMetadata: {
-    title: `Development Tutorials`,
+    title: `Tezos Developer Portal`,
     author: `An Author`,
     description: `A archive of various tutorials`,
     siteUrl: `http://localhost:8000/`,
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Development Tutorials`,
+        name: `Tezos Developer Portal`,
         short_name: `dev_tuts`,
         start_url: `/`,
         background_color: `#ffffff`,

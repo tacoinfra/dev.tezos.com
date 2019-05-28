@@ -16,7 +16,7 @@ const categorySlugs = getCategorySlugs(organizedTutorials)
 const TutorialIndex = ({ location }) => {
   return (
     <Layout location={location} title="Tutorials" compact>
-      <SEO title="All posts" />
+      <SEO title="Tutorials" />
 
       <SplitWrapper>
         <SplitWrapper.Sidebar>
