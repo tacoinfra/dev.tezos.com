@@ -20,7 +20,7 @@ const ResourcesPage = ({ location }) => {
                   {
                     posts.map(({ link, title, body }) => (
                       <li key={link}>
-                        <p><a href={link} target="_blank">{title}</a></p>
+                        <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
                         <p><small>{body}</small></p>
                       </li>
                     ))
