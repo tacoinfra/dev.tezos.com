@@ -73,8 +73,8 @@ export default [
             <li><strong>Transfer</strong> - the key owners are able to transfer a balance of tokens to any external contract.</li>
             <li><strong>Changer ownership</strong> - The key owners are able to change the delegates and the keys controlling the multisig.</li>
           </ul>
-          <p>* All of the above functionality is contingent on the key owners providing valid signatures for their keys.</p>
-          <p>** The multisig has been formally verified, meaning that executing the multisig will produce certain outcomes with mathematical certainty.</p>
+          <p><em>* All of the above functionality is contingent on the key owners providing valid signatures for their keys.</em></p>
+          <p><em>** The multisig has been formally verified, meaning that executing the multisig will produce certain outcomes with mathematical certainty.</em></p>
         `
       },
       {

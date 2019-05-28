@@ -139,9 +139,41 @@ const TutorialItem = styled.a`
   }
 `
 
-const TutorialDescription = styled.p`
+const TutorialDescription = styled.div`
   margin-bottom: 0;
   margin-top: 20px;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.8em;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 64px;
+
+    li {
+      position: relative;
+      margin-bottom: 8px;
+
+      &::before {
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-left: 6px solid ${palette.lightBlue};
+        content: '';
+        height: 0;
+        left: -30px;
+        position: absolute;
+        top: 7px;
+        width: 0;
+      }
+    }
+  }
 `
 
 const TutorialAuthor = styled.p`
