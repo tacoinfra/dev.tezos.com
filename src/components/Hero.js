@@ -39,12 +39,16 @@ const HeroContainer = styled.div`
   @media (min-width: ${breakpoints.mobile}) {
     padding-top: 100px;
   }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding-top: ${props => props.compact ? '100px' : '70px'};
+  }
 `
 
 const BackgroundImage = styled.div`
   svg {
     position: absolute;
-    top: 0;
+    top: ${props => props.compact ? '-60px' : '0'};
     left: 50%;
     margin-left: calc(${spacings.maxWidth} * -1 - 600px);
     z-index: 1;
