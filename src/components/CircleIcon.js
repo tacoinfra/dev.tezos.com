@@ -1,7 +1,20 @@
+import React from "react"
 import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
 
-const CircleIcon = styled.div`
+const CircleIcon = ({
+  href,
+  children
+}) => (
+  <CircleIconContainer
+    as={href ? 'a' : 'div'}
+    href={href}
+  >
+    {children}
+  </CircleIconContainer>
+)
+
+const CircleIconContainer = styled.div`
   background-color: ${palette.blue};
   border-radius: 100px;
   display: inline-block;

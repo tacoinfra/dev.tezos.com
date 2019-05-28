@@ -21,7 +21,7 @@ const HomeHeroContent = () => (
   <Container>
     <SocialLinks>
       <li>
-        <CircleIcon href="#">
+        <CircleIcon href="https://www.reddit.com/r/tezos">
           <img
             src={redditIcon2x}
             srcSet={srcSet(redditIcon, redditIcon2x)}
@@ -30,7 +30,7 @@ const HomeHeroContent = () => (
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="#">
+        <CircleIcon href="https://riot.im/app/#/room/#tezos:matrix.org">
           <img
             src={riotIcon2x}
             srcSet={srcSet(riotIcon, riotIcon2x)}
@@ -39,7 +39,7 @@ const HomeHeroContent = () => (
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="#">
+        <CircleIcon href="https://tezos.stackexchange.com/">
           <img
             src={stackexchangeIcon2x}
             srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)}
@@ -51,7 +51,7 @@ const HomeHeroContent = () => (
 
     <Rule />
 
-    <MailSignup action="#">
+    <MailSignup action="">
       <label htmlFor="email">
         <CircleIcon>
           <img
