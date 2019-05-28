@@ -62,7 +62,7 @@ const HomeHeroContent = () => (
         </CircleIcon>
         <span>Developer Mailing List</span>
       </label>
-      <TextInput id="email" name="email" type="email" placeholder="Email"></TextInput>
+      <TextInput id="email" name="email" type="email" placeholder="Email" required></TextInput>
       <ButtonAnchor type="submit" isAnchor={false} isSmall isSecondary>Submit</ButtonAnchor>
     </MailSignup>
   </Container>
