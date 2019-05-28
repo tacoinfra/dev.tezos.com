@@ -3,9 +3,9 @@ const languages = require("./src/utils/languages.js")
 module.exports = {
   siteMetadata: {
     title: `Tezos Developer Portal`,
-    author: `An Author`,
-    description: `A archive of various tutorials`,
-    siteUrl: `http://localhost:8000/`,
+    author: `Tezos`,
+    description: ``,
+    siteUrl: `http://dev.tezos.com/`,
     languages,
   },
   plugins: [
