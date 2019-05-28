@@ -60,6 +60,7 @@ const TutorialIndex = ({ location }) => {
                       key={title}
                       href={link}
                       as={link ? "a" : "div"}
+                      target={link ? "_blank" : null}
                     >
                       <h3>{title}</h3>
                       {author && <TutorialAuthor>{author}</TutorialAuthor>}
@@ -126,7 +127,8 @@ const TutorialItem = styled.a`
     margin-bottom: 0;
   }
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     text-decoration: none;
 
     h3 { text-decoration: underline; }
