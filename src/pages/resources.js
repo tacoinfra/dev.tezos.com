@@ -14,8 +14,8 @@ const ResourcesPage = ({ location }) => {
       <ShellWrapper>
         <PostListGroup columns={resourcesContent.length}>
           {
-            resourcesContent.map(({ title, posts }) => (
-              <PostList title={<h3>{title}</h3>}>
+            resourcesContent.map(({ slug, title, posts }) => (
+              <PostList id={slug} title={<h3>{title}</h3>}>
                 <ul>
                   {
                     posts.map(({ link, title, body }) => (

@@ -4,11 +4,12 @@ import { palette } from "../utils/variables"
 import ArrowSvg from "../assets/arrow-right.svg"
 
 const PostList = ({
+  id,
   title,
   link,
   children
 }) => (
-  <Container>
+  <div id={id}>
     <Header>
       <HeaderTitle>{title}</HeaderTitle>
       { link && (
@@ -20,11 +21,8 @@ const PostList = ({
     <Content>
       {children}
     </Content>
-  </Container>
+  </div>
 )
-
-const Container = styled.div`
-`
 
 const Header = styled.header`
   display: flex;

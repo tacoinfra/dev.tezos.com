@@ -1,7 +1,8 @@
 export default [
   {
+    slug: "languages",
     title: "Languages",
-    link: "/resources",
+    link: "/resources#languages",
     posts: [
       {
         link: "http://hackage.haskell.org/package/morley",
@@ -21,8 +22,9 @@ export default [
     ]
   },
   {
+    slug: "libraries",
     title: "Libraries",
-    link: "/resources",
+    link: "/resources#libraries",
     posts: [
       {
         link: "https://www.npmjs.com/package/sotez",
@@ -67,8 +69,9 @@ export default [
     ]
   },
   {
+    slug: "tools",
     title: "Tools",
-    link: "/resources",
+    link: "/resources#tools",
     posts: [
       {
         link: "https://www.plugin-dev.com/project/tezos-michelson/",
