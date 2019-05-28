@@ -15,11 +15,11 @@ const ResourcesPage = ({ location }) => {
         <PostListGroup columns={resourcesContent.length}>
           {
             resourcesContent.map(({ slug, title, posts }) => (
-              <PostList id={slug} title={<h3>{title}</h3>}>
+              <PostList key={slug} id={slug} title={<h3>{title}</h3>}>
                 <ul>
                   {
                     posts.map(({ link, title, body }) => (
-                      <li>
+                      <li key={link}>
                         <p><a href={link} target="_blank">{title}</a></p>
                         <p><small>{body}</small></p>
                       </li>

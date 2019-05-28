@@ -34,7 +34,7 @@ const SiteIndex = ({ location }) => {
           <PostListGroup columns={gettingStarted.length}>
             {
               gettingStarted.map(({ title, description, tutorials, resources }, index) => (
-                <PostList title={<NumberTitle number={index + 1}>{title}</NumberTitle>}>
+                <PostList key={title} title={<NumberTitle number={index + 1}>{title}</NumberTitle>}>
                   <p><small>{description}</small></p>
 
                   {
@@ -45,7 +45,7 @@ const SiteIndex = ({ location }) => {
                       <ul>
                         {
                           tutorials.map(({ title, link }) => (
-                            <li><a href={link} target="_blank">{title}</a></li>
+                            <li key={link}><a href={link} target="_blank">{title}</a></li>
                           ))
                         }
                       </ul>
@@ -60,7 +60,7 @@ const SiteIndex = ({ location }) => {
                       <ul>
                         {
                           resources.map(({ title, link }) => (
-                            <li><a href={link} target="_blank">{title}</a></li>
+                            <li key={link}><a href={link} target="_blank">{title}</a></li>
                           ))
                         }
                       </ul>
@@ -78,11 +78,11 @@ const SiteIndex = ({ location }) => {
           <PostListGroup columns={additionalTutorials.length}>
             {
               additionalTutorials.map(({ title, link, posts }) => (
-                <PostList title={<h3>{title}</h3>} link={link}>
+                <PostList key={title} title={<h3>{title}</h3>} link={link}>
                   <ul>
                     {
                       posts.map(({ link, title }) => (
-                        <li><a href={link} target="_blank">{title}</a></li>
+                        <li key={link}><a href={link} target="_blank">{title}</a></li>
                       ))
                     }
                   </ul>
@@ -98,11 +98,11 @@ const SiteIndex = ({ location }) => {
           <PostListGroup columns={resources.length}>
             {
               resources.map(({ title, link, posts }) => (
-                <PostList title={<h3>{title}</h3>} link={link}>
+                <PostList key={title} title={<h3>{title}</h3>} link={link}>
                   <ul>
                     {
                       posts.map(({ link, title, body }) => (
-                        <li>
+                        <li key={link}>
                           <p><a href={link} target="_blank">{title}</a></p>
                           <p><small>{body}</small></p>
                         </li>
