@@ -102,6 +102,8 @@ const TutorialItem = styled.a`
   }
 
   &:hover {
+    text-decoration: none;
+
     h3 { text-decoration: underline; }
   }
 
