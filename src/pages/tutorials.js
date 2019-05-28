@@ -1,17 +1,14 @@
 import React from "react"
 import styled from "@emotion/styled"
-import slugify from "slugify"
 import Scrollspy from "react-scrollspy"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
 import SplitWrapper from "../components/SplitWrapper"
 import SectionHeading from "../components/SectionHeading"
 import { palette, breakpoints } from "../utils/variables"
-import contentList from "./content.json"
-import { getOrganizedTutorials, getCategorySlugs } from "../lib/contentHelpers"
+import tutorialsContent from "../content/tutorials"
 
-const organizedTutorials = getOrganizedTutorials(contentList)
-const categorySlugs = getCategorySlugs(organizedTutorials)
+const slugList = tutorialsContent.map(category => category.slug)
 
 const TutorialIndex = ({ location }) => {
   return (
@@ -21,40 +18,45 @@ const TutorialIndex = ({ location }) => {
       <SplitWrapper>
         <SplitWrapper.Sidebar>
           <Scrollspy
-            items={categorySlugs}
+            items={slugList}
             currentClassName={'is-current'}
             componentTag={'div'}
           >
             <SidebarList>
-              {Object.keys(organizedTutorials).map(category => (
-                <li key={category}>
-                  <a href={`#${slugify(category.toLowerCase())}`}>{category}</a>
-                </li>
-              ))}
+              {
+                tutorialsContent.map(({ slug, title }) => (
+                  <li key={slug}>
+                    <a href={`#${slug}`}>{title}</a>
+                  </li>
+                ))
+              }
             </SidebarList>
           </Scrollspy>
         </SplitWrapper.Sidebar>
 
         <SplitWrapper.Main>
-          {Object.keys(organizedTutorials).map(category => (
-            <TutorialGroup id={slugify(category.toLowerCase())} key={category}>
-              <SectionHeading>{category}</SectionHeading>
-              {
-                organizedTutorials[category].map(item => (
-                  <TutorialItem
-                    key={item.slug}
-                    href={item.link}
-                  >
-                    <h3>{item.title}</h3>
-                    <TutorialAuthor>{item.author}</TutorialAuthor>
-                    {item.description.length > 0 && (
-                      <TutorialDescription>{item.description}</TutorialDescription>
-                    )}
-                  </TutorialItem>
-                ))
-              }
-            </TutorialGroup>
-          ))}
+          {
+            tutorialsContent.map(({ slug, title, tutorials }) => (
+              <TutorialGroup id={slug} key={slug}>
+                <SectionHeading>{title}</SectionHeading>
+                {
+                  tutorials.map(({ title, author, link, body }) => (
+                    <TutorialItem
+                      key={title}
+                      href={link}
+                      as={link ? "a" : "div"}
+                    >
+                      <h3>{title}</h3>
+                      {author && <TutorialAuthor>{author}</TutorialAuthor>}
+                      <TutorialDescription
+                        dangerouslySetInnerHTML={{ __html: body }}
+                      />
+                    </TutorialItem>
+                  ))
+                }
+              </TutorialGroup>
+            ))
+          }
         </SplitWrapper.Main>
       </SplitWrapper>
     </Layout>
@@ -96,12 +98,14 @@ const TutorialItem = styled.a`
   display: block;
   padding: 34px;
   margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
 
   h3 {
     margin-bottom: 0;
   }
 
-  &:hover {
+  &[href]:hover {
     text-decoration: none;
 
     h3 { text-decoration: underline; }
@@ -112,17 +116,21 @@ const TutorialItem = styled.a`
   }
 `
 
+const TutorialDescription = styled.p`
+  margin-bottom: 0;
+  margin-top: 20px;
+`
+
 const TutorialAuthor = styled.p`
   border-bottom: 1px solid ${palette.grey};
   color: ${palette.blue};
   font-size: 20px;
   padding-bottom: 18px;
   margin-top: 12px;
-  margin-bottom: 12px;
-`
 
-const TutorialDescription = styled.p`
-  margin-bottom: 0;
+  & + ${TutorialDescription} {
+    margin-top: 12px;
+  }
 `
 
 export default TutorialIndex
