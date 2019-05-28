@@ -1,13 +1,27 @@
-import React from "react"
+import React, { useRef } from "react"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
+import EqualHeight from "./EqualHeight"
 import { breakpoints } from "../utils/variables"
 
-const PostListGroup = ({ columns = 3, children }) => (
-  <Container columns={columns}>
-    {children}
-  </Container>
-)
+// expects children to be a render prop so we can pass refs for EqualHeight
+const PostListGroup = ({ columns = 3, children }) => {
+  // statically define refs even if less columns are used
+  const refList = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ]
+
+  return (
+    <EqualHeight nodes={refList}>
+      <Container columns={columns}>
+        {children(refList)}
+      </Container>
+    </EqualHeight>
+  )
+}
 
 const ThreeColumn = css`
   @media (min-width: ${breakpoints.mobile}) {

@@ -4,13 +4,14 @@ import { palette } from "../utils/variables"
 import ArrowSvg from "../assets/arrow-right.svg"
 
 const PostList = ({
+  titleRef,
   id,
   title,
   link,
   children
 }) => (
   <div id={id}>
-    <Header>
+    <Header ref={titleRef}>
       <HeaderTitle>{title}</HeaderTitle>
       { link && (
         <HeaderLink>

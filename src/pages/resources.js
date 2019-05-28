@@ -14,20 +14,26 @@ const ResourcesPage = ({ location }) => {
       <ShellWrapper>
         <PostListGroup columns={resourcesContent.length}>
           {
-            resourcesContent.map(({ slug, title, posts }) => (
-              <PostList key={slug} id={slug} title={<h3>{title}</h3>}>
-                <ul>
-                  {
-                    posts.map(({ link, title, body }) => (
-                      <li key={link}>
-                        <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
-                        <p><small>{body}</small></p>
-                      </li>
-                    ))
-                  }
-                </ul>
-              </PostList>
-            ))
+            (refList) =>
+              resourcesContent.map(({ slug, title, posts }, index) => (
+                <PostList
+                  key={slug}
+                  id={slug}
+                  titleRef={refList[index]}
+                  title={<h3>{title}</h3>}
+                >
+                  <ul>
+                    {
+                      posts.map(({ link, title, body }) => (
+                        <li key={link}>
+                          <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
+                          <p><small>{body}</small></p>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </PostList>
+              ))
           }
         </PostListGroup>
       </ShellWrapper>
