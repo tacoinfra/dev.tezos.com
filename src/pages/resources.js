@@ -6,78 +6,29 @@ import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
 import resourcesContent from "../content/resources"
 
-const DevToolsPage = ({ location }) => {
+const ResourcesPage = ({ location }) => {
   return (
     <Layout location={location} title="Resources" compact>
       <SEO title="Resources" />
+
       <ShellWrapper>
-        <PostListGroup columns={3}>
-          <PostList title={<h3>Languages</h3>}>
-            <ul>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-            </ul>
-          </PostList>
-
-          <PostList title={<h3>Libraries</h3>}>
-            <ul>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-            </ul>
-          </PostList>
-
-          <PostList title={<h3>Tools</h3>}>
-            <ul>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-              <li>
-                <p><a href="#/">How to get Tezos</a></p>
-                <p><small>Minim non dolor ipsum aute proident.</small></p>
-              </li>
-            </ul>
-          </PostList>
+        <PostListGroup columns={resourcesContent.length}>
+          {
+            resourcesContent.map(({ title, posts }) => (
+              <PostList title={<h3>{title}</h3>}>
+                <ul>
+                  {
+                    posts.map(({ link, title, body }) => (
+                      <li>
+                        <p><a href={link}>{title}</a></p>
+                        <p><small>{body}</small></p>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </PostList>
+            ))
+          }
         </PostListGroup>
       </ShellWrapper>
     </Layout>
@@ -86,4 +37,4 @@ const DevToolsPage = ({ location }) => {
 
 
 
-export default DevToolsPage
+export default ResourcesPage
