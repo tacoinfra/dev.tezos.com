@@ -69,6 +69,7 @@ const Content = styled.div`
 
   h4 {
     margin-top: 25px;
+    margin-bottom: 18px;
   }
 
   ul {
@@ -77,8 +78,13 @@ const Content = styled.div`
   }
 
   li {
-    padding-bottom: 15px;
+    margin: 0;
+    padding: 0 0 8px 0;
     border-bottom: 1px solid ${palette.grey};
+
+    & + li {
+      padding-top: 8px;
+    }
 
     p {
       margin: 0;
