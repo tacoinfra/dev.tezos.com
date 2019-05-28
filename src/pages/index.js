@@ -45,7 +45,7 @@ const SiteIndex = ({ location }) => {
                       <ul>
                         {
                           tutorials.map(({ title, link }) => (
-                            <li><a href={link}>{title}</a></li>
+                            <li><a href={link} target="_blank">{title}</a></li>
                           ))
                         }
                       </ul>
@@ -60,7 +60,7 @@ const SiteIndex = ({ location }) => {
                       <ul>
                         {
                           resources.map(({ title, link }) => (
-                            <li><a href={link}>{title}</a></li>
+                            <li><a href={link} target="_blank">{title}</a></li>
                           ))
                         }
                       </ul>
@@ -82,7 +82,7 @@ const SiteIndex = ({ location }) => {
                   <ul>
                     {
                       posts.map(({ link, title }) => (
-                        <li><a href={link}>{title}</a></li>
+                        <li><a href={link} target="_blank">{title}</a></li>
                       ))
                     }
                   </ul>
@@ -103,7 +103,7 @@ const SiteIndex = ({ location }) => {
                     {
                       posts.map(({ link, title, body }) => (
                         <li>
-                          <p><a href={link}>{title}</a></p>
+                          <p><a href={link} target="_blank">{title}</a></p>
                           <p><small>{body}</small></p>
                         </li>
                       ))
