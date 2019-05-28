@@ -31,13 +31,9 @@ const FourColumn = css`
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
 
   ${props => props.columns === 3 ? ThreeColumn : FourColumn }
-
-  @media (min-width: ${breakpoints.mobile}) {
-    grid-gap: 40px;
-  }
 `
 
 export default PostListGroup
