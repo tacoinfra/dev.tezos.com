@@ -40,6 +40,8 @@ const HeaderTitle = styled.div`
 `
 
 const HeaderLink = styled.div`
+  white-space: nowrap;
+
   span {
     margin-right: 5px;
   }
