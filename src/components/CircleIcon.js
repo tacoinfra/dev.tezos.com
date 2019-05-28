@@ -7,7 +7,8 @@ const CircleIcon = ({
   children
 }) => (
   <CircleIconContainer
-    as={href ? 'a' : 'div'}
+    as={href ? "a" : "div"}
+    target={href ? "_blank" : null}
     href={href}
   >
     {children}
@@ -40,6 +41,13 @@ const CircleIconContainer = styled.div`
   svg {
     height: 100%;
     top: 0;
+  }
+
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
   }
 `
 
