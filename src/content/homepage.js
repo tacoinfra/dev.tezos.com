@@ -149,17 +149,9 @@ const additionalTutorials = [
     ]
   },
   {
-    title: "Ledger",
+    title: "Hardware Wallets",
     link: "/tutorials",
     posts: [
-      {
-        title: "Tezos Ledger Applications: Releases",
-        link: "https://github.com/obsidiansystems/ledger-app-tezos/releases"
-      },
-      {
-        title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
-        link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md"
-      },
       {
         title: "How to Configure Tezos on the Leger Nano S",
         link: "https://medium.com/@PosBakerz/how-to-configure-tezos-on-ledger-nano-s-a2439186956d"
@@ -173,15 +165,17 @@ const additionalTutorials = [
         link: "https://medium.com/cryptium/how-to-delegate-tezzies-tezos-xtz-with-your-ledger-nano-s-with-initial-setup-screenshots-519c9ae6654f"
       },
       {
+        title: "Tezos Ledger Applications: Releases",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/releases"
+      },
+      {
+        title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md"
+      },
+      {
         title: "Debugging Linux connection Issues",
         link: "https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues"
-      }
-    ]
-  },
-  {
-    title: "Hardware Wallets",
-    link: "/tutorials",
-    posts: [
+      },
       {
         title: "Storage and Delegation with Ledger Nano S - Magnum Wallet",
         link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7"

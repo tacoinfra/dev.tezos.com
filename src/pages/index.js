@@ -104,7 +104,7 @@ const SiteIndex = ({ location }) => {
         </Section>
 
         <Section>
-          <SectionHeading centered>Resources</SectionHeading>
+          <SectionHeading centered>Additional Resources</SectionHeading>
 
           <PostListGroup columns={resources.length}>
             {
