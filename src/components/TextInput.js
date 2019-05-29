@@ -6,6 +6,7 @@ const StyledInput = styled.input`
   background: transparent;
   border: 0 solid rgba(255, 255, 255, 0.5);
   border-bottom-width: 1px;
+  border-radius: 0;
   color: ${palette.white};
   font-size: 16px;
   font-weight: 300;
