@@ -1,6 +1,7 @@
 const languages = require("./src/utils/languages.js")
 
 module.exports = {
+  pathPrefix: '/dev.tezos.com',
   siteMetadata: {
     title: `Tezos Developer Portal`,
     author: `Tezos`,
