@@ -52,6 +52,8 @@ const HeaderLink = styled.div`
   }
 
   a {
+    font-weight: 400;
+
     &:hover,
     &:focus {
       text-decoration: none;

@@ -51,7 +51,7 @@ export const Sidebar = styled(ShellWrapper)`
     position: sticky;
     top: -28px;
     margin-bottom: 0;
-    width: 350px;
+    flex: 0 0 350px;
   }
 `
 
