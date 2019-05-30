@@ -26,15 +26,14 @@ const Header = () => (
       <NavigationList>
         {navigationListItems.map(item => (
           <NavigationLink
-            activeStyle={{ fontWeight: 900 }}
             key={item.title}
             to={item.href}
           >
             {item.title}
           </NavigationLink>
         ))}
-        <ButtonAnchor isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
-        <ButtonAnchor href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
+        <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
+        <li><ButtonAnchor href="https://www.tezos.com/">Back to Tezos</ButtonAnchor></li>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -69,6 +68,7 @@ const NavigationList = styled.div`
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
+  list-style: none;
 
   & > * + * {
     margin-left: 32px;
@@ -128,9 +128,10 @@ const MobileMenu = () => {
               </MobileMenuLink>
             </li>
           ))}
-          <ButtonAnchor href="https://www.tezos.com/">
+          <li><ButtonAnchor isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com" external>Contribute To Dev Portal</ButtonAnchor></li>
+          <li><ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
-          </ButtonAnchor>
+          </ButtonAnchor></li>
         </MobileMenuNavList>
       </MobileMenuContainer>
     </Fragment>
@@ -199,6 +200,10 @@ const MobileMenuContainer = styled.div`
   transform: ${props =>
     props.isMenuOpen ? "translateX(0)" : "translateX(100%)"};
   transition: transform 150ms ease-in-out, width 250ms ease-in-out;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    display: none;
+  }
 `
 
 const MobileMenuNavList = styled.ul`

@@ -30,6 +30,7 @@ const BaseStyles = css`
   border: 2px solid ${palette.blue};
   color: ${palette.white};
   cursor: pointer;
+  display: inline-block;
   font-weight: 300;
   flex-shrink: 0;
   padding: 0 40px;
