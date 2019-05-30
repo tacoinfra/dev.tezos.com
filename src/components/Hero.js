@@ -97,7 +97,7 @@ const PageTitle = styled.h1`
 const PageSubtitle = styled.h2`
   color: ${palette.white};
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 38px;
 `
 
