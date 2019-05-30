@@ -27,17 +27,17 @@ const Footer = () => (
           `}
         >
           <li>
-            <a href="https://riot.im/app/#/room/#tezos:matrix.org">
+            <a href="https://riot.im/app/#/room/#tezos:matrix.org" target="_blank" rel="noopener noreferrer">
               <RiotIcon />
             </a>
           </li>
           <li>
-            <a href="https://gitlab.com/tezos/tezos">
+            <a href="https://gitlab.com/tezos/tezos" target="_blank" rel="noopener noreferrer">
               <GitlabIcon />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/tezos">
+            <a href="https://twitter.com/tezos" target="_blank" rel="noopener noreferrer">
               <TwitterIcon />
             </a>
           </li>
