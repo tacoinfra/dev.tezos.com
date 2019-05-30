@@ -8,9 +8,11 @@ const ButtonAnchor = ({
   type,
   isSecondary = false,
   isSmall = false,
+  external = false,
   children,
 }) => {
   const Tag = href ? StyledAnchor : StyledButton
+  const externalProps = external ? { target: '_blank', rel: 'noopener noreferrer' } : {}
 
   return (
     <Tag
@@ -19,6 +21,7 @@ const ButtonAnchor = ({
       isSmall={isSmall}
       isSecondary={isSecondary}
       css={BaseStyles}
+      {...externalProps}
     >
       {children}
     </Tag>

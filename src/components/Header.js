@@ -128,7 +128,7 @@ const MobileMenu = () => {
               </MobileMenuLink>
             </li>
           ))}
-          <li><ButtonAnchor isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com" external>Contribute To Dev Portal</ButtonAnchor></li>
+          <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
           <li><ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
           </ButtonAnchor></li>
