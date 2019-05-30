@@ -14,7 +14,7 @@ const gettingStarted = [
         link: "https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"
       },
       {
-        title: "Tezos Installation Guid",
+        title: "Tezos Installation Guide",
         link: "https://medium.com/coinmonks/tezos-installation-guide-8175b3f0b748"
       },
       {
