@@ -61,7 +61,7 @@ export default [
     slug: "template-contracts",
     title: "Template Contracts",
     body: `
-      <p>Developers at <a href="https://www.nomadic-labs.com/">Nomadic Labs</a> have created and formally verified a set of commonly used smart-contracts. The following template contracts have been developed for general purpose use.</p>
+      <p>Developers at <a href="https://www.nomadic-labs.com/" target="_blank" rel="noopener noreferrer">Nomadic Labs</a> have created and formally verified a set of commonly used smart-contracts. The following template contracts have been developed for general purpose use.</p>
     `,
     tutorials: [
       {
