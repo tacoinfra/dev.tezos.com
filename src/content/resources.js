@@ -5,6 +5,11 @@ export default [
     link: "/resources#languages",
     posts: [
       {
+        link: "https://gitlab.com/gabriel.alfour/ligo",
+        title: "Ligo ",
+        body: "A syntax-agnostic, high-level smart contract language"
+      },
+      {
         link: "http://hackage.haskell.org/package/morley",
         title: "Morley/Lorentz",
         body: "Haskell-like Michelson Programming Language"
@@ -15,9 +20,9 @@ export default [
         body: "High level language, currently in Alpha"
       },
       {
-        link: "https://gitlab.com/gabriel.alfour/ligo",
-        title: "Ligo ",
-        body: "A syntax-agnostic, high-level smart contract language"
+        link: "http://smartpy.io/",
+        title: "SmartPy",
+        body: "Tezos smart contracts with Python syntax"
       }
     ]
   },
@@ -95,7 +100,7 @@ export default [
       },
       {
         link: "https://tzscan.io/",
-        title: "TZScan",
+        title: "TzScan",
         body: "Block Explorer"
       }
     ]
