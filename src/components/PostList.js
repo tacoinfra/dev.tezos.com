@@ -15,7 +15,7 @@ const PostList = ({
       <HeaderTitle>{title}</HeaderTitle>
       { link && (
         <HeaderLink>
-          <a href={link}><span>View all</span> <ArrowSvg /></a>
+          <a href={link}><span>View All</span> <ArrowSvg /></a>
         </HeaderLink>
       ) }
     </Header>
