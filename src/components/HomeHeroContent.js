@@ -128,8 +128,10 @@ const MailSignup = styled.form`
     display: flex;
 
     span {
-      margin-left: 12px;
+      margin-left: 23px;
       white-space: nowrap;
+      font-weight: 300;
+      font-size: 18px;
     }
   }
 
@@ -145,6 +147,10 @@ const MailSignup = styled.form`
 
     input {
       margin: 2px 20px 0;
+    }
+
+    button {
+      align-self: flex-end;
     }
   }
 

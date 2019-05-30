@@ -44,7 +44,7 @@ const BaseStyles = css`
 
 const DynamicStyles = props =>
   css`
-    line-height: ${props.isSmall ? "30px" : "40px"};
+    line-height: ${props.isSmall ? "27px" : "40px"};
     font-size: ${props.isSmall ? "13px" : "15px"};
     min-width: ${props.isSmall ? "115px" : "183px"};
     background-color: ${props.isSecondary ? palette.darkBlue : palette.blue};
