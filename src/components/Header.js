@@ -123,7 +123,7 @@ const MobileMenu = () => {
         <MobileMenuNavList>
           {navigationListItems.map(item => (
             <li key={item.title}>
-              <MobileMenuLink to={item.href}>
+              <MobileMenuLink to={item.href} onClick={() => handleToggleMenu()}>
                 {item.title}
               </MobileMenuLink>
             </li>
