@@ -32,8 +32,8 @@ const Header = () => (
             {item.title}
           </NavigationLink>
         ))}
-        <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
-        <li><ButtonAnchor href="https://www.tezos.com/">Back to Tezos</ButtonAnchor></li>
+        <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
+        <ButtonAnchor href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
