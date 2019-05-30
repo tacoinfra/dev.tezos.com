@@ -17,7 +17,7 @@ export default [
       {
         link: "https://gitlab.com/gabriel.alfour/ligo",
         title: "Ligo ",
-        body: "Michelson smart-contract language"
+        body: "A syntax-agnostic, high-level smart contract language"
       }
     ]
   },
