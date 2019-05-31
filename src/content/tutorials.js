@@ -1,43 +1,7 @@
 export default [
   {
-    slug: "interacting-with-the-blockchain",
-    title: "Interacting with the Blockchain",
-    tutorials: [
-      {
-        title: "Setting up a node",
-        author: "Tezos Gitlab Documentation",
-        link: "http://tezos.gitlab.io/mainnet/introduction/howtoget.html",
-        body: `
-          <p>Learn how to install the Tezos binaries and start exploring the blockchain. This Tezos documentation resource explains how to use OPAM to install Tezos via the command line.</p>
-        `
-      }
-    ]
-  },
-  {
-    slug: "smart-contract-programming",
-    title: "Smart Contract Programming",
-    tutorials: [
-      {
-        title: "Smart Contract Programming in Michelson",
-        author: "CamlCase",
-        link: "https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/01",
-        body: `
-          <p>Michelson is a stack-based smart-contract programming language that's used in Tezos. Learn to program in Michelson with these exercises.</p>
-        `
-      },
-      {
-        title: "Application Development on Tezos",
-        author: "Catsigma",
-        link: "https://medium.com/@catsigma/decentralized-app-development-on-tezos-for-beginners-part-1-def5277e2d4",
-        body: `
-          <p>Learn to write and deploy your first michelson Smart-contract. This five-part tutorial teaches you to set up a Tezos node and write and deploy a contract using a programming language called liquidity.</p>
-        `
-      }
-    ]
-  },
-  {
-    slug: "baking-and-delegating",
-    title: "Baking and Delegating",
+    slug: "baking",
+    title: "Baking",
     tutorials: [
       {
         title: "Set up your own Secure Baker",
@@ -58,8 +22,107 @@ export default [
     ]
   },
   {
-    slug: "template-contracts",
-    title: "Template Contracts",
+    slug: "hardware-wallets",
+    title: "Hardware Wallets",
+    tutorials: [
+      {
+        title: "How to Configure Tezos on the Leger Nano S",
+        author: "Lorem ipsum",
+        link: "https://medium.com/@PosBakerz/how-to-configure-tezos-on-ledger-nano-s-a2439186956d",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Nano S Tutorial",
+        author: "Lorem ipsum",
+        link: "https://www.youtube.com/watch?v=PdeilPjIE-Q",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "How to Delegate Tez (Tezos' XTZ) with Your Ledger Nano S",
+        author: "Lorem ipsum",
+        link: "https://medium.com/cryptium/how-to-delegate-tezzies-tezos-xtz-with-your-ledger-nano-s-with-initial-setup-screenshots-519c9ae6654f",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Applications: Releases",
+        author: "Lorem ipsum",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/releases",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
+        author: "Lorem ipsum",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Debugging Linux Connection Issues",
+        author: "Lorem ipsum",
+        link: "https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Ledger Nano S - Magnum Wallet",
+        author: "Lorem ipsum",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Ledger Nano S - TezBox Wallet",
+        author: "Lorem ipsum",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-tezbox-wallet-8fb4ac2d3355",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Trezor Model T - TezBox Wallet",
+        author: "Lorem ipsum",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-tezbox-e26c578f7a8b",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Trezor Model T - Magnum Wallet",
+        author: "Lorem ipsum",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-magnum-wallet-51525aab5122",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      }
+    ]
+  },
+  {
+    slug: "dapp",
+    title: "DApp",
+    tutorials: [
+      {
+        title: "Tezos Software Architecture: The Big Picture",
+        link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html",
+        body: `
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+        `
+      }
+    ]
+  },
+  {
+    slug: "contract-templates",
+    title: "Contract Templates",
     body: `
       <p>Developers at <a href="https://www.nomadic-labs.com/" target="_blank" rel="noopener noreferrer">Nomadic Labs</a> have created and formally verified a set of commonly used smart-contracts. The following template contracts have been developed for general purpose use.</p>
     `,

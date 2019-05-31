@@ -120,7 +120,7 @@ const gettingStarted = [
 const additionalTutorials = [
   {
     title: "Baking",
-    link: "/tutorials",
+    link: "/tutorials/#baking",
     posts: [
       {
         title: "Benefits and Risks of Home Baking",
@@ -150,7 +150,7 @@ const additionalTutorials = [
   },
   {
     title: "Hardware Wallets",
-    link: "/tutorials",
+    link: "/tutorials/#hardware-wallets",
     posts: [
       {
         title: "How to Configure Tezos on the Leger Nano S",
@@ -196,7 +196,7 @@ const additionalTutorials = [
   },
   {
     title: "DApp",
-    link: "/tutorials",
+    link: "/tutorials/#dapp",
     posts: [
       {
         title: "Tezos Software Architecture: The Big Picture",
