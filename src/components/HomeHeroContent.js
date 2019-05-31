@@ -12,8 +12,6 @@ import riotIcon from "../assets/icon-riot.png"
 import riotIcon2x from "../assets/icon-riot@2x.png"
 import stackexchangeIcon from "../assets/icon-stackexchange.png"
 import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
-import mailIcon from "../assets/icon-mail.png"
-import mailIcon2x from "../assets/icon-mail@2x.png"
 
 const srcSet = (src, src2x) => `${src} 1x, ${src2x} 2x`
 
@@ -53,13 +51,6 @@ const HomeHeroContent = () => (
 
     <MailSignup action="">
       <label htmlFor="email">
-        <CircleIcon>
-          <img
-            src={mailIcon2x}
-            srcSet={srcSet(mailIcon, mailIcon2x)}
-            alt="Email"
-          />
-        </CircleIcon>
         <span>Developer Mailing List</span>
       </label>
       <TextInput id="email" name="email" type="email" placeholder="Email" required></TextInput>
@@ -128,7 +119,6 @@ const MailSignup = styled.form`
     display: flex;
 
     span {
-      margin-left: 23px;
       white-space: nowrap;
       font-weight: 300;
       font-size: 18px;
