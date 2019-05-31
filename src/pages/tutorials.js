@@ -18,8 +18,8 @@ const TutorialIndex = ({ location }) => {
   }
 
   return (
-    <Layout location={location} title="Tutorials" compact>
-      <SEO title="Tutorials" />
+    <Layout location={location} title="Additional Tutorials" compact>
+      <SEO title="Additional Tutorials" />
 
       <SplitWrapper>
         <SplitWrapper.Sidebar>
