@@ -20,7 +20,6 @@ const ButtonAnchor = ({
       href={href}
       isSmall={isSmall}
       isSecondary={isSecondary}
-      css={BaseStyles}
       {...externalProps}
     >
       {children}
