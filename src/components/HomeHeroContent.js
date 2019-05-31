@@ -28,7 +28,7 @@ const HomeHeroContent = () => (
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="https://riot.im/app/#/room/#tezos:matrix.org">
+        <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
           <img
             src={riotIcon2x}
             srcSet={srcSet(riotIcon, riotIcon2x)}

@@ -27,7 +27,7 @@ const Footer = () => (
           `}
         >
           <li>
-            <a href="https://riot.im/app/#/room/#tezos:matrix.org" target="_blank" rel="noopener noreferrer">
+            <a href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" target="_blank" rel="noopener noreferrer">
               <RiotIcon />
             </a>
           </li>
