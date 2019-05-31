@@ -171,26 +171,6 @@ const additionalTutorials = [
       {
         title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
         link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md"
-      },
-      {
-        title: "Debugging Linux connection Issues",
-        link: "https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues"
-      },
-      {
-        title: "Storage and Delegation with Ledger Nano S - Magnum Wallet",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7"
-      },
-      {
-        title: "Storage and Delegation with Ledger Nano S - TezBox Wallet",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-tezbox-wallet-8fb4ac2d3355"
-      },
-      {
-        title: "Storage and Delegation with Trezor Model T - TezBox Wallet",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-tezbox-e26c578f7a8b"
-      },
-      {
-        title: "Storage and Delegation with Trezor Model T - Magnum Wallet",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-magnum-wallet-51525aab5122"
       }
     ]
   },
