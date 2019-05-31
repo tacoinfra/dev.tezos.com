@@ -113,6 +113,7 @@ export default [
     tutorials: [
       {
         title: "Tezos Software Architecture: The Big Picture",
+        author: "Lorem ipsum",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html",
         body: `
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
