@@ -12,21 +12,29 @@ const Layout = ({
   subtitle,
   heroContent,
   compact = false
-}) => (
-  <Container>
-    <Global styles={globalRules} />
-    <Header />
-    <Hero
-      compact={compact}
-      title={title}
-      subtitle={subtitle}
-    >
-      {heroContent}
-    </Hero>
-    <Main>{children}</Main>
-    <Footer />
-  </Container>
-)
+}) => {
+  // TODO: Remove this
+  if (window.location.hostname === 'developer.tezos.com' || window.location.hostname === 'dev.tezos.com') {
+    return 'Under Construction'
+  }
+  return (
+    (
+      <Container>
+        <Global styles={globalRules} />
+        <Header />
+        <Hero
+          compact={compact}
+          title={title}
+          subtitle={subtitle}
+        >
+          {heroContent}
+        </Hero>
+        <Main>{children}</Main>
+        <Footer />
+      </Container>
+    )
+  )
+}
 
 const globalRules = css`
   body {
