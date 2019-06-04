@@ -10,6 +10,11 @@ export default [
         body: "A syntax-agnostic, high-level smart contract language"
       },
       {
+        link: "http://smartpy.io/",
+        title: "SmartPy",
+        body: "Tezos smart contracts with Python syntax"
+      },
+      {
         link: "http://hackage.haskell.org/package/morley",
         title: "Morley/Lorentz",
         body: "Haskell-like Michelson Programming Language"
@@ -18,11 +23,6 @@ export default [
         link: "https://fi-code.com/",
         title: "Fi",
         body: "High level language, currently in Alpha"
-      },
-      {
-        link: "http://smartpy.io/",
-        title: "SmartPy",
-        body: "Tezos smart contracts with Python syntax"
       }
     ]
   },
