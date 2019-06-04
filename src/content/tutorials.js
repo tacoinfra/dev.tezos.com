@@ -90,11 +90,27 @@ export default [
     title: "Baking",
     tutorials: [
       {
+        title: "Bake with Kiln (GUI)",
+        author: "Lorem Ipsum",
+        link: "https://gitlab.com/obsidian.systems/tezos-bake-monitor",
+        body: `
+          <p>Ex Lorem officia dolore duis ipsum esse laboris cupidatat ipsum.</p>
+        `
+      },
+      {
         title: "It's a Baker's Life for Me",
         author: "Arthur Breitman",
         link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1",
         body: `
           <p>How to become a Tezos validator (baker)</p>
+        `
+      },
+      {
+        title: "Tezos Baking How To",
+        author: "dakk",
+        link: "https://gist.github.com/dakk/bdf6efe42ae920acc660b20080a506dd",
+        body: `
+          <p>How to install and set up Tezos baking on Ubuntu or Debian</p>
         `
       },
       {
@@ -117,6 +133,11 @@ export default [
         body: `
           <p>This article describes the main elements of Tezos from a distance. It abstracts from all plumbing and both internal and system dependencies to give a simple view of the main components, their responsibilities and interactions</p>
         `
+      },
+      {
+        hideOnTutorialsPage: true,
+        title: "Contract Templates",
+        link: "/tutorials#contract-templates"
       }
     ]
   },

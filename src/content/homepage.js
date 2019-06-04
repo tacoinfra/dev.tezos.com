@@ -18,15 +18,19 @@ const gettingStarted = [
         link: "https://gitlab.com/obsidian.systems/tezos-bake-monitor"
       },
       {
-        title: "Getting started with Tezos command-line client on betanet (MacOS)",
+        title: "Getting started with the Tezos command-line client on mainnet (MacOS)",
         link: "https://medium.com/@csoreff/getting-started-with-the-tezos-command-line-client-on-betanet-macos-484d16be4612",
       }
     ]
   },
   {
-    title: "Learning a smart-contracts programming language",
-    description: "Choose one of the high-level languages to program in or use Michelson (the smart-contract language of Tezos) directly",
+    title: "Learning a smart contracts programming language",
+    description: "Choose one of the high-level languages to program in or use Michelson (the smart-contract language of Tezos) directly.",
     tutorials: [
+      {
+        title: "Michelson: the language of Smart Contracts in Tezos",
+        link: "http://tezos.gitlab.io/mainnet/whitedoc/michelson.html"
+      },
       {
         title: "What is Michelson",
         link: "https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/01"
@@ -141,7 +145,7 @@ const additionalTutorials = [
         link: "https://gist.github.com/dakk/bdf6efe42ae920acc660b20080a506dd"
       },
       {
-        title: "Setting up a Secure Baker",
+        title: "Set up your own Secure Baker",
         link: "https://medium.com/@obsidian.systems/setting-up-a-secure-baker-27bb12363679"
       }
     ]
@@ -153,6 +157,10 @@ const additionalTutorials = [
       {
         title: "Tezos Software Architecture: The Big Picture",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html"
+      },
+      {
+        title: "Contract Templates",
+        link: "/tutorials#contract-templates"
       }
     ]
   }
