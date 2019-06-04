@@ -14,8 +14,11 @@ const Layout = ({
   compact = false
 }) => {
   // TODO: Remove this
-  if (window.location.hostname === 'developer.tezos.com' || window.location.hostname === 'dev.tezos.com') {
-    return 'Under Construction'
+  // Wrap the require in check for window
+  if (typeof window !== `undefined`) {
+    if (window.location.hostname === 'developer.tezos.com' || window.location.hostname === 'dev.tezos.com') {
+      return 'Under Construction'
+    }
   }
   return (
     (
