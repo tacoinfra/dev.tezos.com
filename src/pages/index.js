@@ -78,32 +78,6 @@ const SiteIndex = ({ location }) => {
         </CalloutGroup>
 
         <Section>
-          <SectionHeading centered>Additional Tutorials</SectionHeading>
-
-          <PostListGroup columns={additionalTutorials.length}>
-            {
-              (refList) =>
-                additionalTutorials.map(({ title, link, posts }, index) => (
-                  <PostList
-                    key={title}
-                    titleRef={refList[index]}
-                    title={<h3>{title}</h3>}
-                    link={link}
-                  >
-                    <ul>
-                      {
-                        posts.map(({ link, title }) => (
-                          <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
-                        ))
-                      }
-                    </ul>
-                  </PostList>
-                ))
-            }
-          </PostListGroup>
-        </Section>
-
-        <Section>
           <SectionHeading centered>Additional Resources</SectionHeading>
 
           <PostListGroup columns={resources.length}>
@@ -123,6 +97,32 @@ const SiteIndex = ({ location }) => {
                             <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
                             <p><small>{body}</small></p>
                           </li>
+                        ))
+                      }
+                    </ul>
+                  </PostList>
+                ))
+            }
+          </PostListGroup>
+        </Section>
+
+        <Section>
+          <SectionHeading centered>Additional Tutorials</SectionHeading>
+
+          <PostListGroup columns={additionalTutorials.length}>
+            {
+              (refList) =>
+                additionalTutorials.map(({ title, link, posts }, index) => (
+                  <PostList
+                    key={title}
+                    titleRef={refList[index]}
+                    title={<h3>{title}</h3>}
+                    link={link}
+                  >
+                    <ul>
+                      {
+                        posts.map(({ link, title }) => (
+                          <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
                         ))
                       }
                     </ul>

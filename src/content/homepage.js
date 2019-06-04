@@ -2,8 +2,8 @@ import resourcesPageData from './resources'
 
 const gettingStarted = [
   {
-    title: "Starting up a node on Tezos",
-    description: "Learn how to install the Tezos binaries, Master the command-line interface, and start exploring the blockchain.",
+    title: "Starting up a node",
+    description: "Install Tezos binaries, master the command-line interface, and start exploring the blockchain.",
     tutorials: [
       {
         title: "How to Get Tezos",
@@ -14,22 +14,18 @@ const gettingStarted = [
         link: "https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md"
       },
       {
-        title: "Tezos Installation Guide",
-        link: "https://medium.com/coinmonks/tezos-installation-guide-8175b3f0b748"
+        title: "Run a Tezos node in Kiln (GUI)",
+        link: "https://gitlab.com/obsidian.systems/tezos-bake-monitor"
       },
       {
-        title: "Building Tezos on Ubuntu & Debian - Fast Build",
-        link: "https://medium.com/@shaunbelcher/building-tezos-on-ubuntu-fast-build-b2397bf01678"
-      },
-      {
-        title: "Getting Started with Tezos Command-line client on betanet (MacOS)",
+        title: "Getting started with Tezos command-line client on betanet (MacOS)",
         link: "https://medium.com/@csoreff/getting-started-with-the-tezos-command-line-client-on-betanet-macos-484d16be4612",
       }
     ]
   },
   {
-    title: "Learning a smart-contract language",
-    description: "Learn about Michelson, the smart-contract language of Tezos. Choose one of the high-level languages to program in, or program in Michelson directly.",
+    title: "Learning a smart-contracts programming language",
+    description: "Choose one of the high-level languages to program in or use Michelson (the smart-contract language of Tezos) directly",
     tutorials: [
       {
         title: "What is Michelson",
@@ -38,21 +34,9 @@ const gettingStarted = [
       {
         title: "Michelson & The Tezos Blockchain",
         link: "https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/02"
-      },
-      {
-        title: "Tezos Blockstars Program",
-        link: "https://tezos.b9lab.com/"
       }
     ],
     resources: [
-      {
-        title: "Morley/Lorentz",
-        link: "http://hackage.haskell.org/package/morley"
-      },
-      {
-        title: "Ligo",
-        link: "https://gitlab.com/gabriel.alfour/ligo"
-      },
       {
         title: "Michelson emacs mode",
         link: "https://github.com/tezos/tezos/tree/master/emacs"
@@ -61,7 +45,7 @@ const gettingStarted = [
   },
   {
     title: "Deploying transactions to the testnet and mainet",
-    description: "Create and sign transactions to be sent to the mainnet. This is where you’ll learn to deploy and interact with the contracts that you’ve created.",
+    description: "Create and sign transactions. Deploy and interact with the contracts that you’ve created.",
     tutorials: [
       {
         title: "Contract Origination & Interaction",
@@ -92,8 +76,8 @@ const gettingStarted = [
     ]
   },
   {
-    title: "Interacting with your contract through your code",
-    description: "Retrieve information about your contracts. Learn to query your node for information. Build applications, websites, and more!",
+    title: "Interacting with your contract",
+    description: "Learn to query your node for information about your contracts. Start building applications.",
     tutorials: [
       {
         title: "Interacting with your contract",
@@ -101,10 +85,6 @@ const gettingStarted = [
       }
     ],
     resources: [
-      {
-        title: "TzScan",
-        link: "https://tzscan.io/"
-      },
       {
         title: "EzTz",
         link: "https://github.com/TezTech/eztz"
