@@ -99,36 +99,6 @@ const gettingStarted = [
 
 const additionalTutorials = [
   {
-    title: "Baking",
-    link: "/tutorials/#baking",
-    posts: [
-      {
-        title: "Benefits and Risks of Home Baking",
-        link: "https://medium.com/@obsidian.systems/benefits-and-risks-of-home-baking-a631c9ca745"
-      },
-      {
-        title: "It's a Baker's Life for Me",
-        link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1"
-      },
-      {
-        title: "Baking on Tezos",
-        link: "https://medium.com/@bakechain/baking-on-tezos-34d952d79c9d"
-      },
-      {
-        title: "Tezos Mainnet - Setting Up Home Baking",
-        link: "https://medium.com/@tezbaker.io/tezos-mainnet-setting-up-home-baking-4bf258a9fd30"
-      },
-      {
-        title: "Tezos Baking How To",
-        link: "https://gist.github.com/dakk/bdf6efe42ae920acc660b20080a506dd"
-      },
-      {
-        title: "Setting up a Secure Baker",
-        link: "https://medium.com/@obsidian.systems/setting-up-a-secure-baker-27bb12363679"
-      }
-    ]
-  },
-  {
     title: "Hardware Wallets",
     link: "/tutorials/#hardware-wallets",
     posts: [
@@ -155,7 +125,29 @@ const additionalTutorials = [
     ]
   },
   {
-    title: "DApp",
+    title: "Baking",
+    link: "/tutorials/#baking",
+    posts: [
+      {
+        title: 'Bake with Kiln (GUI)',
+        link: 'https://gitlab.com/obsidian.systems/tezos-bake-monitor'
+      },
+      {
+        title: "It's a Baker's Life for Me",
+        link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1"
+      },
+      {
+        title: "Tezos Baking How To",
+        link: "https://gist.github.com/dakk/bdf6efe42ae920acc660b20080a506dd"
+      },
+      {
+        title: "Setting up a Secure Baker",
+        link: "https://medium.com/@obsidian.systems/setting-up-a-secure-baker-27bb12363679"
+      }
+    ]
+  },
+  {
+    title: "App",
     link: "/tutorials/#dapp",
     posts: [
       {
