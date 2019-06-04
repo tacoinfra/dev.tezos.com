@@ -6,7 +6,7 @@ export default [
     posts: [
       {
         link: "https://gitlab.com/gabriel.alfour/ligo",
-        title: "Ligo ",
+        title: "Ligo",
         body: "A syntax-agnostic, high-level smart contract language"
       },
       {
@@ -42,9 +42,19 @@ export default [
         body: "Javascript library for interacting with Tezos"
       },
       {
+        link: "https://github.com/TezosRio/TezosJ_SDK",
+        title: "TezosJ SDK",
+        body: "Android Java SDK for Tezos"
+      },
+      {
         link: "https://github.com/BrianGuo/MichelsonExecutionEngine",
         title: "M.E.L.",
         body: "Michelson Execution library"
+      },
+      {
+        link: "https://ocamlpro.github.io/techelson/user_doc/index.html",
+        title: "Techelson",
+        body: "Test Execution Environment (TEE) for Michelson contracts"
       },
       {
         link: "https://github.com/Cryptonomic/Conseil/ ",

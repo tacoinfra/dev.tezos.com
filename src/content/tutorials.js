@@ -92,7 +92,10 @@ export default [
       {
         title: "It's a Baker's Life for Me",
         author: "Arthur Breitman",
-        link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1"
+        link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1",
+        body: `
+          <p>How to become a Tezos validator (baker)</p>
+        `
       },
       {
         title: "Set up your own Secure Baker",
