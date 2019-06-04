@@ -14,21 +14,19 @@ const Layout = ({
   compact = false
 }) => {
   return (
-    (
-      <Container>
-        <Global styles={globalRules} />
-        <Header />
-        <Hero
-          compact={compact}
-          title={title}
-          subtitle={subtitle}
-        >
-          {heroContent}
-        </Hero>
-        <Main>{children}</Main>
-        <Footer />
-      </Container>
-    )
+    <Container>
+      <Global styles={globalRules} />
+      <Header />
+      <Hero
+        compact={compact}
+        title={title}
+        subtitle={subtitle}
+      >
+        {heroContent}
+      </Hero>
+      <Main>{children}</Main>
+      <Footer />
+    </Container>
   )
 }
 
