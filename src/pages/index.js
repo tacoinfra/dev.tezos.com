@@ -22,7 +22,7 @@ const SiteIndex = ({ location }) => {
     <Layout
       location={location}
       title="Tezos Developer Portal"
-      subtitle="Technical Resources for Software and Blockchain Developers"
+      subtitle="Resources for Developers"
       heroContent={<HomeHeroContent />}
     >
       <SEO title="Home" />
