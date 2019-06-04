@@ -23,6 +23,11 @@ export default [
         link: "https://fi-code.com/",
         title: "Fi",
         body: "High level language, currently in Alpha"
+      },
+      {
+        link: 'http://www.liquidity-lang.org/',
+        title: 'Liquidity',
+        body: 'Liquidity is a high-level typed smart-contract language for Tezos that strictly complies with Michelson security restrictions'
       }
     ]
   },
