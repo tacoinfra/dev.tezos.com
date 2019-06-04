@@ -7,7 +7,7 @@ import TezosLogo from "../assets/tezos-logo.svg"
 
 const navigationListItems = [
   {
-    title: "Additional Tutorials",
+    title: "Tutorials",
     href: "/tutorials",
   },
   {

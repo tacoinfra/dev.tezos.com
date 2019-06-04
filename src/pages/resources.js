@@ -8,8 +8,8 @@ import resourcesContent from "../content/resources"
 
 const ResourcesPage = ({ location }) => {
   return (
-    <Layout location={location} title="Resources" compact>
-      <SEO title="Resources" />
+    <Layout location={location} title="Additional Resources" compact>
+      <SEO title="Additional Resources" />
 
       <ShellWrapper>
         <PostListGroup columns={resourcesContent.length}>
