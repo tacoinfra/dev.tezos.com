@@ -104,14 +104,6 @@ export default [
         body: `
           <p>Tips on how to up your own at-home baker.</p>
         `
-      },
-      {
-        title: "Helpful articles for Bakers",
-        author: "Cryptium Labs",
-        link: "https://medium.com/cryptium",
-        body: `
-          <p>Learn about the baking process, how to store your Tez in wallets, and how to delegate your baking rights.</p>
-        `
       }
     ]
   },

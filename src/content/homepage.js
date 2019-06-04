@@ -147,7 +147,7 @@ const additionalTutorials = [
     ]
   },
   {
-    title: "App",
+    title: "App Development",
     link: "/tutorials/#app-development",
     posts: [
       {
