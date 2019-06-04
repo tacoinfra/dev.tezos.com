@@ -95,8 +95,12 @@ const Content = styled.div`
       margin: 0;
 
       & + p {
-        margin-top: -4px;
+        margin-top: -2px;
       }
+    }
+
+    small {
+      line-height: 20px;
     }
   }
 `
