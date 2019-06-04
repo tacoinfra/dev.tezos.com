@@ -64,9 +64,11 @@ const TutorialIndex = ({ location }) => {
                     >
                       <h3>{title}</h3>
                       {author && <TutorialAuthor>{author}</TutorialAuthor>}
-                      <TutorialDescription
-                        dangerouslySetInnerHTML={{ __html: body }}
-                      />
+                      {body && (
+                        <TutorialDescription
+                          dangerouslySetInnerHTML={{ __html: body }}
+                        />
+                      )}
                     </TutorialItem>
                   ))
                 }
@@ -140,8 +142,10 @@ const TutorialItem = styled.a`
 `
 
 const TutorialDescription = styled.div`
+  border-top: 1px solid ${palette.grey};
   margin-bottom: 0;
   margin-top: 20px;
+  padding-top: 12px;
 
   & > *:last-child {
     margin-bottom: 0;
@@ -177,14 +181,13 @@ const TutorialDescription = styled.div`
 `
 
 const TutorialAuthor = styled.p`
-  border-bottom: 1px solid ${palette.grey};
   color: ${palette.blue};
   font-size: 20px;
-  padding-bottom: 18px;
+  margin-bottom: 12px;
   margin-top: 12px;
 
-  & + ${TutorialDescription} {
-    margin-top: 12px;
+  &:last-child {
+    margin-bottom: 0;
   }
 `
 
