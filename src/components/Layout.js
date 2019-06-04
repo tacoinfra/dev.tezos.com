@@ -38,7 +38,7 @@ const globalRules = css`
   a {
     color: ${palette.blue};
     font-weight: 300;
-    line-height: 29px;
+    line-height: 26px;
     text-decoration: none;
 
     &:hover,
