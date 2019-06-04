@@ -1,8 +1,99 @@
 export default [
   {
+    slug: "hardware-wallets",
+    title: "Hardware Wallets",
+    tutorials: [
+      {
+        title: "How to Configure Tezos on the Leger Nano S",
+        author: "PosBakerz",
+        link: "https://medium.com/@PosBakerz/how-to-configure-tezos-on-ledger-nano-s-a2439186956d",
+        body: `
+          <p>An easy tutorial on how to store your Tezos Tokens on a Nano S Ledger.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Nano S Tutorial",
+        author: "Arthur Breitman",
+        link: "https://www.youtube.com/watch?v=PdeilPjIE-Q",
+        body: `
+          <p>How to use the Tezos command line client with a Ledger Nano S hardware wallet.</p>
+        `
+      },
+      {
+        title: "How to Delegate Tez (Tezos' XTZ) with Your Ledger Nano S",
+        author: "Cryptium",
+        link: "https://medium.com/cryptium/how-to-delegate-tezzies-tezos-xtz-with-your-ledger-nano-s-with-initial-setup-screenshots-519c9ae6654f",
+        body: `
+          <p>This article aims to be guideline for setting up your Ledger Nano for receiving XTZ and making delegations to bakers.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Applications: Releases",
+        author: "Obsidian Systems",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/releases",
+        body: `
+          <p>Stay up to date on Obsidian Systems' latest Tezos Ledger App releases.</p>
+        `
+      },
+      {
+        title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
+        author: "Obsidian Systems",
+        link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md",
+        body: `
+          <p>How to set up your Tezos Baking and Tezos Wallet applications on a Mac.</p>
+        `
+      },
+      {
+        title: "Debugging Linux Connection Issues",
+        author: "Ledger",
+        link: "https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues",
+        body: `
+          <p>Users may encounter connection issues when trying to connect their Ledger Nano S or Ledger Blue device. Here are some steps to help you troubleshoot.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Ledger Nano S - Magnum Wallet",
+        author: "Cryptium",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7",
+        body: `
+          <p>If you own a Ledger Nano S, Tezos (XTZ), and your favourite wallet happens to be Magnum Wallet, you can store your funds in the hardware wallet and link it to a Magnum Wallet whenever you want to make transfers or delegations. </p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Ledger Nano S - TezBox Wallet",
+        author: "Cryptium",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-tezbox-wallet-8fb4ac2d3355",
+        body: `
+          <p>TezBox is a community developed wallet for the Tezos network that is cross-platform, open-source and decentralized - <a href="https://tezbox.com" target="_blank" rel="noopener noreferrer">https://tezbox.com</a></p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Trezor Model T - TezBox Wallet",
+        author: "Cryptium",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-tezbox-e26c578f7a8b",
+        body: `
+          <p>While Trezor is working on supporting a Tezos wallet, a Tezos holder who owns a Trezor Model T can only interact with the network through another wallet, such as SimpleStaking, in combination with the device.</p>
+        `
+      },
+      {
+        title: "Storage and Delegation with Trezor Model T - Magnum Wallet",
+        author: "Cryptium",
+        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-magnum-wallet-51525aab5122",
+        body: `
+          <p>If you own a TREZOR Model T, Tezos (XTZ), and your favourite wallet happens to be Magnum Wallet, you can store your funds in the hardware wallet and link it to a Magnum Wallet whenever you want to make transfers or delegations.</p>
+        `
+      }
+    ]
+  },
+  {
     slug: "baking",
     title: "Baking",
     tutorials: [
+      {
+        title: "It's a Baker's Life for Me",
+        author: "Arthur Breitman",
+        link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1"
+      },
       {
         title: "Set up your own Secure Baker",
         author: "Obsidian Systems",
@@ -22,101 +113,15 @@ export default [
     ]
   },
   {
-    slug: "hardware-wallets",
-    title: "Hardware Wallets",
-    tutorials: [
-      {
-        title: "How to Configure Tezos on the Leger Nano S",
-        author: "Lorem ipsum",
-        link: "https://medium.com/@PosBakerz/how-to-configure-tezos-on-ledger-nano-s-a2439186956d",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Tezos Ledger Nano S Tutorial",
-        author: "Lorem ipsum",
-        link: "https://www.youtube.com/watch?v=PdeilPjIE-Q",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "How to Delegate Tez (Tezos' XTZ) with Your Ledger Nano S",
-        author: "Lorem ipsum",
-        link: "https://medium.com/cryptium/how-to-delegate-tezzies-tezos-xtz-with-your-ledger-nano-s-with-initial-setup-screenshots-519c9ae6654f",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Tezos Ledger Applications: Releases",
-        author: "Lorem ipsum",
-        link: "https://github.com/obsidiansystems/ledger-app-tezos/releases",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Tezos Ledger Applications: Mac-specific CLI Installation Guide",
-        author: "Lorem ipsum",
-        link: "https://github.com/obsidiansystems/ledger-app-tezos/blob/master/MacInstallation.md",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Debugging Linux Connection Issues",
-        author: "Lorem ipsum",
-        link: "https://support.ledger.com/hc/en-us/articles/115005165269-Fix-connection-issues",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Storage and Delegation with Ledger Nano S - Magnum Wallet",
-        author: "Lorem ipsum",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Storage and Delegation with Ledger Nano S - TezBox Wallet",
-        author: "Lorem ipsum",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-tezbox-wallet-8fb4ac2d3355",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Storage and Delegation with Trezor Model T - TezBox Wallet",
-        author: "Lorem ipsum",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-tezbox-e26c578f7a8b",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      },
-      {
-        title: "Storage and Delegation with Trezor Model T - Magnum Wallet",
-        author: "Lorem ipsum",
-        link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-trezor-model-t-and-delegate-with-magnum-wallet-51525aab5122",
-        body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
-        `
-      }
-    ]
-  },
-  {
     slug: "dapp",
     title: "DApp",
     tutorials: [
       {
         title: "Tezos Software Architecture: The Big Picture",
-        author: "Lorem ipsum",
+        author: "",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html",
         body: `
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum.</p>
+          <p></p>
         `
       }
     ]
