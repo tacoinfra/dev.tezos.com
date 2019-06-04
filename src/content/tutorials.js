@@ -99,7 +99,7 @@ export default [
         author: "Obsidian Systems",
         link: "https://medium.com/@obsidian.systems/setting-up-a-secure-baker-27bb12363679",
         body: `
-          <p>Thinking of Running your own Baker? Obsidian Systems gives some helpful tips on how to up your own at-home baker.</p>
+          <p>Tips on how to up your own at-home baker.</p>
         `
       },
       {
@@ -107,21 +107,20 @@ export default [
         author: "Cryptium Labs",
         link: "https://medium.com/cryptium",
         body: `
-          <p>Cryptium Labs has many helpful articles for bakers that range from understanding the baking process to storing your Tez in wallets and delegating your baking rights.</p>
+          <p>Learn about the baking process, how to store your Tez in wallets, and how to delegate your baking rights.</p>
         `
       }
     ]
   },
   {
-    slug: "dapp",
-    title: "DApp",
+    slug: "app-development",
+    title: "App Development",
     tutorials: [
       {
         title: "Tezos Software Architecture: The Big Picture",
-        author: "",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html",
         body: `
-          <p></p>
+          <p>This article describes the main elements of Tezos from a distance. It abstracts from all plumbing and both internal and system dependencies to give a simple view of the main components, their responsibilities and interactions</p>
         `
       }
     ]

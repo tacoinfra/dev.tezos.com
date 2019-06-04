@@ -148,7 +148,7 @@ const additionalTutorials = [
   },
   {
     title: "App",
-    link: "/tutorials/#dapp",
+    link: "/tutorials/#app-development",
     posts: [
       {
         title: "Tezos Software Architecture: The Big Picture",
