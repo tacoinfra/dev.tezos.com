@@ -5,7 +5,7 @@ module.exports = {
     title: `Tezos Developer Portal`,
     author: `Tezos`,
     description: `Resources for Developers`,
-    siteUrl: `http://developers.tezos.com/`,
+    siteUrl: `https://developers.tezos.com/`,
     languages,
   },
   plugins: [
