@@ -32,7 +32,7 @@ const Header = () => (
             {item.title}
           </NavigationLink>
         ))}
-        <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
+        <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor>
         <ButtonAnchor href="https://www.tezos.com/">Back to Tezos.com</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
@@ -128,7 +128,7 @@ const MobileMenu = () => {
               </MobileMenuLink>
             </li>
           ))}
-          <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
+          <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
           <li><ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
           </ButtonAnchor></li>

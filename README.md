@@ -1,4 +1,4 @@
-# dev.tezos.com
+# developers.tezos.com
 
 This project is a site for the dev portal for Tezos.com. It used as a tutorial hub for various topics related to Tezos.
 
@@ -8,11 +8,11 @@ This project is a site for the dev portal for Tezos.com. It used as a tutorial h
 
 1. Clone the repository
 
-`git clone git@github.com:tacoinfra/dev.tezos.com`
+`git clone git@github.com:tacoinfra/developers.tezos.com`
 
 2. Change directory into our clone and install our dependencies
 
-`cd dev.tezos.com && npm install`
+`cd developers.tezos.com && npm install`
 
 3. Start the development environment using the `dev` script in `package.json`
 
