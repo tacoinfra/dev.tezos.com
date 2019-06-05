@@ -56,7 +56,7 @@ export default [
         author: "Cryptium",
         link: "https://medium.com/cryptium/how-to-store-your-tezos-xtz-in-your-ledger-nano-s-and-delegate-with-magnum-wallet-3871dc4bd3b7",
         body: `
-          <p>If you own a Ledger Nano S, Tezos (XTZ), and your favourite wallet happens to be Magnum Wallet, you can store your funds in the hardware wallet and link it to a Magnum Wallet whenever you want to make transfers or delegations. </p>
+          <p>If you own a Ledger Nano S, Tezos (XTZ), and your favourite wallet happens to be Magnum Wallet, you can store your funds in the hardware wallet and link it to a Magnum Wallet whenever you want to make transfers or delegations.</p>
         `
       },
       {
@@ -91,10 +91,10 @@ export default [
     tutorials: [
       {
         title: "Bake with Kiln (GUI)",
-        author: "Lorem Ipsum",
+        author: "Obsidian Systems",
         link: "https://gitlab.com/obsidian.systems/tezos-bake-monitor",
         body: `
-          <p>Ex Lorem officia dolore duis ipsum esse laboris cupidatat ipsum.</p>
+          <p>Kiln, by Obsidian Systems, is a tool for both baking and monitoring on the Tezos network. It provides a locally hosted graphical interface, binaries for tezos-client, tezos-node, tezos-baker, and tezos-endorser, and it builds a cache of chain data from the nodes to which it connects.</p>
         `
       },
       {
@@ -102,7 +102,7 @@ export default [
         author: "Arthur Breitman",
         link: "https://medium.com/tezos/its-a-baker-s-life-for-me-c214971201e1",
         body: `
-          <p>How to become a Tezos validator (baker)</p>
+          <p>How to become a Tezos validator (baker).</p>
         `
       },
       {
@@ -110,7 +110,7 @@ export default [
         author: "dakk",
         link: "https://gist.github.com/dakk/bdf6efe42ae920acc660b20080a506dd",
         body: `
-          <p>How to install and set up Tezos baking on Ubuntu or Debian</p>
+          <p>How to install and set up Tezos baking on Ubuntu or Debian.</p>
         `
       },
       {
@@ -129,15 +129,11 @@ export default [
     tutorials: [
       {
         title: "Tezos Software Architecture: The Big Picture",
+        author: "Nomadic",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/the_big_picture.html",
         body: `
           <p>This article describes the main elements of Tezos from a distance. It abstracts from all plumbing and both internal and system dependencies to give a simple view of the main components, their responsibilities and interactions</p>
         `
-      },
-      {
-        hideOnTutorialsPage: true,
-        title: "Contract Templates",
-        link: "/tutorials#contract-templates"
       }
     ]
   },
