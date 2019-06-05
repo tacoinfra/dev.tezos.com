@@ -33,6 +33,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-sitemap": "^2.1.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
