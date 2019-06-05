@@ -25,7 +25,7 @@ const SiteIndex = ({ location }) => {
       subtitle="Resources for Developers"
       heroContent={<HomeHeroContent />}
     >
-      <SEO title="Home" />
+      <SEO />
 
       <Wrapper>
         <CalloutGroup>

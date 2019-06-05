@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Tezos Developer Portal`,
     author: `Tezos`,
-    description: ``,
+    description: `Resources for Developers`,
     siteUrl: `http://dev.tezos.com/`,
     languages,
   },
@@ -28,6 +28,7 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
