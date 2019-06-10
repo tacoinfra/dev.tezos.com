@@ -25,11 +25,7 @@ const PostListGroup = ({ columns = 3, children }) => {
 
 const ThreeColumn = css`
   @media (min-width: ${breakpoints.mobile}) {
-    /* grid-template-columns: repeat(auto-fill, minmax(45%, 1fr)); */
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
-
-  @media (min-width: ${breakpoints.tablet}) {
   }
 `
 const FourColumn = css`
