@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Tezos Developer Portal`,
     author: `Tezos`,
-    description: `Resources for Developers`,
+    description: `Welcome to the Tezos Developer Portal. Explore and find the tools you need to get started building on Tezos right now.`,
     siteUrl: `https://developers.tezos.com/`,
     languages,
   },
