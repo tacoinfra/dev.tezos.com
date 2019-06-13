@@ -6,7 +6,7 @@ const gettingStarted = [
     description: "Install Tezos binaries, master the command-line interface, and start exploring the blockchain.",
     tutorials: [
       {
-        title: "How to Get Tezos",
+        title: "How to Run Tezos",
         link: "http://tezos.gitlab.io/mainnet/introduction/howtoget.html"
       },
       {
@@ -26,7 +26,7 @@ const gettingStarted = [
   {
     title: "Learning a smart contracts programming language",
     description: "Choose one of the high-level languages to program in or use Michelson (the smart-contract language of Tezos) directly.",
-    tutorials: [
+    languages: [
       {
         title: "Michelson: the language of Smart Contracts in Tezos",
         link: "http://tezos.gitlab.io/mainnet/whitedoc/michelson.html"
@@ -70,12 +70,8 @@ const gettingStarted = [
         link: "https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet"
       },
       {
-        title: "TzScan",
+        title: "Tezos.ID",
         link: "https://tzscan.io/"
-      },
-      {
-        title: "TezBridge",
-        link: "https://www.tezbridge.com/"
       }
     ]
   },
@@ -96,6 +92,10 @@ const gettingStarted = [
       {
         title: "Go-Tezos",
         link: "https://github.com/DefinitelyNotAGoat/go-tezos"
+      },
+      {
+        title: "TezBridge",
+        link: "https://www.tezbridge.com/"
       }
     ]
   }

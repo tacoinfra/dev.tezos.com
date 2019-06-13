@@ -50,7 +50,7 @@ const Footer = () => (
             font-weight: 100;
           `}
         >
-          Copyright © {new Date().getFullYear()} Tezos. All rights reserved.
+          Copyright © {new Date().getFullYear()}. All rights reserved.
         </p>
       </div>
     </FooterContent>

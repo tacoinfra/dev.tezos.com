@@ -34,7 +34,13 @@ const SiteIndex = ({ location }) => {
           <PostListGroup columns={gettingStarted.length}>
             {
               (refList) =>
-                gettingStarted.map(({ title, description, tutorials, resources }, index) => (
+                gettingStarted.map(({
+                  title,
+                  description,
+                  tutorials,
+                  languages,
+                  resources
+                }, index) => (
                   <PostList
                     key={title}
                     titleRef={refList[index]}
@@ -50,6 +56,21 @@ const SiteIndex = ({ location }) => {
                         <ul>
                           {
                             tutorials.map(({ title, link }) => (
+                              <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
+                            ))
+                          }
+                        </ul>
+                      </React.Fragment>
+                    }
+
+                    {
+                      languages &&
+                      languages.length > 0 &&
+                      <React.Fragment>
+                        <h4>Languages</h4>
+                        <ul>
+                          {
+                            languages.map(({ title, link }) => (
                               <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
                             ))
                           }
@@ -78,7 +99,7 @@ const SiteIndex = ({ location }) => {
         </CalloutGroup>
 
         <Section>
-          <SectionHeading centered>Additional Resources</SectionHeading>
+          <SectionHeading centered>Resources</SectionHeading>
 
           <PostListGroup columns={resources.length}>
             {
@@ -97,32 +118,6 @@ const SiteIndex = ({ location }) => {
                             <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
                             <p><small>{body}</small></p>
                           </li>
-                        ))
-                      }
-                    </ul>
-                  </PostList>
-                ))
-            }
-          </PostListGroup>
-        </Section>
-
-        <Section>
-          <SectionHeading centered>Additional Tutorials</SectionHeading>
-
-          <PostListGroup columns={additionalTutorials.length}>
-            {
-              (refList) =>
-                additionalTutorials.map(({ title, link, posts }, index) => (
-                  <PostList
-                    key={title}
-                    titleRef={refList[index]}
-                    title={<h3>{title}</h3>}
-                    link={link}
-                  >
-                    <ul>
-                      {
-                        posts.map(({ link, title }) => (
-                          <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
                         ))
                       }
                     </ul>

@@ -10,6 +10,11 @@ export default [
         body: "A syntax-agnostic, high-level smart contract language"
       },
       {
+        link: "https://fi-code.com/",
+        title: "Fi",
+        body: "High level language, currently in Alpha"
+      },
+      {
         link: "http://smartpy.io/",
         title: "SmartPy",
         body: "Tezos smart contracts with Python syntax"
@@ -18,11 +23,6 @@ export default [
         link: "http://hackage.haskell.org/package/morley",
         title: "Morley/Lorentz",
         body: "Haskell-like Michelson Programming Language"
-      },
-      {
-        link: "https://fi-code.com/",
-        title: "Fi",
-        body: "High level language, currently in Alpha"
       },
       {
         link: 'http://www.liquidity-lang.org/',
@@ -42,9 +42,14 @@ export default [
         body: "Javascript library for interacting with Tezos"
       },
       {
-        link: "https://github.com/TezosRio/TezosJ_SDK",
-        title: "TezosJ SDK",
-        body: "Android Java SDK for Tezos"
+        link: "https://cryptonomic.github.io/ConseilJS/#/",
+        title: "Conseiljs",
+        body: "Javascript library for building tezos dapps"
+      },
+      {
+        link: "https://github.com/TezTech/eztz",
+        title: "Eztz",
+        body: "Javascript library for interacting with Tezos "
       },
       {
         link: "https://github.com/BrianGuo/MichelsonExecutionEngine",
@@ -57,29 +62,24 @@ export default [
         body: "Test Execution Environment (TEE) for Michelson contracts"
       },
       {
-        link: "https://github.com/Cryptonomic/Conseil/ ",
-        title: "Conseil",
-        body: "API tool for querying against nodes"
-      },
-      {
-        link: "https://cryptonomic.github.io/ConseilJS/#/",
-        title: "Conseiljs",
-        body: "Javascript library for building tezos dapps"
-      },
-      {
-        link: "https://github.com/TezTech/eztz",
-        title: "Eztz",
-        body: "Javascript library for interacting with Tezos "
+        link: "https://github.com/TezosRio/TezosJ_SDK",
+        title: "TezosJ SDK",
+        body: "Android Java SDK for Tezos"
       },
       {
         link: "https://github.com/murbard/pytezos",
         title: "PyTezos",
-        body: "Python Library for interacting with Tezos "
+        body: "Python Library for interacting with Tezos"
       },
       {
         link: "https://github.com/DefinitelyNotAGoat/go-tezos",
         title: "Go-Tezos",
-        body: "Golang Library for interacting with Tezos "
+        body: "Golang Library for interacting with Tezos"
+      },
+      {
+        link: "https://github.com/Cryptonomic/Conseil/ ",
+        title: "Conseil",
+        body: "API tool for querying against nodes"
       },
       {
         link: "https://www.tezbridge.com/",
@@ -99,14 +99,14 @@ export default [
         body: "Michelson Plugin for IntelliJ"
       },
       {
-        link: "https://stove-labs.github.io/granary/",
-        title: "Granary",
-        body: "Tezos Development Toolkit"
-      },
-      {
         link: "https://github.com/tezos/tezos/tree/master/emacs",
         title: "Michelson emacs mode ",
         body: "Michelson Plugin for Emacs"
+      },
+      {
+        link: "https://stove-labs.github.io/granary/",
+        title: "Granary",
+        body: "Tezos Development Toolkit"
       },
       {
         link: "https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet",
@@ -115,7 +115,7 @@ export default [
       },
       {
         link: "https://tzscan.io/",
-        title: "TzScan",
+        title: "Tezos.ID",
         body: "Block Explorer"
       }
     ]
