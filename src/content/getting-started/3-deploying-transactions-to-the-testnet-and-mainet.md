@@ -8,8 +8,6 @@ tutorials:
     link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/03
   - title: Michelson Data Structures
     link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/04
-  - title: Deploying Our First Michelson Contract On Tezos
-    link: https://medium.com/@catsigma/decentralized-app-development-on-tezos-for-beginners-part-4-d453b3584a3d
 resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
