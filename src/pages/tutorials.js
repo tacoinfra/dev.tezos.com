@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Scrollspy from "react-scrollspy"
 import SEO from "../components/SEO"
@@ -6,20 +7,54 @@ import Layout from "../components/Layout"
 import SplitWrapper from "../components/SplitWrapper"
 import SectionHeading from "../components/SectionHeading"
 import { palette, breakpoints } from "../utils/variables"
-import tutorialsContent from "../content/tutorials"
+import { structureTutorialsContent } from "../content/helpers"
 
-const slugList = tutorialsContent.map(category => category.slug)
+const query = graphql`
+  query {
+    allMarkdownRemark(
+      sort: {
+        order: ASC,
+        fields: [frontmatter___priority]
+      }
+      filter: {
+        frontmatter: {
+          type: { eq: "tutorial" }
+        }
+      }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            priority
+            meta
+            type
+            category
+            title
+            author
+            link
+          }
+        }
+      }
+    }
+  }
+`
+
 
 const TutorialIndex = ({ location }) => {
   const [activeScrollSpy, setActiveScrollSpy] = useState(null)
+
+  const data = useStaticQuery(query)
+  const tutorialsContent = structureTutorialsContent(data)
+  const slugList = tutorialsContent.map(category => category.slug)
 
   const handleScrollSpyUpdate = (el) => {
     setActiveScrollSpy(el.getAttribute("id"))
   }
 
   return (
-    <Layout location={location} title="Additional Tutorials" compact>
-      <SEO title="Additional Tutorials" />
+    <Layout location={location} title="Tutorials" compact>
+      <SEO title="Tutorials" />
 
       <SplitWrapper>
         <SplitWrapper.Sidebar>
@@ -45,17 +80,17 @@ const TutorialIndex = ({ location }) => {
 
         <SplitWrapper.Main>
           {
-            tutorialsContent.map(({ slug, title, body, tutorials }) => (
+            tutorialsContent.map(({ slug, title, html, tutorials }) => (
               <TutorialGroup id={slug} key={slug}>
                 <SectionHeading>{title}</SectionHeading>
                 {
-                  body &&
+                  html &&
                   <TutorialBody
-                    dangerouslySetInnerHTML={{ __html: body }}
+                    dangerouslySetInnerHTML={{ __html: html }}
                   />
                 }
                 {
-                  tutorials.map(({ title, author, link, body }) => (
+                  tutorials.map(({ title, author, link, html }) => (
                     <TutorialItem
                       key={title}
                       href={link}
@@ -64,9 +99,9 @@ const TutorialIndex = ({ location }) => {
                     >
                       <h3>{title}</h3>
                       {author && <TutorialAuthor>{author}</TutorialAuthor>}
-                      {body && (
+                      {html && (
                         <TutorialDescription
-                          dangerouslySetInnerHTML={{ __html: body }}
+                          dangerouslySetInnerHTML={{ __html: html }}
                         />
                       )}
                     </TutorialItem>

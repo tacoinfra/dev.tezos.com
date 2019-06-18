@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby";
 import styled from "@emotion/styled"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
@@ -9,15 +10,57 @@ import PostListGroup from "../components/PostListGroup"
 import SectionHeading from "../components/SectionHeading"
 import HomeHeroContent from "../components/HomeHeroContent"
 import { palette, breakpoints } from "../utils/variables"
-import homepageContent from "../content/homepage"
+import {
+  structureGettingStartedContent,
+  structureResourcesContent
+ } from "../content/helpers"
 
-const {
-  gettingStarted,
-  additionalTutorials,
-  resources
-} = homepageContent
+const query = graphql`
+  {
+    allMarkdownRemark(
+      sort: {
+        order: ASC,
+        fields: [frontmatter___priority]
+      }
+      filter: {
+        frontmatter: {
+          type: { regex: "/(resource|getting-started)/" }
+        }
+      }
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            type
+            slug
+            title
+            priority
+            tutorials {
+              title
+              link
+            }
+            languages {
+              title
+              link
+            }
+            resources {
+              title
+              link
+              description
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 const SiteIndex = ({ location }) => {
+  const data = useStaticQuery(query)
+  const gettingStartedContent = structureGettingStartedContent(data)
+  const resourcesContent = structureResourcesContent(data)
+
   return (
     <Layout
       location={location}
@@ -31,10 +74,10 @@ const SiteIndex = ({ location }) => {
         <CalloutGroup>
           <h2>Getting Started</h2>
 
-          <PostListGroup columns={gettingStarted.length}>
+          <PostListGroup columns={gettingStartedContent.length}>
             {
               (refList) =>
-                gettingStarted.map(({
+                gettingStartedContent.map(({
                   title,
                   description,
                   tutorials,
@@ -101,10 +144,10 @@ const SiteIndex = ({ location }) => {
         <Section>
           <SectionHeading centered>Resources</SectionHeading>
 
-          <PostListGroup columns={resources.length}>
+          <PostListGroup columns={resourcesContent.length}>
             {
               (refList) =>
-                resources.map(({ title, link, posts }, index) => (
+                resourcesContent.map(({ title, link, resources }, index) => (
                   <PostList
                     key={title}
                     titleRef={refList[index]}
@@ -113,10 +156,10 @@ const SiteIndex = ({ location }) => {
                   >
                     <ul>
                       {
-                        posts.map(({ link, title, body }) => (
+                        resources.map(({ link, title, description }) => (
                           <li key={link}>
                             <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
-                            <p><small>{body}</small></p>
+                            <p><small>{description}</small></p>
                           </li>
                         ))
                       }
