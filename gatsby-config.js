@@ -9,6 +9,14 @@ module.exports = {
     languages,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
