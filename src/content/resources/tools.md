@@ -1,5 +1,6 @@
 ---
 type: resource
+priority: 2
 slug: tools
 title: Tools
 resources:
@@ -18,5 +19,4 @@ resources:
   - title: TzScan
     link: https://tzscan.io/
     description: Block Explorer
-
 ---

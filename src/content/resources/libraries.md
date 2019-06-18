@@ -1,5 +1,6 @@
 ---
 type: resource
+priority: 1
 slug: libraries
 title: Libraries
 resources:
