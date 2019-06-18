@@ -1,6 +1,5 @@
 ---
 type: getting-started
-order: 1
 title: Starting up a node
 description: Install Tezos binaries, master the command-line interface, and start exploring the blockchain.
 tutorials:

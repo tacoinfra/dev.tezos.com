@@ -1,6 +1,6 @@
 ---
 type: getting-started
-order: 3
+priority: 3
 title: Deploying transactions to the testnet and mainet
 description: Create and sign transactions. Deploy and interact with the contracts that you’ve created.
 tutorials:

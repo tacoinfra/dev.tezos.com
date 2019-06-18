@@ -1,6 +1,6 @@
 ---
 type: getting-started
-order: 2
+priority: 2
 title: Learning a smart contracts programming language
 description: Choose one of the high-level languages to program in or use Michelson (the smart-contract language of Tezos) directly.
 languages:

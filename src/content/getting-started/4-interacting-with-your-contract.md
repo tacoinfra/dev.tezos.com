@@ -1,6 +1,6 @@
 ---
 type: getting-started
-order: 4
+priority: 4
 title: Interacting with your contract
 description: Learn to query your node for information about your contracts. Start building applications.
 resources:
