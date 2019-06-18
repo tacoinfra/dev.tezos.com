@@ -12,5 +12,5 @@ resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
   - title: Tezos.ID
-    link: https://tzscan.io/
+    link: https://tezos.id/
 ---
