@@ -6,43 +6,26 @@ import CircleIcon from "./CircleIcon"
 import { breakpoints } from "../utils/variables"
 
 // images
-import redditIcon from "../assets/icon-reddit.png"
-import redditIcon2x from "../assets/icon-reddit@2x.png"
-import riotIcon from "../assets/icon-riot.png"
-import riotIcon2x from "../assets/icon-riot@2x.png"
-import stackexchangeIcon from "../assets/icon-stackexchange.png"
-import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
-
-const srcSet = (src, src2x) => `${src} 1x, ${src2x} 2x`
+import RedditIcon from "../assets/social-reddit.svg"
+import RiotIcon from "../assets/social-riot.svg"
+import StackexchangeIcon from "../assets/social-stackexchange.svg"
 
 const HomeHeroContent = () => (
   <Container>
     <SocialLinks>
       <li>
         <CircleIcon href="https://www.reddit.com/r/tezos">
-          <img
-            src={redditIcon2x}
-            srcSet={srcSet(redditIcon, redditIcon2x)}
-            alt="Reddit"
-          />
+          <RedditIcon />
         </CircleIcon>
       </li>
       <li>
         <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
-          <img
-            src={riotIcon2x}
-            srcSet={srcSet(riotIcon, riotIcon2x)}
-            alt="Riot"
-          />
+          <RiotIcon />
         </CircleIcon>
       </li>
       <li>
         <CircleIcon href="https://tezos.stackexchange.com/">
-          <img
-            src={stackexchangeIcon2x}
-            srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)}
-            alt="Stack Exchange"
-          />
+          <StackexchangeIcon/>
         </CircleIcon>
       </li>
     </SocialLinks>

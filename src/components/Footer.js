@@ -4,14 +4,10 @@ import CircleIcon from "./CircleIcon"
 import { palette } from "../utils/variables"
 
 // images
-import redditIcon from "../assets/icon-reddit.png"
-import redditIcon2x from "../assets/icon-reddit@2x.png"
-import riotIcon from "../assets/icon-riot.png"
-import riotIcon2x from "../assets/icon-riot@2x.png"
-import stackexchangeIcon from "../assets/icon-stackexchange.png"
-import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
-
-const srcSet = (src, src2x) => `${src} 1x, ${src2x} 2x`
+import GitlabIcon from "../assets/social-gitlab.svg"
+import TwitterIcon from "../assets/social-twitter.svg"
+import RiotIcon from "../assets/social-riot.svg"
+import StackexchangeIcon from "../assets/social-stackexchange.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -20,30 +16,23 @@ const Footer = () => (
       <SocialHeader>Follow Us</SocialHeader>
       <SocialList>
         <li>
-          <CircleIcon href="https://www.reddit.com/r/tezos">
-            <img
-              src={redditIcon2x}
-              srcSet={srcSet(redditIcon, redditIcon2x)}
-              alt="Reddit"
-            />
+          <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
+            <RiotIcon />
           </CircleIcon>
         </li>
         <li>
-          <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
-            <img
-              src={riotIcon2x}
-              srcSet={srcSet(riotIcon, riotIcon2x)}
-              alt="Riot"
-            />
+          <CircleIcon href="https://gitlab.com/tezos/tezos">
+            <GitlabIcon />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://twitter.com/tezos">
+            <TwitterIcon />
           </CircleIcon>
         </li>
         <li>
           <CircleIcon href="https://tezos.stackexchange.com/">
-            <img
-              src={stackexchangeIcon2x}
-              srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)}
-              alt="Stack Exchange"
-            />
+            <StackexchangeIcon />
           </CircleIcon>
         </li>
       </SocialList>
