@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import ButtonAnchor from "./ButtonAnchor"
-import TextInput from "./TextInput"
+import MailSignup from "./MailSignup"
 import CircleIcon from "./CircleIcon"
 import { breakpoints } from "../utils/variables"
 
@@ -32,13 +31,7 @@ const HomeHeroContent = () => (
 
     <Rule />
 
-    <MailSignup action="">
-      <label htmlFor="email">
-        <span>Developer Mailing List</span>
-      </label>
-      <TextInput id="email" name="email" type="email" placeholder="Email" required></TextInput>
-      <ButtonAnchor type="submit" isAnchor={false} isSmall isSecondary>Submit</ButtonAnchor>
-    </MailSignup>
+    <MailSignup />
   </Container>
 )
 
@@ -87,51 +80,6 @@ const Rule = styled.hr`
 
   @media (min-width: ${breakpoints.tablet}) {
     display: none
-  }
-`
-
-const MailSignup = styled.form`
-  align-items: center;
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 320px;
-  width: 100%;
-
-  label {
-    align-items: center;
-    display: flex;
-
-    span {
-      white-space: nowrap;
-      font-weight: 300;
-      font-size: 18px;
-    }
-  }
-
-  input {
-    margin: 10px 0 20px;
-    max-width: 400px;
-  }
-
-  @media (min-width: ${breakpoints.mobile}) {
-    align-items: center;
-    flex-flow: row nowrap;
-    max-width: 100%;
-
-    input {
-      margin: 2px 20px 0;
-    }
-
-    button {
-      align-self: flex-end;
-    }
-  }
-
-  @media (min-width: ${breakpoints.tablet}) {
-    border-top: none;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: 40px;
-    padding-left: 40px;
   }
 `
 
