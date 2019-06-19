@@ -1,7 +1,7 @@
 ---
 type: getting-started
 priority: 4
-title: Interacting with your contract
+title: Interact with your contract
 description: Learn to query your node for information about your contracts. Start building applications.
 resources:
   - title: EzTz

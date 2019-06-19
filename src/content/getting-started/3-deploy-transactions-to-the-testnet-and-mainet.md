@@ -1,7 +1,7 @@
 ---
 type: getting-started
 priority: 3
-title: Deploying transactions to the testnet and mainet
+title: Deploy transactions to the testnet and mainnet
 description: Create and sign transactions. Deploy and interact with the contracts that you’ve created.
 tutorials:
   - title: Contract Origination & Interaction

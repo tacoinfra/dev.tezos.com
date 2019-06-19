@@ -35,6 +35,7 @@ const query = graphql`
             type
             slug
             title
+            description
             priority
             tutorials {
               title

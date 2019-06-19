@@ -12,5 +12,5 @@ resources:
     description: Tezos.ID is a blockchain explorer; wallet and tansaction monitoring tool
   - title: XTZ Explorer
     link: https://xtzexplorer.io/
-    description: XTZexplorer is a block explorer with visualized history information about all Tezos (XTZ) transactions.
+    description: XTZ Explorer is a block explorer with visualized history information about all Tezos (XTZ) transactions
 ---
