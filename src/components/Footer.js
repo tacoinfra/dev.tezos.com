@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import CircleIcon from "./CircleIcon"
-import { palette, breakpoints, spacings } from "../utils/variables"
+import { palette } from "../utils/variables"
 
 // images
 import redditIcon from "../assets/icon-reddit.png"
