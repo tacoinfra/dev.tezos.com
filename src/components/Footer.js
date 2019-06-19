@@ -1,59 +1,53 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
+import CircleIcon from "./CircleIcon"
 import { palette, breakpoints, spacings } from "../utils/variables"
-import RiotIcon from "../assets/social-riot.svg"
-import GitlabIcon from "../assets/social-gitlab.svg"
-import TwitterIcon from "../assets/social-twitter.svg"
+
+// images
+import redditIcon from "../assets/icon-reddit.png"
+import redditIcon2x from "../assets/icon-reddit@2x.png"
+import riotIcon from "../assets/icon-riot.png"
+import riotIcon2x from "../assets/icon-riot@2x.png"
+import stackexchangeIcon from "../assets/icon-stackexchange.png"
+import stackexchangeIcon2x from "../assets/icon-stackexchange@2x.png"
+
+const srcSet = (src, src2x) => `${src} 1x, ${src2x} 2x`
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
   <FooterContainer>
-    <FooterContent>
-      <SocialContent>
-        <p
-          css={css`
-            font-size: 18px;
-            margin: 0 40px 0 0;
-            font-weight: 100;
-            white-space: nowrap;
-          `}
-        >
-          Follow Us
-        </p>
-        <SocialList
-          css={css`
-            margin: 0;
-          `}
-        >
-          <li>
-            <a href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" target="_blank" rel="noopener noreferrer">
-              <RiotIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://gitlab.com/tezos/tezos" target="_blank" rel="noopener noreferrer">
-              <GitlabIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/tezos" target="_blank" rel="noopener noreferrer">
-              <TwitterIcon />
-            </a>
-          </li>
-        </SocialList>
-      </SocialContent>
-      <div>
-        <p
-          css={css`
-            margin: 0;
-            font-weight: 100;
-          `}
-        >
-          Copyright © {new Date().getFullYear()}. All rights reserved.
-        </p>
-      </div>
-    </FooterContent>
+    <SocialContent>
+      <SocialHeader>Follow Us</SocialHeader>
+      <SocialList>
+        <li>
+          <CircleIcon href="https://www.reddit.com/r/tezos">
+            <img
+              src={redditIcon2x}
+              srcSet={srcSet(redditIcon, redditIcon2x)}
+              alt="Reddit"
+            />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
+            <img
+              src={riotIcon2x}
+              srcSet={srcSet(riotIcon, riotIcon2x)}
+              alt="Riot"
+            />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://tezos.stackexchange.com/">
+            <img
+              src={stackexchangeIcon2x}
+              srcSet={srcSet(stackexchangeIcon, stackexchangeIcon2x)}
+              alt="Stack Exchange"
+            />
+          </CircleIcon>
+        </li>
+      </SocialList>
+    </SocialContent>
   </FooterContainer>
 )
 
@@ -62,30 +56,24 @@ const FooterContainer = styled.footer`
   height: 230px;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   background-color: ${palette.darkerBlue};
   color: ${palette.white};
   padding: 64px 8px;
 `
 
-const FooterContent = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-width: ${spacings.maxWidth};
-  flex-wrap: wrap;
-  @media (max-width: ${breakpoints.tablet}) {
-    justify-content: center;
-  }
-`
-
 const SocialContent = styled.div`
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+`
+
+const SocialHeader = styled.p`
+  font-size: 18px;
+  margin: 0 18px 0 0;
+  font-weight: 100;
+  white-space: nowrap;
 `
 
 const SocialList = styled.ul`
@@ -93,12 +81,14 @@ const SocialList = styled.ul`
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
-  li {
-    margin: 0 18px 0 0;
-    transition: transform 0.25s ease-in-out;
-    &:hover {
-      transform: translateY(-4px);
-    }
+  margin: 0;
+
+  & > li {
+    margin-bottom: 0;
+  }
+
+  & > * + * {
+    margin-left: 12px;
   }
 `
 
