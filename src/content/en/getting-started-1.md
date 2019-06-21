@@ -12,7 +12,7 @@ tutorials:
     link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
 resources:
   - title: Lorem Ipsum
-    link: tezos.com
+    link: https://tezos.com
   - title: Lorem Ipsum
-    link: tezos.com
+    link: https://tezos.com
 ---

@@ -5,9 +5,9 @@ title: Interact with your contract
 description: Learn to query your node for information about your contracts. Start building applications.
 tutorials:
   - title: Lorem Ipsum
-    link: tezos.com
+    link: https://tezos.com
   - title: Lorem Ipsum
-    link: tezos.com
+    link: https://tezos.com
 resources:
   - title: EzTz
     link: https://github.com/TezTech/eztz
