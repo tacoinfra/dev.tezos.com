@@ -16,7 +16,4 @@ languages:
     link: https://fi-code.com/
   - title: Liquidity
     link: http://www.liquidity-lang.org/
-resources:
-  - title: Michelson emacs mode
-    link: https://github.com/tezos/tezos/tree/master/emacs
 ---

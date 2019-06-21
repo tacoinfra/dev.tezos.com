@@ -10,4 +10,9 @@ tutorials:
     link: https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md
   - title: Run a Tezos node in Kiln (GUI)
     link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
+resources:
+  - title: Lorem Ipsum
+    link: tezos.com
+  - title: Lorem Ipsum
+    link: tezos.com
 ---
