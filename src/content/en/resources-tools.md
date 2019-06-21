@@ -16,7 +16,4 @@ resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
     description: Faucet for the Tezos Alphanet
-  - title: TzScan
-    link: https://tzscan.io/
-    description: Block Explorer
 ---
