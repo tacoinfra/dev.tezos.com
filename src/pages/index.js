@@ -13,7 +13,7 @@ import { palette, breakpoints } from "../utils/variables"
 import {
   structureGettingStartedContent,
   structureResourcesContent
- } from "../content/helpers"
+ } from "../utils/content-helpers"
 
 const query = graphql`
   {

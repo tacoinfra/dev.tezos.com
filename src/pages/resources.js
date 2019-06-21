@@ -5,7 +5,7 @@ import SEO from "../components/SEO"
 import ShellWrapper from "../components/ShellWrapper"
 import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
-import { structureResourcesContent } from "../content/helpers"
+import { structureResourcesContent } from "../utils/content-helpers"
 
 const query = graphql`
   query {
