@@ -80,6 +80,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         .concat(meta)}
     >
       <link rel="shortcut icon" href={favicon} />
+      <meta name="robots" content="noindex" />
     </Helmet>
   )
 }
