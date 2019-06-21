@@ -5,27 +5,37 @@ import ButtonAnchor from "./ButtonAnchor"
 import TextInput from "./TextInput"
 import { breakpoints } from "../utils/variables"
 
-const MailSignup = () => {
-  const inputRef = useRef()
+const useMailchimp = (emailRef) => {
   const [message, setMessage] = useState(null)
   const [status, setStatus] = useState(null)
 
   const handleSubmit = async ev => {
     ev.preventDefault()
 
-    const { value } = inputRef.current
+    const { value } = emailRef.current
     const data = await addToMailchimp(value)
 
     setMessage(data.msg)
     setStatus(data.result)
   }
 
+  return {
+    message,
+    status,
+    handleSubmit
+  }
+}
+
+const MailSignup = () => {
+  const emailRef = useRef()
+  const { message, status, handleSubmit } = useMailchimp(emailRef)
+
   return (
     <MailSignupContainer onSubmit={handleSubmit}>
       <LayoutContainer>
         <label htmlFor="email">Developer Mailing List</label>
         <TextInput
-          ref={inputRef}
+          ref={emailRef}
           id="email"
           name="email"
           type="email"
@@ -58,7 +68,6 @@ const getMessageColor = ({ status }) => {
       return 'white'
   }
 }
-
 
 const MailSignupContainer = styled.form`
   max-width: 320px;
