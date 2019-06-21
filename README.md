@@ -45,8 +45,7 @@ Content is generated using Markdown files located in the [src/content](src/conte
 
 To contribute content, we suggest:
 
-1. Fork this repository
-2. Checkout the `staging` branch
-3. Install and start development server (`npm start`)
-4. Make edits and test locally
-5. Commit and create a PR with `staging` as the base branch.
+1. Forking this repository from the `master` branch
+2. [Install](#installation) and start [development server](#development)
+3. Make content edits and test locally
+4. Commit and create a PR with `staging` as the base branch
