@@ -1,7 +1,7 @@
 ---
 type: getting-started
 priority: 2
-title: Learn a smart contracts programming language
+title: Learn a smart contract programming language
 description: Choose one of the high-level languages to program in.
 languages:
   - title: Michelson
