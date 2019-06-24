@@ -39,7 +39,7 @@ To deploy your production-ready build, run `npm run deploy`
 
 Reference to the Gatsby Tutorial [link](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/)
 
-## Content Entry
+## Edit / Submit Content
 
 Content is generated using Markdown files located in the [src/content](src/content) directory.  While running in development mode (`npm run develop` or `npm run start`) content can be edited and viewed in the local server environment.
 
