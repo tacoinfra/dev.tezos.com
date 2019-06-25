@@ -4,6 +4,7 @@ import { palette } from "../utils/variables"
 
 const CircleIcon = ({
   href,
+  label,
   children
 }) => {
   const hrefProps = href && {
@@ -14,7 +15,7 @@ const CircleIcon = ({
   }
 
   return (
-    <CircleIconContainer {...hrefProps}>
+    <CircleIconContainer {...hrefProps} aria-label={label}>
       {children}
     </CircleIconContainer>
   )

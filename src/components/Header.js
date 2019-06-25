@@ -15,7 +15,7 @@ const navigationListItems = [
 const Header = () => (
   <HeaderContainer>
     <NavigationMenu>
-      <NavigationLink to="/">
+      <NavigationLink to="/" aria-label="Tezos Developers">
         <TezosLogo />
       </NavigationLink>
       <MobileMenu />

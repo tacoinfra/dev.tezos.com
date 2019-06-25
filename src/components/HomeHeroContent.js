@@ -13,17 +13,17 @@ const HomeHeroContent = () => (
   <Container>
     <SocialLinks>
       <li>
-        <CircleIcon href="https://www.reddit.com/r/tezos">
+        <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
           <RedditIcon />
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org">
+        <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" label="Riot">
           <RiotIcon />
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="https://tezos.stackexchange.com/">
+        <CircleIcon href="https://tezos.stackexchange.com/" label="Stack Exchange">
           <StackexchangeIcon/>
         </CircleIcon>
       </li>
