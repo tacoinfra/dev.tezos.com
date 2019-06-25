@@ -5,7 +5,7 @@ import { palette } from "../utils/variables"
 
 // images
 import GitlabIcon from "../assets/social-gitlab.svg"
-import TwitterIcon from "../assets/social-twitter.svg"
+import RedditIcon from "../assets/social-reddit.svg"
 import RiotIcon from "../assets/social-riot.svg"
 import StackexchangeIcon from "../assets/social-stackexchange.svg"
 
@@ -26,8 +26,8 @@ const Footer = () => (
           </CircleIcon>
         </li>
         <li>
-          <CircleIcon href="https://twitter.com/tezos">
-            <TwitterIcon />
+          <CircleIcon href="https://www.reddit.com/r/tezos">
+            <RedditIcon />
           </CircleIcon>
         </li>
         <li>
