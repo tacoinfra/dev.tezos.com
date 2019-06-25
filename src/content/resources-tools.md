@@ -5,7 +5,7 @@ slug: tools
 title: Tools
 resources:
   - title: Tezos - intellij
-    link: https://www.plugin-dev.com/project/tezos-michelson/
+    link: https://www.plugin-dev.com/intellij/
     description: Michelson Plugin for IntelliJ
   - title: Michelson emacs mode
     link: https://github.com/tezos/tezos/tree/master/emacs
