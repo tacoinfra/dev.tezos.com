@@ -5,15 +5,20 @@ import { palette } from "../utils/variables"
 const CircleIcon = ({
   href,
   children
-}) => (
-  <CircleIconContainer
-    as={href ? "a" : "div"}
-    target={href ? "_blank" : null}
-    href={href}
-  >
-    {children}
-  </CircleIconContainer>
-)
+}) => {
+  const hrefProps = href && {
+    as: 'a',
+    href,
+    target: '_blank',
+    rel: 'noopener noreferrer'
+  }
+
+  return (
+    <CircleIconContainer {...hrefProps}>
+      {children}
+    </CircleIconContainer>
+  )
+}
 
 const CircleIconContainer = styled.div`
   background-color: ${palette.blue};
