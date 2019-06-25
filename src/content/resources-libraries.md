@@ -31,7 +31,4 @@ resources:
   - title: Conseil
     link: https://github.com/Cryptonomic/Conseil/
     description: API tool for querying against nodes
-  - title: TezBridge
-    link: https://www.tezbridge.com/
-    description: Web wallet storing Tezos accounts
 ---
