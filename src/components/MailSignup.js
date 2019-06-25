@@ -70,6 +70,7 @@ const getMessageColor = ({ status }) => {
 }
 
 const MailSignupContainer = styled.form`
+  position: relative;
   max-width: 320px;
   width: 100%;
 
@@ -117,6 +118,7 @@ const LayoutContainer = styled.div`
 `
 
 const Response = styled.p`
+  position: absolute;
   margin-top: 20px;
   color: ${getMessageColor}
 `
