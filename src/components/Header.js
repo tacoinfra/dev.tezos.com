@@ -3,42 +3,33 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import ButtonAnchor from "./ButtonAnchor"
 import { palette, breakpoints, spacings } from "../utils/variables"
-import TezosLogo from "../assets/tezos_logo.svg"
+import TezosLogo from "../assets/tezos-logo.svg"
 
 const navigationListItems = [
   {
-    title: "Tutorials",
-    href: "/tutorials",
-  },
-  {
-    title: "Dev Tools",
-    href: "/tools",
-  },
-  {
-    title: "Community",
-    href: "/#community",
+    title: "Resources",
+    href: "/resources",
   },
 ]
 
 const Header = () => (
   <HeaderContainer>
     <NavigationMenu>
-      <NavigationLink to="/">
+      <NavigationLink to="/" aria-label="Tezos Developers">
         <TezosLogo />
       </NavigationLink>
       <MobileMenu />
       <NavigationList>
         {navigationListItems.map(item => (
           <NavigationLink
-            activeStyle={{ fontWeight: 900 }}
             key={item.title}
             to={item.href}
           >
             {item.title}
           </NavigationLink>
         ))}
-        <ButtonAnchor isSmall isSecondary href="https://www.github.com/tacoinfra/dev.tezos.com">Contribute To Dev Portal</ButtonAnchor>
-        <ButtonAnchor isSmall href="https://www.tezos.com/">Back to Tezos</ButtonAnchor>
+        <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor>
+        <ButtonAnchor href="https://www.tezos.com/">Back to Tezos.com</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -53,9 +44,8 @@ const HeaderContainer = styled.header`
   overflow: hidden;
   position: absolute;
   z-index: 10;
-  @media (max-width: ${breakpoints.tablet}) {
-    padding: 8px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 `
 
 const NavigationMenu = styled.div`
@@ -74,6 +64,12 @@ const NavigationList = styled.div`
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
+  list-style: none;
+
+  & > * + * {
+    margin-left: 32px;
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     display: none;
   }
@@ -87,7 +83,6 @@ const NavigationLink = styled(Link)`
   line-height: 16px;
   color: ${palette.white};
   text-transform: uppercase;
-  margin-right: 31.75px;
   white-space: nowrap;
   &:hover {
     opacity: 0.8;
@@ -124,14 +119,15 @@ const MobileMenu = () => {
         <MobileMenuNavList>
           {navigationListItems.map(item => (
             <li key={item.title}>
-              <MobileMenuLink to={item.href}>
+              <MobileMenuLink to={item.href} onClick={() => handleToggleMenu()}>
                 {item.title}
               </MobileMenuLink>
             </li>
           ))}
-          <ButtonAnchor href="https://www.tezos.com/">
+          <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
+          <li><ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
-          </ButtonAnchor>
+          </ButtonAnchor></li>
         </MobileMenuNavList>
       </MobileMenuContainer>
     </Fragment>
@@ -200,6 +196,10 @@ const MobileMenuContainer = styled.div`
   transform: ${props =>
     props.isMenuOpen ? "translateX(0)" : "translateX(100%)"};
   transition: transform 150ms ease-in-out, width 250ms ease-in-out;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    display: none;
+  }
 `
 
 const MobileMenuNavList = styled.ul`

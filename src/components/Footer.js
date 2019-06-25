@@ -1,57 +1,42 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
-import { palette, breakpoints, spacings } from "../utils/variables"
-import RiotIcon from "../assets/riot.svg"
-import GitlabIcon from "../assets/gitlab.svg"
-import TwitterIcon from "../assets/twitter.svg"
-import FacebookIcon from "../assets/facebook.svg"
+import CircleIcon from "./CircleIcon"
+import { palette } from "../utils/variables"
+
+// images
+import GitlabIcon from "../assets/social-gitlab.svg"
+import RedditIcon from "../assets/social-reddit.svg"
+import RiotIcon from "../assets/social-riot.svg"
+import StackexchangeIcon from "../assets/social-stackexchange.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
   <FooterContainer>
-    <FooterContent>
-      <SocialContent>
-        <p
-          css={css`
-            font-size: 18px;
-            margin: 0 40px 0 0;
-            font-weight: 100;
-            white-space: nowrap;
-          `}
-        >
-          Follow Us
-        </p>
-        <SocialList
-          css={css`
-            margin: 0;
-          `}
-        >
-          <li>
+    <SocialContent>
+      <SocialHeader>Follow Us</SocialHeader>
+      <SocialList>
+        <li>
+          <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" label="Riot">
             <RiotIcon />
-          </li>
-          <li>
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://gitlab.com/tezos/tezos" label="Gitlab">
             <GitlabIcon />
-          </li>
-          <li>
-            <TwitterIcon />
-          </li>
-          <li>
-            <FacebookIcon />
-          </li>
-        </SocialList>
-      </SocialContent>
-      <div>
-        <p
-          css={css`
-            margin: 0;
-            font-weight: 100;
-          `}
-        >
-          Copyright © {new Date().getFullYear()} Tezos. All rights reserved.
-        </p>
-      </div>
-    </FooterContent>
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
+            <RedditIcon />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://tezos.stackexchange.com/" label="StackExchange">
+            <StackexchangeIcon />
+          </CircleIcon>
+        </li>
+      </SocialList>
+    </SocialContent>
   </FooterContainer>
 )
 
@@ -60,30 +45,24 @@ const FooterContainer = styled.footer`
   height: 230px;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   background-color: ${palette.darkerBlue};
   color: ${palette.white};
   padding: 64px 8px;
 `
 
-const FooterContent = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  max-width: ${spacings.maxWidth};
-  flex-wrap: wrap;
-  @media (max-width: ${breakpoints.tablet}) {
-    justify-content: center;
-  }
-`
-
 const SocialContent = styled.div`
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+`
+
+const SocialHeader = styled.p`
+  font-size: 18px;
+  margin: 0 18px 0 0;
+  font-weight: 100;
+  white-space: nowrap;
 `
 
 const SocialList = styled.ul`
@@ -91,8 +70,14 @@ const SocialList = styled.ul`
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
-  li {
-    margin: 0 18px 0 0;
+  margin: 0;
+
+  & > li {
+    margin-bottom: 0;
+  }
+
+  & > * + * {
+    margin-left: 12px;
   }
 `
 

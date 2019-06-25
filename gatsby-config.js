@@ -2,30 +2,46 @@ const languages = require("./src/utils/languages.js")
 
 module.exports = {
   siteMetadata: {
-    title: `Development Tutorials`,
-    author: `An Author`,
-    description: `A archive of various tutorials`,
-    siteUrl: `http://localhost:8000/`,
+    title: `Tezos Developer Portal`,
+    author: `Tezos`,
+    description: `Welcome to the Tezos Developer Portal. Explore and find the tools you need to get started building on Tezos right now.`,
+    siteUrl: `https://developers.tezos.com/`,
     languages,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://tezos.us6.list-manage.com/subscribe/post?u=80b9a27c332a234b4cac5c13b&amp;id=d8f4b4112e'
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Development Tutorials`,
-        short_name: `dev_tuts`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        name: 'Tezos.com',
+        short_name: 'Tezos',
+        start_url: '/',
+        background_color: '#0055FF',
+        theme_color: '#0055FF',
+        display: 'minimal-ui',
+        icon: 'src/assets/icon.png'
       },
     },
     `gatsby-plugin-offline`,
@@ -41,7 +57,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/ // See below to configure properly
+          include: /\.svg/ // See below to configure properly
         }
       }
     }

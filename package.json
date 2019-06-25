@@ -1,5 +1,5 @@
 {
-  "name": "dev.tezos.com",
+  "name": "developers.tezos.com",
   "private": true,
   "description": "A site for various tutorials related to Tezos",
   "version": "0.1.0",
@@ -22,14 +22,21 @@
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-typography": "^2.2.13",
     "gatsby-transformer-sharp": "^2.1.18",
+    "lodash.debounce": "^4.0.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-scrollspy": "^3.4.0",
+    "react-smooth-collapse": "^2.0.1",
     "react-typography": "^0.16.19",
     "typeface-roboto": "^0.0.54",
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-plugin-mailchimp": "^5.1.0",
+    "gatsby-plugin-sitemap": "^2.1.0",
+    "gatsby-source-filesystem": "^2.0.39",
+    "gatsby-transformer-remark": "^2.4.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.0"
   },
