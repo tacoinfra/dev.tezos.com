@@ -13,14 +13,6 @@ const Layout = ({
   heroContent,
   compact = false
 }) => {
-  if (typeof window !== `undefined`) {
-    if (
-      window.location.hostname === 'developers.tezos.com' ||
-      window.location.hostname === 'dev.tezos.com'
-    ) {
-      return 'Under Construction'
-    }
-  }
 
   return (
     <Container>
