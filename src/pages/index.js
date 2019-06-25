@@ -57,6 +57,18 @@ const query = graphql`
   }
 `
 
+const ResourceList = ({ list }) => {
+  return (
+    <ul>
+      {
+        list.map(({ title, link }, i) => (
+          <li key={`${link}-${i}`}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
+        ))
+      }
+    </ul>
+  )
+}
+
 const SiteIndex = ({ location }) => {
   const data = useStaticQuery(query)
   const gettingStartedContent = structureGettingStartedContent(data)
@@ -97,13 +109,7 @@ const SiteIndex = ({ location }) => {
                       tutorials.length > 0 &&
                       <React.Fragment>
                         <h4>Tutorials</h4>
-                        <ul>
-                          {
-                            tutorials.map(({ title, link }) => (
-                              <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
-                            ))
-                          }
-                        </ul>
+                        <ResourceList list={tutorials} />
                       </React.Fragment>
                     }
 
@@ -112,13 +118,7 @@ const SiteIndex = ({ location }) => {
                       languages.length > 0 &&
                       <React.Fragment>
                         <h4>Languages</h4>
-                        <ul>
-                          {
-                            languages.map(({ title, link }) => (
-                              <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
-                            ))
-                          }
-                        </ul>
+                        <ResourceList list={languages} />
                       </React.Fragment>
                     }
 
@@ -127,13 +127,7 @@ const SiteIndex = ({ location }) => {
                       resources.length > 0 &&
                       <React.Fragment>
                         <h4>Resources</h4>
-                        <ul>
-                          {
-                            resources.map(({ title, link }) => (
-                              <li key={link}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
-                            ))
-                          }
-                        </ul>
+                        <ResourceList list={resources} />
                       </React.Fragment>
                     }
                   </PostList>
@@ -176,7 +170,6 @@ const SiteIndex = ({ location }) => {
     </Layout>
   )
 }
-
 
 /* Content components */
 const Wrapper = styled(ShellWrapper)`
