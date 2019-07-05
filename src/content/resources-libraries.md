@@ -7,7 +7,7 @@ resources:
   - title: Sotez
     link: https://www.npmjs.com/package/sotez
     description: Javascript library for interacting with Tezos
-  - title: Conseiljs
+  - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
     description: Javascript library for building tezos dapps
   - title: Eztz
@@ -28,7 +28,4 @@ resources:
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
     description: Golang Library for interacting with Tezos
-  - title: Conseil
-    link: https://github.com/Cryptonomic/Conseil/
-    description: API tool for querying against nodes
 ---
