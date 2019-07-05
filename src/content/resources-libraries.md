@@ -25,6 +25,9 @@ resources:
   - title: PyTezos
     link: https://github.com/murbard/pytezos
     description: Python Library for interacting with Tezos
+  - title: TezosKit
+    link: https://github.com/keefertaylor/TezosKit
+    description: Swift SDK for Tezos 
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
     description: Golang Library for interacting with Tezos
