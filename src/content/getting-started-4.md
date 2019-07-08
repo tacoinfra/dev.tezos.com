@@ -9,8 +9,10 @@ tutorials:
   - title: Lorem Ipsum
     link: https://tezos.com
 resources:
-  - title: EzTz
+  - title: Eztz
     link: https://github.com/TezTech/eztz
+  - title: ConseilJS
+    link: https://cryptonomic.github.io/ConseilJS/#/
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
   - title: TezBridge

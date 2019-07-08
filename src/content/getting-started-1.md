@@ -11,8 +11,8 @@ tutorials:
   - title: Run a Tezos node in Kiln (GUI)
     link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
 resources:
-  - title: Lorem Ipsum
-    link: https://tezos.com
-  - title: Lorem Ipsum
-    link: https://tezos.com
+  - title: Git repository
+    link: https://gitlab.com/tezos/tezos
+  - title: Docker images
+    link: https://hub.docker.com/r/tezos/tezos
 ---
