@@ -10,7 +10,7 @@ resources:
   - title: Tezos.ID
     link: https://tezos.id/
     description: Tezos.ID is a blockchain explorer; wallet and tansaction monitoring tool
-  - title: XTZ Explorer
-    link: https://xtzexplorer.io/
-    description: XTZ Explorer is a block explorer with visualized history information about all Tezos (XTZ) transactions
+  - title: Arronax
+    link: https://arronax-beta.cryptonomic.tech/
+    description: Arronax is an analysis oriented block explorer.
 ---
