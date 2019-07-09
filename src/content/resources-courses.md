@@ -4,10 +4,10 @@ priority: 4
 slug: courses
 title: Courses
 resources:
-  - title: Lorem Ipsum
-    link: https://tezos.com
-    description: Eiusmod deserunt quis eiusmod ea ea esse ipsum. Ad in aute ipsum voluptate culpa cillum.
-  - title: Lorem Ipsum
-    link: https://tezos.com
-    description: Aliqua est qui non sit aliquip enim Lorem esse sint consequat mollit voluptate veniam in.
+  - title: "B9 Labs: Tezos Blockstars"
+    link: https://tezos.b9lab.com/
+    description: B9 Labs / Tezos Blockstars is an end-to-end program supported by experienced tutors at B9lab and designed to provide developers with the knowledge and skills needed to become industry-leading Tezos developers.
+  - title: Tezos Capstone
+    link: https://tezoscapstone.com/curriculum/index.html
+    description: Tezos Capstone is a self-paced online curriculum covering everything from an introduction to blockchain to building on Tezos and creating your own dApp!
 ---
