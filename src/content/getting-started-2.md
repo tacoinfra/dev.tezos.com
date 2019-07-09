@@ -7,7 +7,7 @@ languages:
   - title: Michelson
     link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/01
   - title: Ligo
-    link: https://gitlab.com/gabriel.alfour/ligo
+    link: https://ligolang.org/
   - title: SmartPy
     link: http://smartpy.io/
   - title: Morley/Lorentz

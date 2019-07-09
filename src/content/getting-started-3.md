@@ -8,6 +8,8 @@ tutorials:
     link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/03
   - title: Michelson Data Structures
     link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/04
+  - title: Deploying a contract to Alphanet
+    link: https://stove-labs.github.io/granary/docs/tutorials-deploying-a-tezos-smart-contract-to-alphanet
 resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
