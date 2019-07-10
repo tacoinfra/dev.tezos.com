@@ -13,7 +13,9 @@ const useMailchimp = (emailRef) => {
     ev.preventDefault()
 
     const { value } = emailRef.current
-    const data = await addToMailchimp(value)
+    const data = await addToMailchimp(value, {
+      'group[9][2]': '2'
+    })
 
     setMessage(data.msg)
     setStatus(data.result)
@@ -120,7 +122,7 @@ const LayoutContainer = styled.div`
 const Response = styled.p`
   position: absolute;
   margin-top: 20px;
-  color: ${getMessageColor}
+  color: ${getMessageColor};
 `
 
 export default MailSignup
