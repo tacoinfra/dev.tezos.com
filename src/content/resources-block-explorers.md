@@ -15,5 +15,5 @@ resources:
     description: TzScan is a block explorer for Tezos
   - title: Better Call Dev
     link: https://better-call.dev/
-    description: Smart contract meta-explorer for Tezos
+    description: Michelson Contract Explorer
 ---
