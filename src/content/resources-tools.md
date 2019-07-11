@@ -16,7 +16,7 @@ resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
     description: Faucet for the Tezos Alphanet
-  - title: Conseil
+  - title: ConseilJS
     link: https://github.com/Cryptonomic/Conseil/
-    description: API tool for querying against nodes
+    description: Javascript library for building Tezos dApp
 ---

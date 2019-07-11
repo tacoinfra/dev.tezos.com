@@ -12,5 +12,8 @@ resources:
     description: Arronax is an analysis oriented block explorer.
   - title: TzScan
     link: https://tzscan.io/
-    description: The TzScan is a block explorer for Tezos
+    description: TzScan is a block explorer for Tezos
+  - title: Better Call Dev
+    link: https://better-call.dev/
+    description: Smart contract meta-explorer for Tezos
 ---
