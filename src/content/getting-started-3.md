@@ -17,6 +17,6 @@ resources:
     link: https://tezos.id/
   - title: Granary
     link: https://stove-labs.github.io/granary/docs/getting-started-install
-  - title: Better Call Dev
+  - title: Better Call Dev - "Michelson Contract Explorer"
     link: https://better-call.dev/
 ---
