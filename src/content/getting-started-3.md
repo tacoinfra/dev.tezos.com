@@ -17,4 +17,6 @@ resources:
     link: https://tezos.id/
   - title: Granary
     link: https://stove-labs.github.io/granary/docs/getting-started-install
+  - title: Better Call Dev
+    link: https://better-call.dev/
 ---
