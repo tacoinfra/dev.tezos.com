@@ -14,5 +14,5 @@ resources:
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
   - title: TezBridge
-    link: https://www.tezbridge.com/
+    link: https://docs.tezbridge.com/
 ---

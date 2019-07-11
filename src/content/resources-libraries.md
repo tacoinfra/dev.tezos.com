@@ -9,7 +9,7 @@ resources:
     description: Javascript library for interacting with Tezos
   - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
-    description: Javascript library for building tezos dapps
+    description: Javascript library for building Tezos dApp
   - title: Eztz
     link: https://github.com/TezTech/eztz
     description: Javascript library for interacting with Tezos
@@ -24,11 +24,11 @@ resources:
     description: Android Java SDK for Tezos
   - title: PyTezos
     link: https://github.com/murbard/pytezos
-    description: Python Library for interacting with Tezos
+    description: Python library for interacting with Tezos
   - title: TezosKit
     link: https://github.com/keefertaylor/TezosKit
-    description: Swift SDK for Tezos 
+    description: Swift SDK for Tezos
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
-    description: Golang Library for interacting with Tezos
+    description: Golang library for interacting with Tezos
 ---
