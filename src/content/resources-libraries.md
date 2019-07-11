@@ -9,7 +9,7 @@ resources:
     description: Javascript library for interacting with Tezos
   - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
-    description: Javascript library for building tezos dApp
+    description: Javascript library for building Tezos dApp
   - title: Eztz
     link: https://github.com/TezTech/eztz
     description: Javascript library for interacting with Tezos
