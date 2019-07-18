@@ -5,7 +5,10 @@ import SEO from "../components/SEO"
 import ShellWrapper from "../components/ShellWrapper"
 import PostList from "../components/PostList"
 import PostListGroup from "../components/PostListGroup"
-import { structureResourcesContent } from "../utils/content-helpers"
+import {
+  structureNotificationBarContent,
+  structureResourcesContent
+} from "../utils/content-helpers"
 
 const query = graphql`
   query {
@@ -16,7 +19,7 @@ const query = graphql`
       }
       filter: {
         frontmatter: {
-          type: { eq: "resource" }
+          type: { regex: "/(resource|notification-bar)/" }
         }
       }
     ) {
@@ -27,6 +30,8 @@ const query = graphql`
             type
             slug
             title
+            notification
+            link
             resources {
               title
               link
@@ -41,10 +46,16 @@ const query = graphql`
 
 const ResourcesPage = ({ location }) => {
   const data = useStaticQuery(query)
+  const notificationBarContent = structureNotificationBarContent(data)
   const resourcesContent = structureResourcesContent(data)
 
   return (
-    <Layout location={location} title="Resources" compact>
+    <Layout
+      location={location}
+      title="Resources"
+      compact
+      notificationBarContent={notificationBarContent}
+    >
       <SEO title="Resources" />
 
       <ShellWrapper>
