@@ -5,6 +5,11 @@ export const getMarkdownFiles = (data) => {
   }))
 }
 
+export const structureNotificationBarContent = (data) => {
+  const files = getMarkdownFiles(data)
+  return files.filter(file => file.type === 'notification-bar')[0]
+}
+
 export const structureGettingStartedContent = (data) => {
   const files = getMarkdownFiles(data)
   return files.filter(file => file.type === 'getting-started')
