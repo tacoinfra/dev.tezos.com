@@ -7,7 +7,7 @@ const NotificationBar = ({
   link
 }) => {
   return (
-    <NotificationBarContainer href={link}>
+    <NotificationBarContainer href={link} target="_blank" rel="noopener noreferrer">
       <Wrapper>
         {notification}
       </Wrapper>
