@@ -30,7 +30,6 @@ const query = graphql`
             type
             slug
             title
-            notification
             link
             resources {
               title

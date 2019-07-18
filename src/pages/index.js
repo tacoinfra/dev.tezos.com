@@ -38,7 +38,6 @@ const query = graphql`
             title
             description
             priority
-            notification
             link
             tutorials {
               title

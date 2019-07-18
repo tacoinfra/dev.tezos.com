@@ -3,14 +3,12 @@ import styled from "@emotion/styled"
 import { palette, spacings } from "../utils/variables"
 
 const NotificationBar = ({
-  notification,
+  html: __html,
   link
 }) => {
   return (
     <NotificationBarContainer href={link} target="_blank" rel="noopener noreferrer">
-      <Wrapper>
-        {notification}
-      </Wrapper>
+      <Wrapper dangerouslySetInnerHTML={{ __html }} />
     </NotificationBarContainer>
   )
 }
@@ -33,6 +31,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
 `
 
 export default NotificationBar
