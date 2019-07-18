@@ -18,8 +18,14 @@ const NotificationBar = ({
 const NotificationBarContainer = styled.a`
   background-color: ${palette.darkerBlue};
   color: ${palette.white};
-  padding: 20px 20px;
+  padding: 16px 20px;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: ${palette.lightBoldBlue};
+  }
 `
 
 const Wrapper = styled.div`
