@@ -2,7 +2,8 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Global, css } from "@emotion/core"
 import Header from "./Header"
-import Hero from "../components/Hero"
+import Hero from "./Hero"
+import NotificationBar from "./NotificationBar"
 import Footer from "./Footer"
 import { palette } from "../utils/variables"
 
@@ -11,20 +12,26 @@ const Layout = ({
   title,
   subtitle,
   heroContent,
-  compact = false
+  compact = false,
+  notificationBarContent
 }) => {
-
   return (
     <Container>
       <Global styles={globalRules} />
-      <Header />
-      <Hero
-        compact={compact}
-        title={title}
-        subtitle={subtitle}
-      >
-        {heroContent}
-      </Hero>
+      {
+        notificationBarContent &&
+        <NotificationBar {...notificationBarContent} />
+      }
+      <HeadingContainer>
+        <Header />
+        <Hero
+          compact={compact}
+          title={title}
+          subtitle={subtitle}
+        >
+          {heroContent}
+        </Hero>
+      </HeadingContainer>
       <Main>{children}</Main>
       <Footer />
     </Container>
@@ -83,6 +90,11 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
+  width: 100%;
+`
+
+const HeadingContainer = styled.div`
+  position: relative;
   width: 100%;
 `
 
