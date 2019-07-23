@@ -11,6 +11,7 @@ import SectionHeading from "../components/SectionHeading"
 import HomeHeroContent from "../components/HomeHeroContent"
 import { palette, breakpoints } from "../utils/variables"
 import {
+  structureNotificationBarContent,
   structureGettingStartedContent,
   structureResourcesContent
  } from "../utils/content-helpers"
@@ -24,7 +25,7 @@ const query = graphql`
       }
       filter: {
         frontmatter: {
-          type: { regex: "/(resource|getting-started)/" }
+          type: { regex: "/(resource|getting-started|notification-bar)/" }
         }
       }
     ) {
@@ -37,6 +38,7 @@ const query = graphql`
             title
             description
             priority
+            link
             tutorials {
               title
               link
@@ -71,12 +73,14 @@ const ResourceList = ({ list }) => {
 
 const SiteIndex = ({ location }) => {
   const data = useStaticQuery(query)
+  const notificationBarContent = structureNotificationBarContent(data)
   const gettingStartedContent = structureGettingStartedContent(data)
   const resourcesContent = structureResourcesContent(data)
 
   return (
     <Layout
       location={location}
+      notificationBarContent={notificationBarContent}
       title="Tezos Developer Portal"
       subtitle="Resources for Developers"
       heroContent={<HomeHeroContent />}
