@@ -85,7 +85,6 @@ const Content = styled.div`
   li {
     margin: 0;
     padding: 0 0 8px 0;
-    border-bottom: 1px solid ${palette.grey};
 
     & + li {
       padding-top: 8px;
