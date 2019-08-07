@@ -1,15 +1,22 @@
 ---
 type: getting-started
 priority: 3
-title: Deploy transactions to alphanet and mainnet
-description: Deploy and interact with the contracts that you’ve created.
+title: Use a Library to Integrate Tezos With Your Application
 tutorials:
-  - title: Deploying a contract to Alphanet
-    link: https://stove-labs.github.io/granary/docs/tutorials-deploying-a-tezos-smart-contract-to-alphanet
-  - title: Contract Origination & Interaction
-    link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/03
-  - title: Michelson Data Structures
-    link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/04
+  - title: ConseilJS
+    link: https://cryptonomic.github.io/ConseilJS/#/
+  - title: ConseilPy
+    link: https://github.com/baking-bad/conseilpy
+  - title: Tezos Kit
+    link: https://github.com/keefertaylor/TezosKit
+  - title: PyTezos
+    link: https://github.com/baking-bad/pytezos
+  - title: Eztz
+    link: https://github.com/TezTech/eztz
+  - title: TezBridge 
+    link: https://docs.tezbridge.com/
+  - title: Go-Tezos
+    link: https://github.com/DefinitelyNotAGoat/go-tezos
 resources:
   - title: Testnet Faucet
     link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet

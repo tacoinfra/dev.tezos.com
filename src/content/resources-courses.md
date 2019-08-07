@@ -1,13 +1,19 @@
 ---
 type: resource
-priority: 4
-slug: courses
-title: Courses
+priority: 1
+slug: core-infrastructure
+title: Core Infrastructure
 resources:
-  - title: "B9 Labs: Tezos Blockstars"
-    link: https://tezos.b9lab.com/
-    description: B9 Labs / Tezos Blockstars is an end-to-end program supported by experienced tutors at B9lab and designed to provide developers with the knowledge and skills needed to become industry-leading Tezos developers.
-  - title: Tezos Capstone
-    link: https://tezoscapstone.com/curriculum/index.html
-    description: Tezos Capstone is a self-paced online curriculum covering everything from an introduction to blockchain to building on Tezos and creating your own dApp!
+  - title: Build a Mainnet node for Debian, Ubuntu, or MacOS
+    link: https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md
+  - title: Build a node faster using a snapshot
+    link: https://tezosshots.com/
+  - title: Run a Tezos node in Kiln (GUI)
+    link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
+  - title: How to Get Tezos 
+    link: http://tezos.gitlab.io/mainnet/introduction/howtoget.html
+  - title: Git Repository
+    link: https://gitlab.com/tezos/tezos
+  - title: Docker Images
+    link: https://hub.docker.com/r/tezos/tezos
 ---

@@ -1,6 +1,6 @@
 ---
 type: resource
-priority: 3
+priority: 4
 slug: block-explorers
 title: Block Explorers
 resources:

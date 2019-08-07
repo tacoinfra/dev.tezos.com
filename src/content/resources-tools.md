@@ -1,6 +1,6 @@
 ---
 type: resource
-priority: 2
+priority: 3
 slug: tools
 title: Tools
 resources:
