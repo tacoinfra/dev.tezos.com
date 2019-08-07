@@ -45,6 +45,7 @@ const query = graphql`
             }
             languages {
               title
+              preTitleText
               link
             }
             resources {
@@ -63,8 +64,8 @@ const ResourceList = ({ list }) => {
   return (
     <ul>
       {
-        list.map(({ title, link }, i) => (
-          <li key={`${link}-${i}`}><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
+        list.map(({ title, preTitleText = '', link }, i) => (
+          <li key={`${link}-${i}`}>{preTitleText.length > 0 && `${preTitleText} | `}<a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
         ))
       }
     </ul>
@@ -112,7 +113,6 @@ const SiteIndex = ({ location }) => {
                       tutorials &&
                       tutorials.length > 0 &&
                       <React.Fragment>
-                        <h4>Tutorials</h4>
                         <ResourceList list={tutorials} />
                       </React.Fragment>
                     }
@@ -121,7 +121,6 @@ const SiteIndex = ({ location }) => {
                       languages &&
                       languages.length > 0 &&
                       <React.Fragment>
-                        <h4>Languages</h4>
                         <ResourceList list={languages} />
                       </React.Fragment>
                     }
@@ -130,7 +129,6 @@ const SiteIndex = ({ location }) => {
                       resources &&
                       resources.length > 0 &&
                       <React.Fragment>
-                        <h4>Resources</h4>
                         <ResourceList list={resources} />
                       </React.Fragment>
                     }
