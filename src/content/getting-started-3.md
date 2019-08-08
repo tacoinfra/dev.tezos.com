@@ -8,7 +8,7 @@ tutorials:
     link: https://cryptonomic.github.io/ConseilJS/#/
   - title: ConseilPy
     link: https://github.com/baking-bad/conseilpy
-  - title: Tezos Kit
+  - title: TezosKit
     link: https://github.com/keefertaylor/TezosKit
   - title: PyTezos
     link: https://github.com/baking-bad/pytezos
