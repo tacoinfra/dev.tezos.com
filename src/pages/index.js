@@ -141,8 +141,9 @@ const SiteIndex = ({ location }) => {
           <PostListGroup columns={resourcesContent.length}>
             {refList =>
               resourcesContent.map(({ title, slug, resources, maxContent }, index) => {
+                // Sometimes we want to limit the content on the homepage
                 let resourceList = resources;
-                console.log(maxContent);
+                // If the maxContent is -1 it means we want to show everything
                 if (maxContent > -1) {
                   resourceList = resourceList.slice(0, maxContent);
                 }
