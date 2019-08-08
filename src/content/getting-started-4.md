@@ -2,7 +2,7 @@
 type: getting-started
 priority: 4
 title: Explore the Blockchain
-description:
+description: Use a block explorer to explore the blockchain.
 tutorials:
   - title: Arronax
     link: https://arronax-beta.cryptonomic.tech/

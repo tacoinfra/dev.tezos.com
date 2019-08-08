@@ -1,7 +1,8 @@
 ---
 type: getting-started
 priority: 3
-title: Use a Library to Integrate Tezos With Your Application
+title: Use a Library
+description: Use a library to integrate Tezos with your application.
 tutorials:
   - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
