@@ -3,6 +3,7 @@ type: resource
 priority: 4
 slug: block-explorers
 title: Block Explorers
+maxContent: 3
 resources:
   - title: Tezos.ID
     link: https://tezos.id/

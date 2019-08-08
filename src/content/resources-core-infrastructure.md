@@ -3,6 +3,7 @@ type: resource
 priority: 1
 slug: core-infrastructure
 title: Core Infrastructure
+maxContent: -1
 resources:
   - title: Build a Mainnet node for Debian, Ubuntu, or MacOS
     link: https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md

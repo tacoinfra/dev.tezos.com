@@ -3,6 +3,7 @@ type: resource
 priority: 2
 slug: libraries
 title: Libraries
+maxContent: 3
 resources:
   - title: Sotez
     link: https://www.npmjs.com/package/sotez

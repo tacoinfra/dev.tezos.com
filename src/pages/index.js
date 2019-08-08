@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import SEO from "../components/SEO"
 import Layout from "../components/Layout"
@@ -13,16 +13,13 @@ import { palette, breakpoints } from "../utils/variables"
 import {
   structureNotificationBarContent,
   structureGettingStartedContent,
-  structureResourcesContent
- } from "../utils/content-helpers"
+  structureResourcesContent,
+} from "../utils/content-helpers"
 
 const query = graphql`
   {
     allMarkdownRemark(
-      sort: {
-        order: ASC,
-        fields: [frontmatter___priority]
-      }
+      sort: { order: ASC, fields: [frontmatter___priority] }
       filter: {
         frontmatter: {
           type: { regex: "/(resource|getting-started|notification-bar)/" }
@@ -39,6 +36,7 @@ const query = graphql`
             description
             priority
             link
+            maxContent
             tutorials {
               title
               link
@@ -63,11 +61,14 @@ const query = graphql`
 const ResourceList = ({ list }) => {
   return (
     <ul>
-      {
-        list.map(({ title, preTitleText = '', link }, i) => (
-          <li key={`${link}-${i}`}>{preTitleText.length > 0 && `${preTitleText} | `}<a href={link} target="_blank" rel="noopener noreferrer">{title}</a></li>
-        ))
-      }
+      {list.map(({ title, preTitleText = "", link }, i) => (
+        <li key={`${link}-${i}`}>
+          {preTitleText.length > 0 && `${preTitleText} | `}
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>
+        </li>
+      ))}
     </ul>
   )
 }
@@ -93,47 +94,43 @@ const SiteIndex = ({ location }) => {
           <h2>Getting Started</h2>
 
           <PostListGroup columns={gettingStartedContent.length}>
-            {
-              (refList) =>
-                gettingStartedContent.map(({
-                  title,
-                  description,
-                  tutorials,
-                  languages,
-                  resources
-                }, index) => (
+            {refList =>
+              gettingStartedContent.map(
+                (
+                  { title, description, tutorials, languages, resources },
+                  index
+                ) => (
                   <PostList
                     key={title}
                     titleRef={refList[index]}
-                    title={<NumberTitle number={index + 1}>{title}</NumberTitle>}
+                    title={
+                      <NumberTitle number={index + 1}>{title}</NumberTitle>
+                    }
                   >
-                    <p><small>{description}</small></p>
+                    <p>
+                      <small>{description}</small>
+                    </p>
 
-                    {
-                      tutorials &&
-                      tutorials.length > 0 &&
+                    {tutorials && tutorials.length > 0 && (
                       <React.Fragment>
                         <ResourceList list={tutorials} />
                       </React.Fragment>
-                    }
+                    )}
 
-                    {
-                      languages &&
-                      languages.length > 0 &&
+                    {languages && languages.length > 0 && (
                       <React.Fragment>
                         <ResourceList list={languages} />
                       </React.Fragment>
-                    }
+                    )}
 
-                    {
-                      resources &&
-                      resources.length > 0 &&
+                    {resources && resources.length > 0 && (
                       <React.Fragment>
                         <ResourceList list={resources} />
                       </React.Fragment>
-                    }
+                    )}
                   </PostList>
-                ))
+                )
+              )
             }
           </PostListGroup>
         </CalloutGroup>
@@ -142,9 +139,14 @@ const SiteIndex = ({ location }) => {
           <SectionHeading centered>Resources</SectionHeading>
 
           <PostListGroup columns={resourcesContent.length}>
-            {
-              (refList) =>
-                resourcesContent.map(({ title, slug, resources }, index) => (
+            {refList =>
+              resourcesContent.map(({ title, slug, resources, maxContent }, index) => {
+                let resourceList = resources;
+                console.log(maxContent);
+                if (maxContent > -1) {
+                  resourceList = resourceList.slice(0, maxContent);
+                }
+                return (
                   <PostList
                     key={title}
                     titleRef={refList[index]}
@@ -152,18 +154,26 @@ const SiteIndex = ({ location }) => {
                     link={`/resources#${slug}`}
                   >
                     <ul>
-                      {
-                        resources
-                          .map(({ link, title, description }) => (
-                            <li key={link}>
-                              <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
-                              <p><small>{description}</small></p>
-                            </li>
-                          ))
-                      }
+                      {resourceList.map(({ link, title, description }) => (
+                        <li key={link}>
+                          <p>
+                            <a
+                              href={link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {title}
+                            </a>
+                          </p>
+                          <p>
+                            <small>{description}</small>
+                          </p>
+                        </li>
+                      ))}
                     </ul>
                   </PostList>
-                ))
+                )
+              })
             }
           </PostListGroup>
         </Section>
