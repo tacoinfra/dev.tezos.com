@@ -8,6 +8,4 @@ tutorials:
     link: https://stove-labs.github.io/granary/docs/tutorials-deploying-a-tezos-smart-contract-to-alphanet
   - title: Interacting with a contract on Alphanet
     link: https://stove-labs.github.io/granary/docs/tutorials-interacting-with-a-tezos-smart-contract
-  - title: Build a Mainnet node for Debian, Ubuntu, or MacOS
-    link: https://github.com/tezoscommunity/FAQ/blob/master/Compile_Mainnet.md
 ---
