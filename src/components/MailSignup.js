@@ -5,8 +5,6 @@ import ButtonAnchor from "./ButtonAnchor"
 import TextInput from "./TextInput"
 import { breakpoints } from "../utils/variables"
 
-import EmailSVG from '../assets/email.svg';
-
 const useMailchimp = (emailRef) => {
   const [message, setMessage] = useState(null)
   const [status, setStatus] = useState(null)
@@ -37,7 +35,6 @@ const MailSignup = () => {
   return (
     <MailSignupContainer onSubmit={handleSubmit}>
       <LayoutContainer>
-        <EmailSVG />
         <label htmlFor="email">Developer Mailing List</label>
         <TextInput
           ref={emailRef}
@@ -83,7 +80,6 @@ const MailSignupContainer = styled.form`
     white-space: nowrap;
     font-weight: 300;
     font-size: 18px;
-    margin-left: 23px;
   }
 
   input {
