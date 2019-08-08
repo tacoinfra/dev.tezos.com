@@ -154,7 +154,6 @@ const SiteIndex = ({ location }) => {
                     <ul>
                       {
                         resources
-                          .slice(0, 4)
                           .map(({ link, title, description }) => (
                             <li key={link}>
                               <p><a href={link} target="_blank" rel="noopener noreferrer">{title}</a></p>
