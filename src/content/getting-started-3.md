@@ -17,13 +17,4 @@ tutorials:
     link: https://docs.tezbridge.com/
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
-resources:
-  - title: Testnet Faucet
-    link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
-  - title: Tezos.ID
-    link: https://tezos.id/
-  - title: Granary
-    link: https://stove-labs.github.io/granary/docs/getting-started-install
-  - title: Better Call Dev - "Michelson Contract Explorer"
-    link: https://better-call.dev/
 ---
