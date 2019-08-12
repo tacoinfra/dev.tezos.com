@@ -3,6 +3,7 @@ type: resource
 priority: 2
 slug: tools
 title: Tools
+maxContent: -1
 resources:
   - title: Tezos - intellij
     link: https://www.plugin-dev.com/intellij/
@@ -19,7 +20,4 @@ resources:
   - title: ConseilJS
     link: https://github.com/Cryptonomic/Conseil/
     description: Javascript library for building Tezos dApp
-  - title: Tezos Notifier Bot
-    link: http://tzsnt.fr/
-    description: Tezos Notifier Bot notifies users about transactions and other various events in the Tezos blockchain
 ---

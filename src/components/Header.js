@@ -5,13 +5,6 @@ import ButtonAnchor from "./ButtonAnchor"
 import { palette, breakpoints, spacings } from "../utils/variables"
 import TezosLogo from "../assets/tezos-logo.svg"
 
-const navigationListItems = [
-  {
-    title: "Resources",
-    href: "/resources",
-  },
-]
-
 const Header = () => (
   <HeaderContainer>
     <NavigationMenu>
@@ -20,14 +13,6 @@ const Header = () => (
       </NavigationLink>
       <MobileMenu />
       <NavigationList>
-        {navigationListItems.map(item => (
-          <NavigationLink
-            key={item.title}
-            to={item.href}
-          >
-            {item.title}
-          </NavigationLink>
-        ))}
         <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor>
         <ButtonAnchor href="https://www.tezos.com/">Back to Tezos.com</ButtonAnchor>
       </NavigationList>
@@ -117,13 +102,6 @@ const MobileMenu = () => {
       />
       <MobileMenuContainer isMenuOpen={isMenuOpen}>
         <MobileMenuNavList>
-          {navigationListItems.map(item => (
-            <li key={item.title}>
-              <MobileMenuLink to={item.href} onClick={() => handleToggleMenu()}>
-                {item.title}
-              </MobileMenuLink>
-            </li>
-          ))}
           <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
           <li><ButtonAnchor href="https://www.tezos.com/">
             Back to Tezos
@@ -213,27 +191,6 @@ const MobileMenuNavList = styled.ul`
     margin: 0px 0px 30px;
     text-align: center;
   }
-`
-
-const MobileMenuLink = styled(Link)`
-  color: ${palette.blue};
-  padding: 0px;
-  display: flex;
-  text-decoration: none;
-  line-height: 1;
-  font-weight: 500;
-  text-align: left;
-  border-radius: 0px;
-  text-transform: uppercase;
-  flex-direction: row;
-  -moz-box-align: center;
-  align-items: center;
-  justify-content: space-around;
-  opacity: 1;
-  white-space: nowrap;
-  position: relative;
-  margin: 0px auto;
-  font-size: 22px;
 `
 
 export default Header

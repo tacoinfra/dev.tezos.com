@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
-import ArrowSvg from "../assets/arrow-right.svg"
 
 const PostList = ({
   titleRef,
@@ -13,11 +12,6 @@ const PostList = ({
   <div id={id}>
     <Header ref={titleRef}>
       <HeaderTitle>{title}</HeaderTitle>
-      { link && (
-        <HeaderLink>
-          <a href={link}><span>View All</span> <ArrowSvg /></a>
-        </HeaderLink>
-      ) }
     </Header>
     <Content>
       {children}
@@ -36,32 +30,6 @@ const HeaderTitle = styled.div`
 
   h3 {
     margin-bottom: 0;
-  }
-`
-
-const HeaderLink = styled.div`
-  white-space: nowrap;
-
-  span {
-    margin-right: 5px;
-  }
-
-  svg {
-    position: relative;
-    top: 2px;
-  }
-
-  a {
-    font-weight: 400;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-
-      span {
-        text-decoration: underline;
-      }
-    }
   }
 `
 

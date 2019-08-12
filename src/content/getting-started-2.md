@@ -1,19 +1,22 @@
 ---
 type: getting-started
 priority: 2
-title: Learn a smart contract programming language
-description: Choose one of the high-level languages to program in.
+title: Write a Smart Contract
+description: Learn how to author smart contracts in your choice of syntax. Code will compile to Michelson, the smart contract language of the Tezos blockchain.
 languages:
-  - title: Michelson
-    link: https://gitlab.com/camlcase-dev/michelson-tutorial/tree/master/01
   - title: Ligo
+    preTitleText: Pascal, OCaml
     link: https://ligolang.org/
   - title: SmartPy
+    preTitleText: Python
     link: http://smartpy.io/
   - title: Morley/Lorentz
+    preTitleText: Haskell
     link: http://hackage.haskell.org/package/morley
   - title: Fi
+    preTitleText: Javascript
     link: https://fi-code.com/
   - title: Liquidity
+    preTitleText: OCaml, ReasonML
     link: http://www.liquidity-lang.org/
 ---
