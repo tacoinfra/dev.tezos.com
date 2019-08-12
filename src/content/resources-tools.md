@@ -1,9 +1,9 @@
 ---
 type: resource
-priority: 3
+priority: 2
 slug: tools
 title: Tools
-maxContent: 3
+maxContent: -1
 resources:
   - title: Tezos - intellij
     link: https://www.plugin-dev.com/intellij/

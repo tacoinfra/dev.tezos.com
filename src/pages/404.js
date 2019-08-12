@@ -12,7 +12,6 @@ const NotFoundPage = () => (
       <List>
         <li><a href="/">Home</a></li>
         <li><a href="/tutorials">Tutorials</a></li>
-        <li><a href="/resources">Resources</a></li>
       </List>
     </Wrapper>
   </Layout>
