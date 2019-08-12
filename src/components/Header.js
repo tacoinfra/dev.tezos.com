@@ -98,7 +98,7 @@ const MobileMenu = () => {
     <Fragment>
       <HamburgerIcon
         isMenuOpen={isMenuOpen}
-        onClick={() => console.log('butts')}
+        onClick={() => handleToggleMenu()}
       />
       <MobileMenuContainer isMenuOpen={isMenuOpen}>
         <MobileMenuNavList>
