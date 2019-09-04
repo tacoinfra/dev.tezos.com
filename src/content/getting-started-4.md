@@ -10,4 +10,8 @@ tutorials:
     link: https://tezos.id/
   - title: Better Call Dev - "Michelson Contract Explorer"
     link: https://better-call.dev/
+  - title: TezBlock
+    link: https://mvp.tezblock.io/
+  - title: TzStats - Tezos Analytics Explorer
+    link: https://tzstats.com/
 ---
