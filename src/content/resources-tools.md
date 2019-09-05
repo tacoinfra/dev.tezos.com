@@ -19,5 +19,5 @@ resources:
     description: Faucet for the Tezos Alphanet
   - title: ConseilJS
     link: https://github.com/Cryptonomic/Conseil/
-    description: Javascript library for building Tezos dApp
+    description: Javascript library for building Tezos dApps
 ---
