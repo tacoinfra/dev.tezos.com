@@ -6,7 +6,7 @@ title: Tools
 maxContent: -1
 resources:
   - title: Tezos - intellij
-    link: https://www.plugin-dev.com/intellij/
+    link: https://www.plugin-dev.com/plugins/tezos-michelson/
     description: Michelson Plugin for IntelliJ
   - title: Michelson emacs mode
     link: https://github.com/tezos/tezos/tree/master/emacs
