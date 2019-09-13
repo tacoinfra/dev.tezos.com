@@ -14,8 +14,10 @@ tutorials:
     link: https://github.com/baking-bad/pytezos
   - title: Eztz
     link: https://github.com/TezTech/eztz
-  - title: TezBridge 
+  - title: TezBridge
     link: https://docs.tezbridge.com/
   - title: Go-Tezos
     link: https://github.com/DefinitelyNotAGoat/go-tezos
+  - title: AirGap-Coin-Lib
+    link: https://github.com/airgap-it/airgap-coin-lib
 ---
