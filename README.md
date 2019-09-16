@@ -48,4 +48,4 @@ To contribute content, we suggest:
 1. Forking this repository from the `master` branch
 2. [Install](#installation) and start [development server](#development)
 3. Make content edits and test locally
-4. Commit and create a PR with `staging` as the base branch. PRs should be assigned to @DanielBMarkham for review.
+4. Commit and create a PR with `staging` as the base branch.
