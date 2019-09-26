@@ -8,4 +8,6 @@ tutorials:
     link: https://stove-labs.github.io/granary/docs/tutorials-deploying-a-tezos-smart-contract-to-alphanet
   - title: Interacting with a contract on Alphanet
     link: https://stove-labs.github.io/granary/docs/tutorials-interacting-with-a-tezos-smart-contract
+  - title: Get started with Ligo in a local Sandbox
+    link: https://stove-labs.github.io/granary/docs/tutorials-deploying-ligo-taco-to-sandbox
 ---
