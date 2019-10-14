@@ -35,7 +35,6 @@ const query = graphql`
             title
             description
             priority
-            link
             maxContent
             tutorials {
               title
