@@ -10,4 +10,6 @@ tutorials:
     link: https://stove-labs.github.io/granary/docs/tutorials-interacting-with-a-tezos-smart-contract
   - title: Get started with Ligo in a local Sandbox
     link: https://stove-labs.github.io/granary/docs/tutorials-deploying-ligo-taco-to-sandbox
+  - title: Get started with TPlus to manage Tezos environments
+    link: https://tplus.dev
 ---
