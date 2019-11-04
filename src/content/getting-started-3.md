@@ -22,4 +22,8 @@ tutorials:
     link: https://github.com/DefinitelyNotAGoat/go-tezos
   - title: AirGap-Coin-Lib
     link: https://github.com/airgap-it/airgap-coin-lib
+  - title: TezosJ_SDK (Android)
+    link: https://github.com/TezosRio/TezosJ_SDK
+  - title: TezosJ_plainJava (Java)
+    link: https://github.com/TezosRio/TezosJ_plainJava
 ---
