@@ -13,6 +13,9 @@ languages:
   - title: Morley/Lorentz
     preTitleText: Haskell
     link: http://hackage.haskell.org/package/morley
+  - title: Archetype
+    preTitleText: Domain-Specific
+    link: http://archetype-lang.org/
   - title: Fi
     preTitleText: Javascript
     link: https://fi-code.com/
