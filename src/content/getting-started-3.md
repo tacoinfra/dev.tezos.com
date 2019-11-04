@@ -4,6 +4,8 @@ priority: 3
 title: Use a Library
 description: Use a library to integrate Tezos with your application.
 tutorials:
+  - title: Taquito
+    link: https://tezostaquito.io/
   - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
   - title: ConseilPy
