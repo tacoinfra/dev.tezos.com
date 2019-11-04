@@ -16,7 +16,4 @@ languages:
   - title: Fi
     preTitleText: Javascript
     link: https://fi-code.com/
-  - title: Liquidity
-    preTitleText: OCaml, ReasonML
-    link: http://www.liquidity-lang.org/
 ---
