@@ -12,4 +12,6 @@ tutorials:
     link: https://better-call.dev/
   - title: tezblock
     link: https://tezblock.io/
+  - title: TZStats
+    link: https://tzstats.com/
 ---
