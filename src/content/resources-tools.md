@@ -20,4 +20,7 @@ resources:
   - title: ConseilJS
     link: https://github.com/Cryptonomic/Conseil/
     description: Javascript library for building Tezos dApps
+  - title: Tezster
+    link: https://github.com/Tezsure/Tezster-CLI
+    description: Testing tool for Tezos
 ---
