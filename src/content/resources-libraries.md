@@ -12,4 +12,7 @@ resources:
   - title: Tezos Capstone 
     link: https://tezoscapstone.com/curriculum/index.html
     description: Tezos Capstone is a self-paced online curriculum covering everything from an introduction to blockchain to building on Tezos and creating your own dApp!
+  - title: Tezos Training at Nomadic Labs 
+    link: https://training.nomadic-labs.com/training.html
+    description: After running successfully through all the steps of this training session, you will be able to run a Tezos (test network/sandboxed) node, use the Michelson emacs mode, and compile pieces of code in both LIGO and SmartPy.
 ---
