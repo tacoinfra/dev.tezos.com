@@ -12,7 +12,7 @@ resources:
   - title: Run a Tezos node in Kiln (GUI)
     link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
   - title: How to Get Tezos 
-    link: http://tezos.gitlab.io/mainnet/introduction/howtoget.html
+    link: http://tezos.gitlab.io/introduction/howtoget.html
   - title: Git Repository
     link: https://gitlab.com/tezos/tezos
   - title: Docker Images

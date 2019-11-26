@@ -15,8 +15,8 @@ resources:
     link: https://stove-labs.github.io/granary/
     description: Tezos Development Toolkit
   - title: Testnet Faucet
-    link: https://tezos.gitlab.io/alphanet/introduction/howtouse.html#faucet
-    description: Faucet for the Tezos Alphanet
+    link: https://tezos.gitlab.io/introduction/howtouse.html#faucet
+    description: Faucet for the Tezos Testnet
   - title: ConseilJS
     link: https://github.com/Cryptonomic/Conseil/
     description: Javascript library for building Tezos dApps
