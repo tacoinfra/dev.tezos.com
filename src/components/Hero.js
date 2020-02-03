@@ -28,9 +28,9 @@ const HeroContainer = styled.div`
   align-items: center;
   background-color: ${palette.darkBlue};
   display: flex;
-  min-height: ${props => props.compact ? '300px' : '580px'};
+  min-height: ${props => props.compact ? '90px' : '90px'};
   padding-top: 120px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   position: relative;
   width: 100%;
   z-index: 0;

@@ -8,6 +8,7 @@ import GitlabIcon from "../assets/social-gitlab.svg"
 import RedditIcon from "../assets/social-reddit.svg"
 import RiotIcon from "../assets/social-riot.svg"
 import StackexchangeIcon from "../assets/social-stackexchange.svg"
+import MailSignup from "./MailSignup"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -34,6 +35,9 @@ const Footer = () => (
           <CircleIcon href="https://tezos.stackexchange.com/" label="StackExchange">
             <StackexchangeIcon />
           </CircleIcon>
+        </li>
+        <li>
+          <MailSignup />
         </li>
       </SocialList>
     </SocialContent>

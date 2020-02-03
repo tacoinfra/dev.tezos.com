@@ -35,7 +35,7 @@ const MailSignup = () => {
   return (
     <MailSignupContainer onSubmit={handleSubmit}>
       <LayoutContainer>
-        <label htmlFor="email">Developer Mailing List</label>
+        <label htmlFor="email"></label>
         <TextInput
           ref={emailRef}
           id="email"
