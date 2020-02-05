@@ -72,6 +72,13 @@ const NavigationLink = styled(Link)`
   &:hover {
     opacity: 0.8;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    & svg image {
+      height: 50px;
+      overflow: visible;
+    }
+  }
 `
 
 const MobileMenu = () => {
