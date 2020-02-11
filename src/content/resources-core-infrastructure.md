@@ -17,4 +17,6 @@ resources:
     link: https://gitlab.com/tezos/tezos
   - title: Docker Images
     link: https://hub.docker.com/r/tezos/tezos
+  - title: Michelson Language Reference
+    link: https://michelson.nomadic-labs.com/
 ---
