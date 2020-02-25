@@ -8,7 +8,7 @@ tutorials:
     link: https://arronax-beta.cryptonomic.tech/
   - title: Tezos.ID
     link: https://tezos.id/
-  - title: Better Call Dev - "Michelson Contract Explorer"
+  - title: Better Call Dev — Smart Contract Explorer
     link: https://better-call.dev/
   - title: tezblock
     link: https://tezblock.io/
@@ -16,4 +16,6 @@ tutorials:
     link: https://tzstats.com/
   - title: TzKT
     link: https://tzkt.io/
+  - title: Baking Bad — Delegation Explorer
+    link: https://baking-bad.org/
 ---
