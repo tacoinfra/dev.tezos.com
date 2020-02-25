@@ -71,7 +71,7 @@ const SocialLinks = styled.ul`
 const Rule = styled.hr`
   background-color: rgba(255, 255, 255, 0.2);
   height: 1px;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 100%;
 
   @media (min-width: ${breakpoints.mobile}) {

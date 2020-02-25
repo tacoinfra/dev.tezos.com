@@ -28,21 +28,16 @@ const HeroContainer = styled.div`
   align-items: center;
   background-color: ${palette.darkBlue};
   display: flex;
-  min-height: ${props => props.compact ? '300px' : '580px'};
-  padding-top: 120px;
-  padding-bottom: 50px;
+  min-height: ${props => props.compact ? '300px' : '370px'};
+  padding-top: 70px;
+  padding-bottom: 0px;
   position: relative;
   width: 100%;
   z-index: 0;
   overflow: hidden;
 
-  @media (min-width: ${breakpoints.mobile}) {
-    padding-top: 100px;
-  }
 
-  @media (min-width: ${breakpoints.tablet}) {
-    padding-top: ${props => props.compact ? '100px' : '70px'};
-  }
+
 `
 
 const BackgroundImage = styled.div`
@@ -54,11 +49,11 @@ const BackgroundImage = styled.div`
     z-index: 1;
     -webkit-transform: translate3d(0,0,-1);
 
-    @media (min-width: ${breakpoints.mobile}) {
+    @media (max-width: ${breakpoints.mobile}) {
       margin-left: calc(${spacings.maxWidth} * -1 - 620px - 8vw);
     }
 
-    @media (min-width: ${breakpoints.full}) {
+    @media (max-width: ${breakpoints.full}) {
       margin-left: calc(${spacings.maxWidth} * -1 - 620px);
     }
   }
@@ -89,9 +84,14 @@ const HeroContentWrapper = styled(ShellWrapper)`
 
 const PageTitle = styled.h1`
   color: ${palette.white};
-  font-size: 58px;
+  font-size: 48px;
   font-weight: 300;
   letter-spacing: 2.24px;
+  
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 30px;
+    margin: 10px 0;
+  }
 `
 
 const PageSubtitle = styled.h2`
@@ -99,6 +99,11 @@ const PageSubtitle = styled.h2`
   font-size: 24px;
   font-weight: 200;
   line-height: 38px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 `
 
 export default Hero;
