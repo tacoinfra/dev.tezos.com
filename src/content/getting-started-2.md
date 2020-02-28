@@ -16,7 +16,4 @@ languages:
   - title: Archetype
     preTitleText: Domain-Specific
     link: http://archetype-lang.org/
-  - title: Fi
-    preTitleText: Javascript
-    link: https://fi-code.com/
 ---
