@@ -27,6 +27,7 @@
     "lodash.debounce": "^4.0.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-error-overlay": "^6.0.6",
     "react-helmet": "^5.2.0",
     "react-scrollspy": "^3.4.0",
     "react-smooth-collapse": "^2.0.1",
@@ -36,8 +37,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-mailchimp": "^5.1.0",
-    "gatsby-plugin-sitemap": "^2.1.0",
-    "gatsby-source-filesystem": "^2.0.39",
+    "gatsby-plugin-sitemap": "^2.2.30",
+    "gatsby-source-filesystem": "^2.1.57",
     "gatsby-transformer-remark": "^2.6.59",
     "prettier": "^1.17.0"
   },
