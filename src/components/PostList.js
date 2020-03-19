@@ -2,20 +2,12 @@ import React from "react"
 import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
 
-const PostList = ({
-  titleRef,
-  id,
-  title,
-  link,
-  children
-}) => (
+const PostList = ({ titleRef, id, title, link, children }) => (
   <div id={id}>
     <Header ref={titleRef}>
       <HeaderTitle>{title}</HeaderTitle>
     </Header>
-    <Content>
-      {children}
-    </Content>
+    <Content>{children}</Content>
   </div>
 )
 

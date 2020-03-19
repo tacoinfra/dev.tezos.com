@@ -26,11 +26,13 @@ function SEO({ description, lang, meta, keywords, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const siteTitle = title ? `${title} | ${site.siteMetadata.title}` : `${site.siteMetadata.title}`
+  const siteTitle = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : `${site.siteMetadata.title}`
 
   return (
     <Helmet>
-      <html lang={lang || 'en'} />
+      <html lang={lang || "en"} />
       <title>{siteTitle}</title>
 
       {/* dont index while in beta */}
@@ -38,10 +40,9 @@ function SEO({ description, lang, meta, keywords, title }) {
 
       <meta name="author" content={site.siteMetadata.author} />
       <meta name="description" content={metaDescription} />
-      {
-        keywords.length > 0 &&
+      {keywords.length > 0 && (
         <meta name="keywords" content={keywords.join(`, `)} />
-      }
+      )}
 
       {/* og tags */}
       <meta name="og:title" content={siteTitle} />
@@ -69,7 +70,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default SEO

@@ -13,8 +13,16 @@ const Header = () => (
       </NavigationLink>
       <MobileMenu />
       <NavigationList>
-        <ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor>
-        <ButtonAnchor href="https://www.tezos.com/">Back to Tezos.com</ButtonAnchor>
+        <ButtonAnchor
+          isSecondary
+          external
+          href="https://www.github.com/tacoinfra/developers.tezos.com"
+        >
+          Contribute To Dev Portal
+        </ButtonAnchor>
+        <ButtonAnchor href="https://www.tezos.com/">
+          Back to Tezos.com
+        </ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -109,10 +117,20 @@ const MobileMenu = () => {
       />
       <MobileMenuContainer isMenuOpen={isMenuOpen}>
         <MobileMenuNavList>
-          <li><ButtonAnchor isSecondary external href="https://www.github.com/tacoinfra/developers.tezos.com">Contribute To Dev Portal</ButtonAnchor></li>
-          <li><ButtonAnchor href="https://www.tezos.com/">
-            Back to Tezos
-          </ButtonAnchor></li>
+          <li>
+            <ButtonAnchor
+              isSecondary
+              external
+              href="https://www.github.com/tacoinfra/developers.tezos.com"
+            >
+              Contribute To Dev Portal
+            </ButtonAnchor>
+          </li>
+          <li>
+            <ButtonAnchor href="https://www.tezos.com/">
+              Back to Tezos
+            </ButtonAnchor>
+          </li>
         </MobileMenuNavList>
       </MobileMenuContainer>
     </Fragment>
@@ -177,7 +195,7 @@ const MobileMenuContainer = styled.div`
   justify-content: column;
   align-items: space-between;
   overflow: hidden;
-  -webkit-transform:translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
   transform: ${props =>
     props.isMenuOpen ? "translateX(0)" : "translateX(100%)"};
   transition: transform 150ms ease-in-out, width 250ms ease-in-out;

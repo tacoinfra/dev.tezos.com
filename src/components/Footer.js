@@ -16,7 +16,10 @@ const Footer = () => (
       <SocialHeader>Follow Us</SocialHeader>
       <SocialList>
         <li>
-          <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" label="Riot">
+          <CircleIcon
+            href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org"
+            label="Riot"
+          >
             <RiotIcon />
           </CircleIcon>
         </li>
@@ -31,7 +34,10 @@ const Footer = () => (
           </CircleIcon>
         </li>
         <li>
-          <CircleIcon href="https://tezos.stackexchange.com/" label="StackExchange">
+          <CircleIcon
+            href="https://tezos.stackexchange.com/"
+            label="StackExchange"
+          >
             <StackexchangeIcon />
           </CircleIcon>
         </li>

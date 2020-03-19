@@ -12,7 +12,9 @@ const ButtonAnchor = ({
   children,
 }) => {
   const Tag = href ? StyledAnchor : StyledButton
-  const externalProps = external ? { target: '_blank', rel: 'noopener noreferrer' } : {}
+  const externalProps = external
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {}
 
   return (
     <Tag

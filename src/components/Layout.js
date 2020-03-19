@@ -13,22 +13,17 @@ const Layout = ({
   subtitle,
   heroContent,
   compact = false,
-  notificationBarContent
+  notificationBarContent,
 }) => {
   return (
     <Container>
       <Global styles={globalRules} />
-      {
-        notificationBarContent &&
+      {notificationBarContent && (
         <NotificationBar {...notificationBarContent} />
-      }
+      )}
       <HeadingContainer>
         <Header />
-        <Hero
-          compact={compact}
-          title={title}
-          subtitle={subtitle}
-        >
+        <Hero compact={compact} title={title} subtitle={subtitle}>
           {heroContent}
         </Hero>
       </HeadingContainer>
@@ -54,7 +49,9 @@ const globalRules = css`
       text-decoration: underline;
     }
   }
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     color: ${palette.darkBlue};
     font-weight: 300;
   }

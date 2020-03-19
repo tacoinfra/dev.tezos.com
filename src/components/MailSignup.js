@@ -5,7 +5,7 @@ import ButtonAnchor from "./ButtonAnchor"
 import TextInput from "./TextInput"
 import { breakpoints } from "../utils/variables"
 
-const useMailchimp = (emailRef) => {
+const useMailchimp = emailRef => {
   const [message, setMessage] = useState(null)
   const [status, setStatus] = useState(null)
 
@@ -14,7 +14,7 @@ const useMailchimp = (emailRef) => {
 
     const { value } = emailRef.current
     const data = await addToMailchimp(value, {
-      'group[9][2]': '2'
+      "group[9][2]": "2",
     })
 
     setMessage(data.msg)
@@ -24,7 +24,7 @@ const useMailchimp = (emailRef) => {
   return {
     message,
     status,
-    handleSubmit
+    handleSubmit,
   }
 }
 
@@ -44,30 +44,29 @@ const MailSignup = () => {
           placeholder="Email"
           required
         />
-        <ButtonAnchor
-          type="submit"
-          isAnchor={false}
-          isSmall
-          isSecondary
-        >
+        <ButtonAnchor type="submit" isAnchor={false} isSmall isSecondary>
           Submit
         </ButtonAnchor>
       </LayoutContainer>
-      {
-        message &&
-        <Response status={status} dangerouslySetInnerHTML={{ __html: message }} />
-      }
+      {message && (
+        <Response
+          status={status}
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
     </MailSignupContainer>
   )
 }
 
 const getMessageColor = ({ status }) => {
   switch (status) {
-    case 'error': return 'red'
-    case 'success': return 'green'
-    case 'ready':
+    case "error":
+      return "red"
+    case "success":
+      return "green"
+    case "ready":
     default:
-      return 'white'
+      return "white"
   }
 }
 

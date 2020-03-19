@@ -8,10 +8,16 @@ const NotFoundPage = () => (
   <Layout title="Page Not Found" compact>
     <SEO title="Page Not Found" />
     <Wrapper>
-      <p>This link is broken or the page has been moved. Maybe were looking for:</p>
+      <p>
+        This link is broken or the page has been moved. Maybe were looking for:
+      </p>
       <List>
-        <li><a href="/">Home</a></li>
-        <li><a href="/tutorials">Tutorials</a></li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/tutorials">Tutorials</a>
+        </li>
       </List>
     </Wrapper>
   </Layout>
@@ -33,6 +39,4 @@ const List = styled.ul`
   }
 `
 
-
 export default NotFoundPage
-

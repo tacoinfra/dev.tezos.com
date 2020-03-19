@@ -2,16 +2,12 @@ import React from "react"
 import styled from "@emotion/styled"
 import { palette } from "../utils/variables"
 
-const CircleIcon = ({
-  href,
-  label,
-  children
-}) => {
+const CircleIcon = ({ href, label, children }) => {
   const hrefProps = href && {
-    as: 'a',
+    as: "a",
     href,
-    target: '_blank',
-    rel: 'noopener noreferrer'
+    target: "_blank",
+    rel: "noopener noreferrer",
   }
 
   return (

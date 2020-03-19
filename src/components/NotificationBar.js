@@ -1,13 +1,14 @@
-import React  from "react"
+import React from "react"
 import styled from "@emotion/styled"
 import { palette, spacings } from "../utils/variables"
 
-const NotificationBar = ({
-  html: __html,
-  link
-}) => {
+const NotificationBar = ({ html: __html, link }) => {
   return (
-    <NotificationBarContainer href={link} target="_blank" rel="noopener noreferrer">
+    <NotificationBarContainer
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Wrapper dangerouslySetInnerHTML={{ __html }} />
     </NotificationBarContainer>
   )

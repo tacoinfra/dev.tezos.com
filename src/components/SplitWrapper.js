@@ -5,9 +5,7 @@ import { palette, breakpoints, spacings } from "../utils/variables"
 
 const SplitWrapper = ({ children }) => (
   <Wrapper>
-    <FlexWrapper>
-      {children}
-    </FlexWrapper>
+    <FlexWrapper>{children}</FlexWrapper>
   </Wrapper>
 )
 
@@ -16,7 +14,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: ${breakpoints.mobile}) {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: ${palette.lightGrey};
       top: 0;

@@ -139,41 +139,43 @@ const SiteIndex = ({ location }) => {
 
           <PostListGroup columns={resourcesContent.length}>
             {refList =>
-              resourcesContent.map(({ title, slug, resources, maxContent }, index) => {
-                // Sometimes we want to limit the content on the homepage
-                let resourceList = resources;
-                // If the maxContent is -1 it means we want to show everything
-                if (maxContent > -1) {
-                  resourceList = resourceList.slice(0, maxContent);
+              resourcesContent.map(
+                ({ title, slug, resources, maxContent }, index) => {
+                  // Sometimes we want to limit the content on the homepage
+                  let resourceList = resources
+                  // If the maxContent is -1 it means we want to show everything
+                  if (maxContent > -1) {
+                    resourceList = resourceList.slice(0, maxContent)
+                  }
+                  return (
+                    <PostList
+                      key={title}
+                      titleRef={refList[index]}
+                      title={<h3>{title}</h3>}
+                      link={`/resources#${slug}`}
+                    >
+                      <ul>
+                        {resourceList.map(({ link, title, description }) => (
+                          <li key={link}>
+                            <p>
+                              <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {title}
+                              </a>
+                            </p>
+                            <p>
+                              <small>{description}</small>
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </PostList>
+                  )
                 }
-                return (
-                  <PostList
-                    key={title}
-                    titleRef={refList[index]}
-                    title={<h3>{title}</h3>}
-                    link={`/resources#${slug}`}
-                  >
-                    <ul>
-                      {resourceList.map(({ link, title, description }) => (
-                        <li key={link}>
-                          <p>
-                            <a
-                              href={link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {title}
-                            </a>
-                          </p>
-                          <p>
-                            <small>{description}</small>
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  </PostList>
-                )
-              })
+              )
             }
           </PostListGroup>
         </Section>

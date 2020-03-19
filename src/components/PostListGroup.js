@@ -7,18 +7,11 @@ import { breakpoints } from "../utils/variables"
 // expects children to be a render prop so we can pass refs for EqualHeight
 const PostListGroup = ({ columns = 3, children }) => {
   // statically define refs even if less columns are used
-  const refList = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null)
-  ]
+  const refList = [useRef(null), useRef(null), useRef(null), useRef(null)]
 
   return (
     <EqualHeight nodes={refList}>
-      <Container columns={columns}>
-        {children(refList)}
-      </Container>
+      <Container columns={columns}>{children(refList)}</Container>
     </EqualHeight>
   )
 }
@@ -43,7 +36,7 @@ const Container = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   grid-gap: 40px;
 
-  ${props => props.columns === 3 ? ThreeColumn : FourColumn }
+  ${props => (props.columns === 3 ? ThreeColumn : FourColumn)}
 `
 
 export default PostListGroup
