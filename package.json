@@ -29,8 +29,6 @@
     "react-dom": "^16.13.0",
     "react-error-overlay": "^6.0.6",
     "react-helmet": "^5.2.0",
-    "react-scrollspy": "^3.4.0",
-    "react-smooth-collapse": "^2.0.1",
     "react-typography": "^0.16.19",
     "typeface-roboto": "0.0.75",
     "typography": "^0.16.19"
