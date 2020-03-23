@@ -23,4 +23,7 @@ resources:
   - title: Tezster
     link: https://github.com/Tezsure/Tezster-CLI
     description: Testing tool for Tezos
+  - title: Nautilus Cloud
+    link: https://nautilus.cloud/ 
+    description: A full suite of tools to develop and deploy Tezos applications
 ---

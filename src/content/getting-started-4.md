@@ -5,7 +5,7 @@ title: Explore the Blockchain
 description: Use a block explorer to explore the blockchain.
 tutorials:
   - title: Arronax
-    link: https://arronax-beta.cryptonomic.tech/
+    link: https://arronax.io/
   - title: Tezos.ID
     link: https://tezos.id/
   - title: Better Call Dev — Smart Contract Explorer
@@ -18,4 +18,6 @@ tutorials:
     link: https://tzkt.io/
   - title: Baking Bad — Delegation Explorer
     link: https://baking-bad.org/
+  - title: Mininax
+    link: https://mininax.io/mainnet
 ---
