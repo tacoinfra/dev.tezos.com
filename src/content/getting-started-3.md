@@ -6,6 +6,8 @@ description: Use a library to integrate Tezos with your application.
 tutorials:
   - title: Taquito
     link: https://tezostaquito.io/
+  - title: Conseil
+    link: https://github.com/Cryptonomic/Conseil
   - title: ConseilJS
     link: https://cryptonomic.github.io/ConseilJS/#/
   - title: ConseilPy
