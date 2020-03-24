@@ -1,8 +1,8 @@
-import Typography from 'typography'
+import Typography from "typography"
 
 const typography = new Typography({
-  headerFontFamily: ['Roboto', 'sans-serif'],
-  bodyFontFamily: ['Roboto', 'sans-serif'],
+  headerFontFamily: ["Roboto", "sans-serif"],
+  bodyFontFamily: ["Roboto", "sans-serif"],
 })
 
 export default typography

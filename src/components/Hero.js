@@ -1,17 +1,12 @@
-import React from "react";
-import styled from "@emotion/styled";
-import { palette, breakpoints, spacings } from "../utils/variables";
+import React from "react"
+import styled from "@emotion/styled"
+import { palette, breakpoints, spacings } from "../utils/variables"
 // NOTE: For some reason, Gatsby doesn't like SVG's as background images in styled components, so I had to code this kind of oddly
 // NOTE: I opted to use an SVG because of the Quality and Performance benefits. If it becomes a hassle, I've included a JPG and PNG in assets you can switch it for
-import HeroBackground from "../assets/hero-background.svg";
-import ShellWrapper from './ShellWrapper';
+import HeroBackground from "../assets/hero-background.svg"
+import ShellWrapper from "./ShellWrapper"
 
-const Hero = ({
-  title,
-  subtitle,
-  compact,
-  children
-}) => (
+const Hero = ({ title, subtitle, compact, children }) => (
   <HeroContainer compact={compact}>
     <BackgroundImage compact={compact}>
       <HeroBackground />
@@ -28,26 +23,23 @@ const HeroContainer = styled.div`
   align-items: center;
   background-color: ${palette.darkBlue};
   display: flex;
-  min-height: ${props => props.compact ? '300px' : '370px'};
+  min-height: ${props => (props.compact ? "300px" : "370px")};
   padding-top: 70px;
   padding-bottom: 0px;
   position: relative;
   width: 100%;
   z-index: 0;
   overflow: hidden;
-
-
-
 `
 
 const BackgroundImage = styled.div`
   svg {
     position: absolute;
-    top: ${props => props.compact ? '-60px' : '0'};
+    top: ${props => (props.compact ? "-60px" : "0")};
     left: 50%;
     margin-left: calc(${spacings.maxWidth} * -1 - 600px);
     z-index: 1;
-    -webkit-transform: translate3d(0,0,-1);
+    -webkit-transform: translate3d(0, 0, -1);
 
     @media (max-width: ${breakpoints.mobile}) {
       margin-left: calc(${spacings.maxWidth} * -1 - 620px - 8vw);
@@ -87,7 +79,7 @@ const PageTitle = styled.h1`
   font-size: 48px;
   font-weight: 300;
   letter-spacing: 2.24px;
-  
+
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 30px;
     margin: 10px 0;
@@ -106,4 +98,4 @@ const PageSubtitle = styled.h2`
   }
 `
 
-export default Hero;
+export default Hero

@@ -18,13 +18,19 @@ const HomeHeroContent = () => (
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org" label="Riot">
+        <CircleIcon
+          href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org"
+          label="Riot"
+        >
           <RiotIcon />
         </CircleIcon>
       </li>
       <li>
-        <CircleIcon href="https://tezos.stackexchange.com/" label="Stack Exchange">
-          <StackexchangeIcon/>
+        <CircleIcon
+          href="https://tezos.stackexchange.com/"
+          label="Stack Exchange"
+        >
+          <StackexchangeIcon />
         </CircleIcon>
       </li>
     </SocialLinks>
@@ -79,7 +85,7 @@ const Rule = styled.hr`
   }
 
   @media (min-width: ${breakpoints.tablet}) {
-    display: none
+    display: none;
   }
 `
 

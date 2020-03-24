@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "@emotion/styled"
-import CircleIcon from './CircleIcon'
+import CircleIcon from "./CircleIcon"
 
-const NumberTitle = ({
-  number,
-  children
-}) => (
+const NumberTitle = ({ number, children }) => (
   <Container>
-    <CircleIcon><span>{number}</span></CircleIcon>
+    <CircleIcon>
+      <span>{number}</span>
+    </CircleIcon>
     <Heading>{children}</Heading>
   </Container>
 )
