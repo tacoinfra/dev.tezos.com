@@ -30,4 +30,6 @@ tutorials:
     link: https://github.com/TezosRio/TezosJ_plainJava
   - title: Netezos (.NET)
     link: https://github.com/baking-bad/netezos
+  - title: KotlinTezos (Android)
+    link: https://gitlab.com/camlcase-dev/kotlin-tezos
 ---
