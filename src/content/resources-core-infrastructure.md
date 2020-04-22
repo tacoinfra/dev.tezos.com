@@ -10,8 +10,8 @@ resources:
   - title: Build a node faster using a snapshot
     link: https://tezosshots.com/
   - title: Run a Tezos node in Kiln (GUI)
-    link: https://gitlab.com/obsidian.systems/tezos-bake-monitor
-  - title: How to Get Tezos 
+    link: https://gitlab.com/obsidian.systems/kiln
+  - title: How to Get Tezos
     link: http://tezos.gitlab.io/introduction/howtoget.html
   - title: Git Repository
     link: https://gitlab.com/tezos/tezos

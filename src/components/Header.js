@@ -16,13 +16,11 @@ const Header = () => (
         <ButtonAnchor
           isSecondary
           external
-          href="https://www.github.com/tacoinfra/developers.tezos.com"
+          href="https://github.com/tacoinfra/developers.tezos.com"
         >
           Contribute To Dev Portal
         </ButtonAnchor>
-        <ButtonAnchor href="https://www.tezos.com/">
-          Back to Tezos.com
-        </ButtonAnchor>
+        <ButtonAnchor href="https://tezos.com/">Back to Tezos.com</ButtonAnchor>
       </NavigationList>
     </NavigationMenu>
   </HeaderContainer>
@@ -121,15 +119,13 @@ const MobileMenu = () => {
             <ButtonAnchor
               isSecondary
               external
-              href="https://www.github.com/tacoinfra/developers.tezos.com"
+              href="https://github.com/tacoinfra/developers.tezos.com"
             >
               Contribute To Dev Portal
             </ButtonAnchor>
           </li>
           <li>
-            <ButtonAnchor href="https://www.tezos.com/">
-              Back to Tezos
-            </ButtonAnchor>
+            <ButtonAnchor href="https://tezos.com/">Back to Tezos</ButtonAnchor>
           </li>
         </MobileMenuNavList>
       </MobileMenuContainer>
