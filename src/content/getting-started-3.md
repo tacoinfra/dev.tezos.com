@@ -21,7 +21,7 @@ tutorials:
   - title: TezBridge
     link: https://docs.tezbridge.com/
   - title: Go-Tezos
-    link: https://github.com/DefinitelyNotAGoat/go-tezos
+    link: https://github.com/goat-systems/go-tezos
   - title: AirGap-Coin-Lib
     link: https://github.com/airgap-it/airgap-coin-lib
   - title: TezosJ_SDK (Android)
