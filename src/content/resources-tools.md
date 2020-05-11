@@ -26,4 +26,7 @@ resources:
   - title: Nautilus Cloud
     link: https://nautilus.cloud/ 
     description: A full suite of tools to develop and deploy Tezos applications
+  - title: Tezos Giga Node
+    link: https://tezos.giganode.io/
+    description: Reliable and geographically distributed Tezos public node infrastructure
 ---
