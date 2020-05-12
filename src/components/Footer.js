@@ -8,6 +8,7 @@ import GitlabIcon from "../assets/social-gitlab.svg"
 import RedditIcon from "../assets/social-reddit.svg"
 import RiotIcon from "../assets/social-riot.svg"
 import StackexchangeIcon from "../assets/social-stackexchange.svg"
+import TelegramIcon from "../assets/social-telegram.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -16,21 +17,21 @@ const Footer = () => (
       <SocialHeader>Follow Us</SocialHeader>
       <SocialList>
         <li>
+          <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
+            <RedditIcon />
+          </CircleIcon>
+        </li>
+        <li>
           <CircleIcon
-            href="https://riot.im/app/#/room/#freenode_#tezos:matrix.org"
+            href="https://riot.tzchat.org/#/room/#freenode_#tezos:matrix.org"
             label="Riot"
           >
             <RiotIcon />
           </CircleIcon>
         </li>
         <li>
-          <CircleIcon href="https://gitlab.com/tezos/tezos" label="Gitlab">
-            <GitlabIcon />
-          </CircleIcon>
-        </li>
-        <li>
-          <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
-            <RedditIcon />
+          <CircleIcon href="https://t.me/TezosDevelopers" label="Telegram">
+            <TelegramIcon />
           </CircleIcon>
         </li>
         <li>
@@ -39,6 +40,11 @@ const Footer = () => (
             label="StackExchange"
           >
             <StackexchangeIcon />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://gitlab.com/tezos/tezos" label="Gitlab">
+            <GitlabIcon />
           </CircleIcon>
         </li>
       </SocialList>
