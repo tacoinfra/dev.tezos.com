@@ -70,7 +70,7 @@ const HeroContentWrapper = styled(ShellWrapper)`
   }
 
   @media (min-width: ${breakpoints.full}) {
-    padding: 0 0 0 360px;
+    /* padding: 0 0 0 360px; */
   }
 `
 
