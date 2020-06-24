@@ -10,9 +10,9 @@ languages:
   - title: SmartPy
     preTitleText: Python
     link: http://smartpy.io/
-  - title: Morley/Lorentz
+  - title: Indigo
     preTitleText: Haskell
-    link: http://hackage.haskell.org/package/morley
+    link: https://indigo-lang.gitlab.io
   - title: Archetype
     preTitleText: Domain-Specific
     link: http://archetype-lang.org/

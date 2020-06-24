@@ -32,4 +32,6 @@ tutorials:
     link: https://github.com/baking-bad/netezos
   - title: KotlinTezos (Android)
     link: https://gitlab.com/camlcase-dev/kotlin-tezos
+  - title: Morley
+    link: https://gitlab.com/morley-framework/morley
 ---
