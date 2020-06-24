@@ -20,4 +20,6 @@ tutorials:
     link: https://baking-bad.org/
   - title: Mininax
     link: https://mininax.io/mainnet
+  - title: Blockchair
+    link: https://blockchair.com/tezos
 ---
