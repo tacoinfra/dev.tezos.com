@@ -9,7 +9,7 @@ tutorials:
   - title: Run a Tezos sandbox
     link: https://assets.tqtezos.com/docs/setup/2-sandbox
   - title: Try Ligo right in the browser
-    link: https://ligolang.org/
+    link: https://ide.ligolang.org/
   - title: Get started with TPlus to manage Tezos environments
     link: https://tplus.dev
 ---
