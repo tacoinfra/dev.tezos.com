@@ -14,8 +14,24 @@ import TelegramIcon from "../assets/social-telegram.svg"
 const Footer = () => (
   <FooterContainer>
     <SocialContent>
-      <SocialHeader>Follow Us</SocialHeader>
+      <SocialHeader>Follow the Tezos Project</SocialHeader>
       <SocialList>
+        <li>
+          <CircleIcon
+            href="https://tezos.stackexchange.com/"
+            label="StackExchange"
+          >
+            <StackexchangeIcon />
+          </CircleIcon>
+        </li>
+        <li>
+          <CircleIcon href="https://t.me/TezosDevelopers" label="Telegram">
+            <TelegramIcon />
+          </CircleIcon>
+        </li>
+
+        {/* Twitter */}
+        {/* Agora */}
         <li>
           <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
             <RedditIcon />
@@ -27,19 +43,6 @@ const Footer = () => (
             label="Riot"
           >
             <RiotIcon />
-          </CircleIcon>
-        </li>
-        <li>
-          <CircleIcon href="https://t.me/TezosDevelopers" label="Telegram">
-            <TelegramIcon />
-          </CircleIcon>
-        </li>
-        <li>
-          <CircleIcon
-            href="https://tezos.stackexchange.com/"
-            label="StackExchange"
-          >
-            <StackexchangeIcon />
           </CircleIcon>
         </li>
         <li>

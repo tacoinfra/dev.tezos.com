@@ -20,12 +20,13 @@ const CircleIcon = ({ href, label, children }) => {
 const CircleIconContainer = styled.div`
   background-color: ${palette.blue};
   border-radius: 100px;
-  display: inline-block;
+  display: flex;
   flex: 0 0 40px;
   height: 40px;
   position: relative;
   vertical-align: middle;
   width: 40px;
+  align-items: center;
 
   & > * {
     left: 0;
@@ -34,7 +35,6 @@ const CircleIconContainer = styled.div`
   }
 
   span {
-    top: 7px;
     text-align: center;
     color: ${palette.white};
   }

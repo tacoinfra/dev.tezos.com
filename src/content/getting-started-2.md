@@ -2,10 +2,10 @@
 type: getting-started
 priority: 2
 title: Write a Smart Contract
-description: Learn how to author smart contracts in your choice of syntax. Code will compile to Michelson, the smart contract language of the Tezos blockchain.
+description: Write smart contracts in your choice of syntax. Code will compile to Michelson, the smart contract language of the Tezos blockchain.
 languages:
-  - title: Ligo
-    preTitleText: Pascal, OCaml
+  - title: LIGO
+    preTitleText: Pascal, OCaml, ReasonML
     link: https://ligolang.org/
   - title: SmartPy
     preTitleText: Python
@@ -13,6 +13,9 @@ languages:
   - title: Indigo
     preTitleText: Haskell
     link: https://indigo-lang.gitlab.io
+  - title: Michelson
+    preTitleText: Language of Tezos Smart Contracts
+    link: https://michelson.nomadic-labs.com/
   - title: Archetype
     preTitleText: Domain-Specific
     link: http://archetype-lang.org/

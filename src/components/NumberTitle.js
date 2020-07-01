@@ -13,7 +13,7 @@ const NumberTitle = ({ number, children }) => (
 
 const Container = styled.div`
   display: flex;
-  align-items: self-end;
+  align-items: center;
 `
 
 const Heading = styled.h3`

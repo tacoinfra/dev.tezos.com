@@ -14,7 +14,7 @@ const PostList = ({ titleRef, id, title, link, children }) => (
 const Header = styled.header`
   display: flex;
   border-bottom: 3px solid ${palette.blue};
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   width: 100%;
 `
 const HeaderTitle = styled.div`

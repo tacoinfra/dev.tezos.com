@@ -6,7 +6,6 @@ import { breakpoints } from "../utils/variables"
 
 // images
 import GitlabIcon from "../assets/social-gitlab.svg"
-import RedditIcon from "../assets/social-reddit.svg"
 import RiotIcon from "../assets/social-riot.svg"
 import StackexchangeIcon from "../assets/social-stackexchange.svg"
 import TelegramIcon from "../assets/social-telegram.svg"
@@ -15,16 +14,11 @@ const HomeHeroContent = () => (
   <Container>
     <SocialLinks>
       <li>
-        <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
-          <RedditIcon />
-        </CircleIcon>
-      </li>
-      <li>
         <CircleIcon
-          href="https://riot.tzchat.org/#/room/#freenode_#tezos:matrix.org"
-          label="Riot"
+          href="https://tezos.stackexchange.com/"
+          label="Stack Exchange"
         >
-          <RiotIcon />
+          <StackexchangeIcon />
         </CircleIcon>
       </li>
       <li>
@@ -34,10 +28,10 @@ const HomeHeroContent = () => (
       </li>
       <li>
         <CircleIcon
-          href="https://tezos.stackexchange.com/"
-          label="Stack Exchange"
+          href="https://riot.tzchat.org/#/room/#freenode_#tezos:matrix.org"
+          label="Riot"
         >
-          <StackexchangeIcon />
+          <RiotIcon />
         </CircleIcon>
       </li>
       <li>

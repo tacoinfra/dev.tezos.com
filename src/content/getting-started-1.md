@@ -2,14 +2,26 @@
 type: getting-started
 priority: 1
 title: Hello World
-description: Very Basic Introductional Tutorials
+description: Very Basic Introductory Materials
 tutorials:
   - title: Deploy and interact with a contract on the Testnet
     link: https://assets.tqtezos.com/docs/setup/1-tezos-client
   - title: Run a Tezos sandbox
     link: https://assets.tqtezos.com/docs/setup/2-sandbox
+  - title: Try SmartPy in a browser
+    link: https://www.smartpy.io/dev/
+  - title: Learn the basics of SmartPy
+    link: https://training.blockmatics.io/p/tezos-smartpy-developer-course/
   - title: Try Ligo right in the browser
     link: https://ide.ligolang.org/
-  - title: Get started with TPlus to manage Tezos environments
+  - title: Learn the basics of LIGO
+    link: https://tezosacademy.io/
+  - title: Try Michelson in a browser
+    link: https://try-michelson.tzalpha.net/
+  - title: Learn the basics of Michelson
+    link: https://michelson.nomadic-labs.com/
+  - title: Get started with Tplus to manage Tezos environments
+    link: https://tplus.dev/
+  - title: Check out Cryptonomic’s Tezos developers’ handbook
     link: https://tplus.dev
 ---
