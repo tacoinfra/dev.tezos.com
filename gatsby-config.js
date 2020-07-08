@@ -20,28 +20,30 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: 'https://tezos.us6.list-manage.com/subscribe/post?u=80b9a27c332a234b4cac5c13b&id=d8f4b4112e'
+        endpoint:
+          "https://tezos.us6.list-manage.com/subscribe/post?u=80b9a27c332a234b4cac5c13b&id=d8f4b4112e",
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        trackingId: `UA-125745326-3`,
+        id: "GTM-5TC6C4R",
+        includeInDevelopment: false,
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Tezos.com',
-        short_name: 'Tezos',
-        start_url: '/',
-        background_color: '#0055FF',
-        theme_color: '#0055FF',
-        display: 'minimal-ui',
-        icon: 'src/assets/icon.png'
+        name: "Tezos.com",
+        short_name: "Tezos",
+        start_url: "/",
+        background_color: "#0055FF",
+        theme_color: "#0055FF",
+        display: "minimal-ui",
+        icon: "src/assets/icon.png",
       },
     },
     `gatsby-plugin-offline`,
@@ -57,9 +59,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.svg/ // See below to configure properly
-        }
-      }
-    }
+          include: /\.svg/, // See below to configure properly
+        },
+      },
+    },
   ],
 }
