@@ -83,7 +83,7 @@ const SiteIndex = ({ location }) => {
       location={location}
       notificationBarContent={notificationBarContent}
       title="Tezos Developer Portal"
-      subtitle="Resources for Developers"
+      subtitle="Developer Support Channels"
       heroContent={<HomeHeroContent />}
     >
       <SEO />

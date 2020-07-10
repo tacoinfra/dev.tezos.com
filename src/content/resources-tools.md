@@ -11,17 +11,14 @@ resources:
   - title: LIGO IDE
     link: https://ide.ligolang.org/
     description: Online editor to write smart contracts in LIGO
-  - title: Tezos - intellij
-    link: https://www.plugin-dev.com/plugins/tezos-michelson/
-    description: Michelson Plugin for IntelliJ
   - title: sol2ligo Transpiler
-    link:
+    link: https://github.com/madfish-solutions/sol2ligo
     description: Tool to migrate Solidity smart contracts to LIGO
   - title: Tplus
     link: https://tplus.dev/tplus
     description: Tool to manage Tezos environments (sandboxes and public nodes)
-  - title: Tezos - IntelliJ
-    link:
+  - title: Michelson - IntelliJ
+    link: https://www.plugin-dev.com/plugins/tezos-michelson/
     description: Michelson Plugin for IntelliJ
   - title: Michelson Emacs Mode
     link: https://github.com/tezos/tezos/tree/master/emacs
@@ -39,7 +36,7 @@ resources:
     link: https://magic-tezos-faucet.now.sh/
     description: A simple faucet for a Tezos testnet
   - title: Testnet Faucet
-    link: https://tezos.gitlab.io/introduction/howtouse.html#faucet
+    link: https://faucet.tzalpha.net/
     description: Faucet for a Tezos testnet
   - title: Mainnet Faucet
     link: https://faucet.tezos.com/

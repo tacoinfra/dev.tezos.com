@@ -9,6 +9,8 @@ import RedditIcon from "../assets/social-reddit.svg"
 import RiotIcon from "../assets/social-riot.svg"
 import StackexchangeIcon from "../assets/social-stackexchange.svg"
 import TelegramIcon from "../assets/social-telegram.svg"
+import TwitterIcon from "../assets/social-icon-twitter.svg"
+import TezosIcon from "../assets/icon-tezos.svg"
 
 // NOTE: Footer component is presentational and does not change (it's a static presentational component)
 const Footer = () => (
@@ -30,8 +32,18 @@ const Footer = () => (
           </CircleIcon>
         </li>
 
-        {/* Twitter */}
-        {/* Agora */}
+        <li>
+          <CircleIcon href="https://twitter.com/tezos" label="Twitter">
+            <TwitterIcon />
+          </CircleIcon>
+        </li>
+
+        <li>
+          <CircleIcon href="https://forum.tezosagora.org/" label="Agora">
+            <TezosIcon />
+          </CircleIcon>
+        </li>
+
         <li>
           <CircleIcon href="https://www.reddit.com/r/tezos" label="Reddit">
             <RedditIcon />

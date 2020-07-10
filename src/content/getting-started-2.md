@@ -13,10 +13,10 @@ languages:
   - title: Indigo
     preTitleText: Haskell
     link: https://indigo-lang.gitlab.io
+  - title: Archetype
+    preTitleText: Domain-Specific
+    link: https://archetype-lang.org/
   - title: Michelson
     preTitleText: Language of Tezos Smart Contracts
     link: https://michelson.nomadic-labs.com/
-  - title: Archetype
-    preTitleText: Domain-Specific
-    link: http://archetype-lang.org/
 ---
