@@ -26,6 +26,8 @@ tutorials:
     link: https://misualizer.tezbridge.com/
   - title: Tezos Hubble Explorer
     link: https://hubble.figment.network/tezos
+  - title: Baking Bad - Delegation Explorer
+    link: https://baking-bad.org/
   - title: Tezos.ID
     link: https://tezos.id/
   - title: Mininax

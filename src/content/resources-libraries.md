@@ -9,7 +9,7 @@ resources:
     link: https://training.blockmatics.io/p/tezos-smartpy-developer-course/
     description: Blockmatics’ SmartPy Developer Course teaches the basics of SmartPy and the SmartPy IDE.
   - title: Cryptoverse Wars (SmartPy)
-    link: https://cryptocodeschool.in/tezos/
+    link: https://cryptocodeschool.in/tezos/overview
     description: Cryptoverse Wars is a fun interactive code school developed by BUIDL Labs that teaches developers how to write smart contracts in SmartPy.
   - title: Tezos Academy (LIGO)
     link: https://tezosacademy.io

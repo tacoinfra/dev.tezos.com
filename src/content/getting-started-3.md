@@ -24,16 +24,18 @@ tutorials:
     link: https://github.com/baking-bad/pytezos
   - title: Sotez - JavaScript library
     link: https://github.com/AndrewKishino/sotez
+  - title: Magic - passwordless wallet connector for apps
+    link: https://docs.magic.link/advanced/tezos/get-started
+  - title: Beacon - wallet connector for apps
+    link: https://www.walletbeacon.io/
   - title: TezBridge - wallet connector for apps
     link: https://docs.tezbridge.com/
   - title: Go Tezos - Go library
     link: https://github.com/goat-systems/go-tezos
-  - title: AirGap Coin Library - API to prepare, sign, and broadcast transactions
-    link: https://github.com/airgap-it/airgap-coin-lib
   - title: TezosJ - Android Java SDK
     link: https://github.com/TezosRio/TezosJ_SDK
   - title: TezosJ Plain Java - Java SDK
     link: https://github.com/TezosRio/TezosJ_plainJava
-  - title: Netezos (.NET) - .Net Standard 2.0 library
+  - title: Netezos - .Net Standard 2.0 library
     link: https://github.com/baking-bad/netezos
 ---

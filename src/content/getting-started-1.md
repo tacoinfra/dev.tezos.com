@@ -11,8 +11,8 @@ tutorials:
   - title: Try SmartPy in a browser
     link: https://www.smartpy.io/dev/
   - title: Learn the basics of SmartPy
-    link: https://training.blockmatics.io/p/tezos-smartpy-developer-course/
-  - title: Try Ligo right in the browser
+    link: https://cryptocodeschool.in/tezos/overview
+  - title: Try LIGO right in the browser
     link: https://ide.ligolang.org/
   - title: Learn the basics of LIGO
     link: https://tezosacademy.io/
@@ -23,5 +23,5 @@ tutorials:
   - title: Get started with Tplus to manage Tezos environments
     link: https://tplus.dev/
   - title: Check out Cryptonomic’s Tezos developers’ handbook
-    link: https://tplus.dev
+    link: https://handbook.cryptonomic.tech/
 ---

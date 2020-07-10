@@ -1087,6 +1087,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.10.3":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.4.tgz#a6724f1a6b8d2f6ea5236dbfe58c7d7ea9c5eb99"
+  integrity sha512-UpTN5yUJr9b4EX2CnGNWIvER7Ab83ibv0pcvvHc4UOdrBI5jb8bj+32cCwPX6xu0mt2daFNjYhoi+X7beH0RSw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.10.2":
   version "7.10.2"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.10.2.tgz#49dbbadcbc4b199df064d7d8b3e21c915b84abdb"
@@ -7471,13 +7478,12 @@ gatsby-plugin-emotion@^4.1.25:
     "@babel/runtime" "^7.10.2"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
-gatsby-plugin-google-analytics@^2.1.38:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.3.tgz#e86f67295853ab9f3e1d5ab24f17bce23e91694e"
-  integrity sha512-pOoMUvF4jzVwW9IksJLngG1zBRljCHxfpCczWUoJQBRU3gcy1syq1KBL/MWGXL1ATGrerdBFGJsiIXbFr6Qp2w==
+gatsby-plugin-google-tagmanager@^2.3.10:
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.3.10.tgz#d10793de450115130a390ff8750d934e009c556b"
+  integrity sha512-ELzc9JGC8KdtXTLu28w1Xxgm6bbckrSvTfoatME1jX4vg7LpACNtIY/axAo2p0zcwFoKyb6dx3dKmDUKqbXI1Q==
   dependencies:
-    "@babel/runtime" "^7.10.2"
-    minimatch "3.0.4"
+    "@babel/runtime" "^7.10.3"
 
 gatsby-plugin-mailchimp@^5.1.0:
   version "5.1.2"
@@ -10930,7 +10936,7 @@ minimatch@3.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -11275,7 +11281,6 @@ node-libs-browser@^2.2.1:
 
 node-link-checker@tqtezos/broken-link-checker#v0.7.x:
   version "0.7.8"
-  uid "1506a41b9da70ccbc5bd7cd55697d76e49b7e9e8"
   resolved "https://codeload.github.com/tqtezos/broken-link-checker/tar.gz/1506a41b9da70ccbc5bd7cd55697d76e49b7e9e8"
   dependencies:
     bhttp "^1.2.1"

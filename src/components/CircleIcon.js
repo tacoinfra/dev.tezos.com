@@ -49,6 +49,10 @@ const CircleIconContainer = styled.div`
     fill: white;
   }
 
+  svg path {
+    fill: white;
+  }
+
   &[href] {
     &:hover,
     &:focus {

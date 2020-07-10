@@ -15,7 +15,7 @@
     "gatsby": "^2.19.49",
     "gatsby-image": "^2.2.45",
     "gatsby-plugin-emotion": "^4.1.25",
-    "gatsby-plugin-google-analytics": "^2.1.38",
+    "gatsby-plugin-google-tagmanager": "^2.3.10",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.42",
     "gatsby-plugin-react-helmet": "^3.1.24",
@@ -35,13 +35,13 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "express": "^4.17.1",
     "gatsby-plugin-mailchimp": "^5.1.0",
     "gatsby-plugin-sitemap": "^2.2.30",
     "gatsby-source-filesystem": "^2.1.57",
     "gatsby-transformer-remark": "^2.6.59",
-    "prettier": "^1.17.0",
-    "express": "^4.17.1",
     "node-link-checker": "tqtezos/broken-link-checker#v0.7.x",
+    "prettier": "^1.17.0",
     "serve-static": "^1.14.1",
     "start-server-and-test": "^1.10.11"
   },
