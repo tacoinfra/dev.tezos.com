@@ -12,7 +12,7 @@ resources:
     link: https://ide.ligolang.org/
     description: Online editor to write smart contracts in LIGO
   - title: sol2ligo Transpiler
-    link: https://github.com/madfish-solutions/sol2ligo
+    link: https://madfish-solutions.github.io/sol2ligo/
     description: Tool to migrate Solidity smart contracts to LIGO
   - title: Tplus
     link: https://tplus.dev/tplus
@@ -53,4 +53,7 @@ resources:
   - title: Tezos Link
     link: https://tezoslink.io/
     description: Scalable API access to the Tezos network
+  - title: Tezos DataHub
+    link: https://datahub.figment.network/
+    description: Reliable API access to the Tezos network
 ---
