@@ -46,7 +46,7 @@ resources:
     description: Reliable and geographically distributed Tezos public node infrastructure
   - title: TezosLive
     link: https://www.tezoslive.io/
-    description: GraphQL API to the Tezos Node RPC API
+    description: GraphQL API to the Tezos Node RPC 
   - title: Nautilus Cloud
     link: https://nautilus.cloud/
     description: A full suite of tools to develop and deploy Tezos applications

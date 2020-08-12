@@ -5,7 +5,7 @@ title: Hello World
 description: Very Basic Introductory Materials
 tutorials:
   - title: Deploy and interact with a digital asset (token)
-    link: https://assets.tqtezos.com/docs/setup/1-tezos-client
+    link: https://assets.tqtezos.com/docs/intro/
   - title: Get started with Tplus to manage Tezos environments (sandboxes and public nodes)
     link: https://tplus.dev/
   - title: Run a Tezos sandbox
@@ -14,7 +14,7 @@ tutorials:
     link: https://www.smartpy.io/dev/
   - title: Learn the basics of SmartPy
     link: https://cryptocodeschool.in/tezos/overview
-  - title: Try LIGO right in the browser
+  - title: Try LIGO in a browser
     link: https://ide.ligolang.org/
   - title: Learn the basics of LIGO
     link: https://tezosacademy.io/
