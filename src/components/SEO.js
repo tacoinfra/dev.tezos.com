@@ -35,9 +35,6 @@ function SEO({ description, lang, meta, keywords, title }) {
       <html lang={lang || "en"} />
       <title>{siteTitle}</title>
 
-      {/* dont index while in beta */}
-      <meta name="robots" content="noindex" />
-
       <meta name="author" content={site.siteMetadata.author} />
       <meta name="description" content={metaDescription} />
       {keywords.length > 0 && (
