@@ -5,6 +5,9 @@ slug: courses
 title: Online Training Courses and Educational Resources
 maxContent: -1
 resources:
+  - title: Sol2Ligo handbook
+    link: https://madfish-solutions.github.io/sol2ligo-course/#/
+    description: Learn Ligo and write Tezos smart contracts with the interactive tool. Convert your Solidity contracts to Ligo easily.
   - title: Blockmatics SmartPy Developer Course
     link: https://training.blockmatics.io/p/tezos-smartpy-developer-course/
     description: Blockmatics’ SmartPy Developer Course teaches the basics of SmartPy and the SmartPy IDE.
