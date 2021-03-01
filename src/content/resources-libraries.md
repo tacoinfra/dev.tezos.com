@@ -41,4 +41,7 @@ resources:
   - title: TQ Tezos Wiki
     link: https://learn.tqtezos.com/
     description: A Tezos wiki by the TQ Tezos team. Learn about Tezos basics, proof-of-stake in Tezos, governance, smart contracts, and more.
+  - title: Nomadic Labs Research
+    link: https://nomadic-labs.com/research.html
+    description: Research and development on distributed, decentralized, and formally verified software.
 ---

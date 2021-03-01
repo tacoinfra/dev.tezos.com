@@ -11,8 +11,10 @@
     "@babel/runtime": "^7.8.7",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "babel-preset-gatsby": "^0.9.1",
     "emotion": "^10.0.27",
     "gatsby": "^2.19.49",
+    "gatsby-cli": "^2.16.2",
     "gatsby-image": "^2.2.45",
     "gatsby-plugin-emotion": "^4.1.25",
     "gatsby-plugin-google-tagmanager": "^2.3.10",
@@ -32,7 +34,8 @@
     "react-typography": "^0.16.19",
     "typeface-roboto": "0.0.75",
     "typescript": "^3.8.3",
-    "typography": "^0.16.19"
+    "typography": "^0.16.19",
+    "webpack": "^5.11.1"
   },
   "devDependencies": {
     "express": "^4.17.1",
