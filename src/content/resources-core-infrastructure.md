@@ -10,7 +10,7 @@ resources:
   - title: Build a node faster using a snapshot
     link: https://snapshots.tulip.tools/#/
   - title: Run a Tezos node and bake in Kiln (GUI)
-    link: https://gitlab.com/obsidian.systems/kiln
+    link: https://tezos-kiln.org
   - title: How to get binaries to run Tezos
     link: https://tezos.gitlab.io/introduction/howtoget.html
   - title: Core Repository
