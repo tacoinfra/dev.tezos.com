@@ -18,6 +18,8 @@ tutorials:
     link: https://gitlab.com/morley-framework/morley
   - title: TezosKit - Swift SDK for iOS, macOS, and iPadOS
     link: https://github.com/keefertaylor/TezosKit
+  - title: camlKit - Swift SDK for iOS with inbuilt Dexter support
+    link: https://gitlab.com/camlcase-dev/camlkit
   - title: KotlinTezos - Android/Kotlin toolbox
     link: https://gitlab.com/camlcase-dev/kotlin-tezos
   - title: PyTezos - Python SDK
